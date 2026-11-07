@@ -35,7 +35,7 @@ const locationButtons = [...document.querySelectorAll("[data-location]")];
 const timeframeButtons = [...document.querySelectorAll("[data-timeframe]")];
 
 let events = [];
-let selectedLocation = "vienna";
+let selectedLocation = "all";
 let selectedTimeframe = "upcoming";
 let referenceDateIso = new Date().toISOString().slice(0, 10);
 let currentYear = Number(referenceDateIso.slice(0, 4));
