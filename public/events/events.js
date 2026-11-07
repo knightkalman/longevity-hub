@@ -416,7 +416,9 @@ async function loadFeed() {
     const upcomingCount = events.filter((eventItem) =>
       isUpcomingEvent(eventItem),
     ).length;
-    headlineCount.textContent = `${upcomingCount} upcoming · ${events.length} total (${currentYear}) · unreviewed`;
+    if (headlineCount) {
+      headlineCount.textContent = `${upcomingCount} upcoming · ${events.length} total (${currentYear}) · unreviewed`;
+    }
     renderEvents();
   } catch {
     feedError = true;

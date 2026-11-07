@@ -34,6 +34,7 @@
         <nav class="primary-nav" aria-label="Main navigation">
           <a href="./news/">Longevity News</a>
           <a href="./events/">Conferences &amp; Events</a>
+          <a href="#featured-events">Featured Events</a>
           <a href="#pillars">Health Pillars</a>
           <a href="#principles">Science &amp; Methods</a>
         </nav>
@@ -54,7 +55,8 @@
 
             <div class="hero-actions">
               <a class="button button-primary" href="./news/">Browse Live News <span aria-hidden="true">→</span></a>
-              <a class="button button-secondary" href="./events/">Conferences &amp; Events <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary" href="#featured-events">Featured Events <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary" href="./events/">Events Directory</a>
               <a class="button button-secondary" href="#pillars">Health Pillars</a>
             </div>
 
@@ -163,6 +165,55 @@
                 <span aria-hidden="true">→</span>
               </a>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Longevity Events Section in Stylish Bubbles -->
+      <section class="section section-featured-events" id="featured-events" aria-labelledby="featured-events-title">
+        <div class="shell">
+          <div class="featured-events-header">
+            <div class="section-head">
+              <p class="eyebrow"><span class="eyebrow-dot"></span> Community &amp; Gatherings</p>
+              <h2 id="featured-events-title">Featured <em>gatherings &amp; congresses.</em></h2>
+              <p>Top upcoming geroscience meetings and recent landmark proceedings across Vienna, Europe, the US, Asia, and worldwide forums.</p>
+            </div>
+
+            <!-- Reactive Filter Pills -->
+            <div class="bubble-filters" role="group" aria-label="Filter featured events">
+              <button class="bubble-filter-btn is-active" type="button" data-bubble-filter="all" aria-pressed="true">
+                <span>All Featured</span>
+                <span class="filter-count" id="count-all">10</span>
+              </button>
+              <button class="bubble-filter-btn" type="button" data-bubble-filter="upcoming" aria-pressed="false">
+                <span class="pulse-dot"></span>
+                <span>Upcoming</span>
+                <span class="filter-count" id="count-upcoming">6</span>
+              </button>
+              <button class="bubble-filter-btn" type="button" data-bubble-filter="past" aria-pressed="false">
+                <span>Recent Past</span>
+                <span class="filter-count" id="count-past">4</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Stylish Bubbles Container -->
+          <div class="events-bubble-grid" id="featured-bubbles-container" aria-live="polite">
+            <div class="bubbles-loading">
+              <span class="bubble-spinner" aria-hidden="true">✳</span>
+              <span>Loading featured events...</span>
+            </div>
+          </div>
+
+          <!-- Bottom bar leading to full directory -->
+          <div class="featured-events-foot">
+            <div class="foot-note">
+              <span class="foot-icon" aria-hidden="true">📍</span>
+              <span>Looking for dedicated regional views (Vienna, Europe, US, Asia) or past archives?</span>
+            </div>
+            <a class="button button-primary" href="./events/">
+              Explore Full Events Directory (140+ meetings) <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </section>
