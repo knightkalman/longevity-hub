@@ -810,6 +810,32 @@ button:focus-visible {
   max-width: 620px;
 }
 
+/* Controls: Visible Location & Timeframe Selectors */
+.featured-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.featured-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.featured-filter-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--moss);
+  min-width: 60px;
+  text-align: right;
+}
+
 /* Reactive Filter Pills */
 .bubble-filters {
   display: inline-flex;
@@ -890,6 +916,27 @@ button:focus-visible {
   background: var(--paper-card);
   color: var(--muted);
   font-weight: 500;
+}
+
+.bubbles-empty {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 48px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--line);
+  background: var(--paper-card);
+  color: var(--muted);
+  text-align: center;
+}
+
+.bubbles-empty p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink-light);
 }
 
 .bubble-spinner {
@@ -1102,9 +1149,28 @@ button:focus-visible {
     gap: 18px;
   }
   
+  .featured-controls {
+    width: 100%;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  
+  .featured-filter-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .featured-filter-label {
+    text-align: left;
+    min-width: unset;
+  }
+  
   .bubble-filters {
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   
   .featured-events-foot {

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import calendar
 import hashlib
+import html
 import json
 import os
 import re
@@ -281,10 +282,18 @@ def local_name(tag: str) -> str:
     return tag.rsplit("}", 1)[-1].lower()
 
 
+def sanitize_text(value: str | None) -> str:
+    if not value:
+        return ""
+    text = html.unescape(value)
+    text = re.sub(r"<[^>]+>", "", text)
+    return " ".join(text.split())
+
+
 def text_content(element: ET.Element | None) -> str:
     if element is None:
         return ""
-    return " ".join("".join(element.itertext()).split())
+    return sanitize_text("".join(element.itertext()))
 
 
 def fetch_bytes(url: str, *, timeout: int = 20, attempts: int = 3) -> bytes:
@@ -554,15 +563,16 @@ def build_candidate(
     run_id: str,
     access_basis: str,
 ) -> dict[str, Any]:
-    clean_title = " ".join(title.split())
+    clean_title = sanitize_text(title)
     if not clean_title or len(clean_title) > 500:
         raise CollectionError("event title is empty or exceeds 500 characters")
     canonical_url = canonicalize_url(article_url, source["allowed_domains"])
     resolved_publisher = (
-        publisher.strip()[:250]
+        sanitize_text(publisher)[:250]
         if publisher and publisher.strip()
-        else source["publisher"]
+        else sanitize_text(source["publisher"])
     )
+    clean_author = sanitize_text(author)[:250] if author and author.strip() else None
     location, location_groups, tags = classify_location(
         clean_title,
         publisher=resolved_publisher,
@@ -575,7 +585,7 @@ def build_candidate(
         "source_record_id": str(upstream_id),
         "title": clean_title,
         "publisher": resolved_publisher,
-        "author": " ".join(author.split())[:250] if author and author.strip() else None,
+        "author": clean_author,
         "source_url": canonical_url,
         "publication_date": publication_date,
         "publication_date_precision": publication_date_precision

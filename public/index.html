@@ -179,21 +179,49 @@
               <p>Top upcoming geroscience meetings and recent landmark proceedings across Vienna, Europe, the US, Asia, and worldwide forums.</p>
             </div>
 
-            <!-- Reactive Filter Pills -->
-            <div class="bubble-filters" role="group" aria-label="Filter featured events">
-              <button class="bubble-filter-btn is-active" type="button" data-bubble-filter="all" aria-pressed="true">
-                <span>All Featured</span>
-                <span class="filter-count" id="count-all">10</span>
-              </button>
-              <button class="bubble-filter-btn" type="button" data-bubble-filter="upcoming" aria-pressed="false">
-                <span class="pulse-dot"></span>
-                <span>Upcoming</span>
-                <span class="filter-count" id="count-upcoming">6</span>
-              </button>
-              <button class="bubble-filter-btn" type="button" data-bubble-filter="past" aria-pressed="false">
-                <span>Recent Past</span>
-                <span class="filter-count" id="count-past">4</span>
-              </button>
+            <!-- Visible Location & Schedule Selectors -->
+            <div class="featured-controls">
+              <!-- Location Filter Selector -->
+              <div class="featured-filter-row">
+                <span class="featured-filter-label">Location</span>
+                <div class="bubble-filters bubble-location-filters" role="group" aria-label="Filter featured events by location">
+                  <button class="bubble-filter-btn is-active" type="button" data-bubble-location="all" aria-pressed="true">
+                    <span>All Locations</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-location="vienna" aria-pressed="false">
+                    <span>Vienna</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-location="europe" aria-pressed="false">
+                    <span>Europe</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-location="us" aria-pressed="false">
+                    <span>US</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-location="asia" aria-pressed="false">
+                    <span>Asia</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Schedule Filter Selector -->
+              <div class="featured-filter-row">
+                <span class="featured-filter-label">Schedule</span>
+                <div class="bubble-filters bubble-timeframe-filters" role="group" aria-label="Filter featured events by schedule">
+                  <button class="bubble-filter-btn is-active" type="button" data-bubble-filter="all" aria-pressed="true">
+                    <span>All Featured</span>
+                    <span class="filter-count" id="count-all">10</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-filter="upcoming" aria-pressed="false">
+                    <span class="pulse-dot"></span>
+                    <span>Upcoming</span>
+                    <span class="filter-count" id="count-upcoming">6</span>
+                  </button>
+                  <button class="bubble-filter-btn" type="button" data-bubble-filter="past" aria-pressed="false">
+                    <span>Recent Past</span>
+                    <span class="filter-count" id="count-past">4</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 

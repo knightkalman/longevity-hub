@@ -100,6 +100,44 @@ class ParserTests(unittest.TestCase):
         )
         self.assertEqual(candidates, [])
 
+    def test_sanitize_text_strips_html_tags_and_decodes_entities(self):
+        self.assertEqual(
+            collector.sanitize_text("NAD<sup>+</sup> precursor fails in Parkinson’s disease"),
+            "NAD+ precursor fails in Parkinson’s disease",
+        )
+        self.assertEqual(
+            collector.sanitize_text("Brain DNA methylation, <i>APOE</i> genotype &amp; longevity"),
+            "Brain DNA methylation, APOE genotype & longevity",
+        )
+        self.assertEqual(
+            collector.sanitize_text("   CD8<sup>+</sup>   T cell decline   "),
+            "CD8+ T cell decline",
+        )
+
+    def test_rss_strips_html_tags_from_title(self):
+        rss_with_html_tags = """<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:rss="http://purl.org/rss/1.0/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rss:item rdf:about="https://www.nature.com/articles/nad-study">
+    <rss:title>NAD&lt;sup&gt;+&lt;/sup&gt; precursor fails in Parkinson’s disease</rss:title>
+    <rss:link>https://www.nature.com/articles/nad-study</rss:link>
+    <dc:date>2026-11-06</dc:date>
+    <dc:creator>Michael Attwaters</dc:creator>
+  </rss:item>
+</rdf:RDF>""".encode("utf-8")
+        candidates = collector.parse_rss(
+            NATURE_SOURCE,
+            rss_with_html_tags,
+            "2026-11-06T10:00:00Z",
+            "test-run",
+        )
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(
+            candidates[0]["title"],
+            "NAD+ precursor fails in Parkinson’s disease",
+        )
+
     def test_pubmed_uses_journal_as_article_publisher(self):
         source = {
             **NATURE_SOURCE,

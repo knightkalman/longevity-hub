@@ -54,6 +54,11 @@ function escapeHtml(value) {
   });
 }
 
+function stripHtmlTags(value) {
+  if (!value) return "";
+  return String(value).replace(/<[^>]+>/g, "");
+}
+
 function safeSourceUrl(value) {
   try {
     const url = new URL(value);
@@ -322,7 +327,7 @@ function renderEvents() {
             ${author}
           </div>
           <div>
-            <h3>${escapeHtml(eventItem.title)}</h3>
+            <h3>${escapeHtml(stripHtmlTags(eventItem.title))}</h3>
             ${isCandidate ? '<p class="story-review-label">Unreviewed event listing</p>' : ""}
             <p class="story-summary">${escapeHtml(summary)}</p>
             ${evidence}

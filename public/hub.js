@@ -9,6 +9,7 @@
   const countUpcomingEl = document.getElementById("count-upcoming");
   const countPastEl = document.getElementById("count-past");
   const bubbleFilterBtns = document.querySelectorAll("[data-bubble-filter]");
+  const bubbleLocationBtns = document.querySelectorAll("[data-bubble-location]");
 
   const MONTH_MAP = {
     jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
@@ -29,6 +30,11 @@
       const ent = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
       return ent[c];
     });
+  }
+
+  function stripHtmlTags(str) {
+    if (!str) return "";
+    return String(str).replace(/<[^>]+>/g, "");
   }
 
   function safeUrl(value) {
@@ -117,6 +123,14 @@
     return LOCATION_LABELS[primary] || "Global";
   }
 
+  function matchesLocation(item, loc) {
+    if (loc === "all") return true;
+    if (item.location === loc) return true;
+    if (Array.isArray(item.location_groups) && item.location_groups.includes(loc)) return true;
+    if (loc === "europe" && item.location === "vienna") return true;
+    return false;
+  }
+
   // Load News preview
   async function loadNewsPreview() {
     try {
@@ -138,8 +152,8 @@
         const topItems = items.slice(0, 3);
         newsPreviewEl.innerHTML = topItems
           .map((item) => {
-            const title = escapeHtml(item.title);
-            const pub = escapeHtml(item.publisher || "Source publication");
+            const title = escapeHtml(stripHtmlTags(item.title));
+            const pub = escapeHtml(stripHtmlTags(item.publisher || "Source publication"));
             const date = escapeHtml(item.published_date || item.collected_at || "");
             const url = escapeHtml(item.canonical_url || item.url || "#");
             const cat = escapeHtml(item.category || "General");
@@ -225,7 +239,7 @@
           eventsPreviewEl.innerHTML = featured
             .slice(0, 3)
             .map((item) => {
-              const title = escapeHtml(item.title);
+              const title = escapeHtml(stripHtmlTags(item.title));
               const loc = escapeHtml(formatLocation(item));
               const date = escapeHtml(formatDisplayDate(item._isoDate, item.publication_date_raw));
               const badge = item._isUpcoming
@@ -243,25 +257,53 @@
         }
       }
 
-      // Render stylish bubbles
-      if (bubblesContainerEl) {
-        if (featured.length === 0) {
+      // Active filters for featured bubbles
+      let activeLocation = "all";
+      let activeTimeframe = "all";
+
+      function renderBubbles() {
+        if (!bubblesContainerEl) return;
+
+        // Filter valid events by active location
+        const locEvents = validEvents.filter((item) => matchesLocation(item, activeLocation));
+        const locUpcoming = locEvents.filter((item) => item._isUpcoming);
+        const locPast = locEvents.filter((item) => !item._isUpcoming);
+
+        // Update counts on timeframe pills for the selected location
+        if (countAllEl) countAllEl.textContent = String(locEvents.length);
+        if (countUpcomingEl) countUpcomingEl.textContent = String(locUpcoming.length);
+        if (countPastEl) countPastEl.textContent = String(locPast.length);
+
+        // Select items for timeframe
+        let displayed = [];
+        if (activeTimeframe === "upcoming") {
+          displayed = locUpcoming.slice(0, 10);
+        } else if (activeTimeframe === "past") {
+          displayed = locPast.slice(0, 10);
+        } else {
+          // "all": balance upcoming first, then past
+          const targetUpcoming = Math.min(locUpcoming.length, 6);
+          const targetPast = Math.min(locPast.length, 10 - targetUpcoming);
+          displayed = [...locUpcoming.slice(0, targetUpcoming), ...locPast.slice(0, targetPast)];
+          if (displayed.length < 10 && locUpcoming.length > targetUpcoming) {
+            const needed = 10 - displayed.length;
+            displayed = [...displayed, ...locUpcoming.slice(targetUpcoming, targetUpcoming + needed)];
+          }
+        }
+
+        if (displayed.length === 0) {
+          const locName = LOCATION_LABELS[activeLocation] || (activeLocation === "all" ? "the world" : activeLocation);
+          const timeframeDesc = activeTimeframe === "upcoming" ? "upcoming" : (activeTimeframe === "past" ? "recent past" : "");
           bubblesContainerEl.innerHTML = `
-            <div class="bubbles-loading">
-              <span>No featured events currently available.</span>
+            <div class="bubbles-empty">
+              <p>No ${timeframeDesc ? timeframeDesc + " " : ""}gatherings currently recorded for ${escapeHtml(locName)} in the featured selection.</p>
+              <a class="button button-primary" href="./events/">Explore Full Events Directory →</a>
             </div>
           `;
           return;
         }
 
-        const upcomingCount = featured.filter((i) => i._isUpcoming).length;
-        const pastCount = featured.filter((i) => !i._isUpcoming).length;
-
-        if (countAllEl) countAllEl.textContent = String(featured.length);
-        if (countUpcomingEl) countUpcomingEl.textContent = String(upcomingCount);
-        if (countPastEl) countPastEl.textContent = String(pastCount);
-
-        bubblesContainerEl.innerHTML = featured
+        bubblesContainerEl.innerHTML = displayed
           .map((item) => {
             const isUp = item._isUpcoming;
             const timeframeClass = isUp ? "is-upcoming" : "is-past";
@@ -271,9 +313,9 @@
               : '<span class="bubble-pill bubble-pill-past">Recent Past</span>';
             const locLabel = escapeHtml(formatLocation(item));
             const dateStr = escapeHtml(formatDisplayDate(item._isoDate, item.publication_date_raw));
-            const title = escapeHtml(item.title);
-            const pub = escapeHtml(item.publisher || "Scientific Meeting");
-            const author = item.author ? `<span> · ${escapeHtml(item.author)}</span>` : "";
+            const title = escapeHtml(stripHtmlTags(item.title));
+            const pub = escapeHtml(stripHtmlTags(item.publisher || "Scientific Meeting"));
+            const author = item.author ? `<span> · ${escapeHtml(stripHtmlTags(item.author))}</span>` : "";
 
             const hiddenTags = new Set(["needs_review", item.location, ...(item.location_groups || [])]);
             const tags = (item.tags || [])
@@ -306,26 +348,36 @@
           `;
           })
           .join("");
-
-        // Wire reactive filter buttons
-        bubbleFilterBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const filterValue = btn.dataset.bubbleFilter;
-            bubbleFilterBtns.forEach((b) => {
-              const active = b === btn;
-              b.classList.toggle("is-active", active);
-              b.setAttribute("aria-pressed", String(active));
-            });
-
-            const bubbles = bubblesContainerEl.querySelectorAll(".event-bubble");
-            bubbles.forEach((bubble) => {
-              const bTimeframe = bubble.dataset.timeframe;
-              const matches = filterValue === "all" || bTimeframe === filterValue;
-              bubble.classList.toggle("is-filtered-out", !matches);
-            });
-          });
-        });
       }
+
+      // Initial render
+      renderBubbles();
+
+      // Wire reactive timeframe filter buttons
+      bubbleFilterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeTimeframe = btn.dataset.bubbleFilter || "all";
+          bubbleFilterBtns.forEach((b) => {
+            const active = b === btn;
+            b.classList.toggle("is-active", active);
+            b.setAttribute("aria-pressed", String(active));
+          });
+          renderBubbles();
+        });
+      });
+
+      // Wire reactive location filter buttons
+      bubbleLocationBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeLocation = btn.dataset.bubbleLocation || "all";
+          bubbleLocationBtns.forEach((b) => {
+            const active = b === btn;
+            b.classList.toggle("is-active", active);
+            b.setAttribute("aria-pressed", String(active));
+          });
+          renderBubbles();
+        });
+      });
     } catch (err) {
       console.warn("Unable to load events or featured bubbles:", err);
       if (eventsPreviewEl) {

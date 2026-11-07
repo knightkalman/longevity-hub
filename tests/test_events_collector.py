@@ -98,6 +98,12 @@ class LocationClassificationTests(unittest.TestCase):
         self.assertEqual(location, "vienna")
         self.assertEqual(groups, ["vienna", "europe"])
 
+    def test_sanitize_text_strips_html_tags(self):
+        self.assertEqual(
+            collector.sanitize_text("Longevity <i>Congress</i>: <b>Vienna</b> <sup>2026</sup>"),
+            "Longevity Congress: Vienna 2026",
+        )
+
     def test_parses_pubmed_day_and_month_dates_and_orders_upcoming_first(self):
         self.assertEqual(
             collector.parse_publication_date("2026 Oct 21"),
