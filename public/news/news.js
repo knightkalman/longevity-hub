@@ -209,7 +209,9 @@ async function loadFeed() {
     const candidateCount = feed.items.filter(
       (story) => story.review_state === "candidate",
     ).length;
-    headlineCount.textContent = `${candidateCount} collected headline${candidateCount === 1 ? "" : "s"} · unreviewed`;
+    if (headlineCount) {
+      headlineCount.textContent = `${candidateCount} collected headline${candidateCount === 1 ? "" : "s"} · unreviewed`;
+    }
     stories = feed.items.filter(
       (story) =>
         (story.review_state === "candidate" ||
