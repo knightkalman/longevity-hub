@@ -415,7 +415,159 @@ h2 em {
   padding-top: 24px;
 }
 
+/* ==========================================================================
+   Bubble Grid & Bubble Card Styles (Consistent with Main Site)
+   ========================================================================== */
+
+.events-bubble-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+  min-height: 200px;
+  transition: opacity 0.2s ease;
+}
+
+.event-bubble {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px 28px;
+  border-radius: 24px;
+  background: #fdfcf9;
+  border: 1.5px solid var(--line);
+  box-shadow: 0 4px 18px rgba(32, 44, 36, 0.04);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.event-bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(214, 223, 146, 0.35) 0%, transparent 70%);
+  transition: opacity 0.3s ease;
+}
+
+.event-bubble:hover {
+  transform: translateY(-4px);
+  border-color: var(--forest);
+  box-shadow: 0 12px 30px rgba(35, 77, 59, 0.12);
+}
+
+.bubble-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.bubble-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bubble-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.bubble-pill-cat {
+  background: rgba(35, 77, 59, 0.08);
+  color: var(--forest-dark);
+  border: 1px solid rgba(35, 77, 59, 0.18);
+}
+
+.bubble-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.bubble-title {
+  margin: 0 0 12px 0;
+  font-family: var(--display);
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  color: var(--forest-dark);
+}
+
+.bubble-title a {
+  color: inherit;
+  display: inline;
+  transition: color 0.15s ease;
+}
+
+.bubble-title a:hover {
+  color: var(--moss);
+}
+
+.bubble-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 14px;
+  color: var(--moss);
+  transition: transform 0.2s ease;
+}
+
+.event-bubble:hover .bubble-arrow {
+  transform: translate(2px, -2px);
+  color: var(--forest);
+}
+
+.bubble-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.bubble-publisher {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.bubble-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+}
+
+.bubble-tag-pill {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: #556052;
+}
+
 .feed-message {
+  grid-column: 1 / -1;
   position: relative;
   display: flex;
   min-height: 270px;

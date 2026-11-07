@@ -113,7 +113,8 @@ function renderStories() {
       }
       const tags = (story.tags ?? [])
         .filter((tag) => tag !== "needs_review" && tag !== story.category)
-        .map((tag) => `<span class="story-tag">${escapeHtml(tag.replaceAll("_", " "))}</span>`)
+        .slice(0, 4)
+        .map((tag) => `<span class="bubble-tag-pill">${escapeHtml(tag.replaceAll("_", " "))}</span>`)
         .join("");
       const author = story.author
         ? `<span>${escapeHtml(story.author)}</span>`
@@ -126,30 +127,27 @@ function renderStories() {
         story.publication_date_precision,
         story.publication_date_raw,
       );
-      const isCandidate = story.review_state === "candidate";
-      const summary = isCandidate
-        ? "Source headline only. No summary or editorial review has been provided."
-        : story.summary;
-      const categoryLabel = `${isCandidate ? "Provisional · " : ""}${CATEGORY_LABELS[story.category] ?? "News"}`;
+      const categoryLabel = CATEGORY_LABELS[story.category] ?? "News";
 
       return `
-        <article class="story-card">
-          <div class="story-meta">
-            <span class="story-category">${escapeHtml(categoryLabel)}</span>
-            <span>${escapeHtml(publicationDate)}</span>
-            <span>${escapeHtml(story.publisher)}</span>
+        <article class="event-bubble">
+          <div class="bubble-top">
+            <div class="bubble-badges">
+              <span class="bubble-pill bubble-pill-cat">${escapeHtml(categoryLabel)}</span>
+            </div>
+            <span class="bubble-date">${escapeHtml(publicationDate)}</span>
+          </div>
+          <h3 class="bubble-title">
+            <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">
+              ${escapeHtml(stripHtmlTags(story.title))}
+              <span class="bubble-arrow" aria-hidden="true">↗</span>
+            </a>
+          </h3>
+          <div class="bubble-meta">
+            <span class="bubble-publisher">${escapeHtml(story.publisher)}</span>
             ${author}
           </div>
-          <div>
-            <h3>${escapeHtml(stripHtmlTags(story.title))}</h3>
-            ${isCandidate ? '<p class="story-review-label">Unreviewed source headline</p>' : ""}
-            <p class="story-summary">${escapeHtml(summary)}</p>
-            ${evidence}
-            <div class="story-tags" aria-label="Story tags">${tags}</div>
-            <a class="source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">
-              Read at ${escapeHtml(story.publisher)} <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          ${tags ? `<div class="bubble-tags" aria-label="Story tags">${tags}</div>` : ""}
         </article>
       `;
     })
@@ -210,14 +208,11 @@ async function loadFeed() {
       (story) => story.review_state === "candidate",
     ).length;
     if (headlineCount) {
-      headlineCount.textContent = `${candidateCount} collected headline${candidateCount === 1 ? "" : "s"} · unreviewed`;
+      headlineCount.textContent = `${candidateCount} collected headline${candidateCount === 1 ? "" : "s"}`;
     }
     stories = feed.items.filter(
       (story) =>
-        (story.review_state === "candidate" ||
-          (story.review_state === "approved" &&
-            typeof story.summary === "string" &&
-            story.summary.trim())) &&
+        story &&
         typeof story.title === "string" &&
         typeof story.publisher === "string" &&
         Array.isArray(story.tags) &&

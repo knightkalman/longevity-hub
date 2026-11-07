@@ -225,18 +225,16 @@ function matchesTimeframe(eventItem, timeframeFilter) {
   return true;
 }
 
-function formatLocationBadge(eventItem, isCandidate) {
+function formatLocationBadge(eventItem) {
   const groups = Array.isArray(eventItem.location_groups)
     ? eventItem.location_groups
     : [];
   const labels = groups
     .map((group) => LOCATION_LABELS[group])
     .filter(Boolean);
-  const regionText =
-    labels.length > 0
-      ? labels.join(" · ")
-      : LOCATION_LABELS[eventItem.location] ?? "Global";
-  return `${isCandidate ? "Provisional · " : ""}${regionText}`;
+  return labels.length > 0
+    ? labels.join(" · ")
+    : LOCATION_LABELS[eventItem.location] ?? "Global";
 }
 
 function renderEvents() {
@@ -290,9 +288,10 @@ function renderEvents() {
       ]);
       const tags = (eventItem.tags ?? [])
         .filter((tag) => !hiddenTags.has(tag))
+        .slice(0, 4)
         .map(
           (tag) =>
-            `<span class="story-tag">${escapeHtml(tag.replaceAll("_", " "))}</span>`,
+            `<span class="bubble-tag-pill">${escapeHtml(tag.replaceAll("_", " "))}</span>`,
         )
         .join("");
       const author = eventItem.author
@@ -306,36 +305,33 @@ function renderEvents() {
         eventItem.publication_date_precision,
         eventItem.publication_date_raw,
       );
-      const isCandidate = eventItem.review_state === "candidate";
-      const upcoming = isUpcomingEvent(eventItem);
-      const timeframeBadgeText = upcoming
-        ? "Upcoming"
-        : `Past · ${currentYear}`;
-      const timeframeBadgeClass = upcoming ? "is-upcoming" : "is-past";
-      const summary = isCandidate
-        ? "Source event listing only. No summary or editorial review has been provided."
-        : eventItem.summary;
-      const locationLabel = formatLocationBadge(eventItem, isCandidate);
+      const locationLabel = formatLocationBadge(eventItem);
+      const isUp = isUpcomingEvent(eventItem);
+      const timeframeClass = isUp ? "is-upcoming" : "is-past";
+      const timeframeBadge = isUp
+        ? '<span class="bubble-pill bubble-pill-upcoming"><span class="pulse-dot"></span> Upcoming</span>'
+        : '<span class="bubble-pill bubble-pill-past">Past</span>';
 
       return `
-        <article class="story-card">
-          <div class="story-meta">
-            <span class="event-timeframe-badge ${timeframeBadgeClass}">${escapeHtml(timeframeBadgeText)}</span>
-            <span class="story-category">${escapeHtml(locationLabel)}</span>
-            <span>${escapeHtml(publicationDate)}</span>
-            <span>${escapeHtml(eventItem.publisher)}</span>
+        <article class="event-bubble ${timeframeClass}">
+          <div class="bubble-top">
+            <div class="bubble-badges">
+              ${timeframeBadge}
+              <span class="bubble-pill bubble-pill-loc">${escapeHtml(locationLabel)}</span>
+            </div>
+            <span class="bubble-date">${escapeHtml(publicationDate)}</span>
+          </div>
+          <h3 class="bubble-title">
+            <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">
+              ${escapeHtml(stripHtmlTags(eventItem.title))}
+              <span class="bubble-arrow" aria-hidden="true">↗</span>
+            </a>
+          </h3>
+          <div class="bubble-meta">
+            <span class="bubble-publisher">${escapeHtml(eventItem.publisher)}</span>
             ${author}
           </div>
-          <div>
-            <h3>${escapeHtml(stripHtmlTags(eventItem.title))}</h3>
-            ${isCandidate ? '<p class="story-review-label">Unreviewed event listing</p>' : ""}
-            <p class="story-summary">${escapeHtml(summary)}</p>
-            ${evidence}
-            <div class="story-tags" aria-label="Event tags">${tags}</div>
-            <a class="source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">
-              View at ${escapeHtml(eventItem.publisher)} <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          ${tags ? `<div class="bubble-tags" aria-label="Event tags">${tags}</div>` : ""}
         </article>
       `;
     })
@@ -404,10 +400,7 @@ async function loadFeed() {
     updateFreshness(feed);
     const validItems = feed.items.filter(
       (eventItem) =>
-        (eventItem.review_state === "candidate" ||
-          (eventItem.review_state === "approved" &&
-            typeof eventItem.summary === "string" &&
-            eventItem.summary.trim())) &&
+        eventItem &&
         typeof eventItem.title === "string" &&
         typeof eventItem.publisher === "string" &&
         Array.isArray(eventItem.tags) &&
@@ -422,7 +415,7 @@ async function loadFeed() {
       isUpcomingEvent(eventItem),
     ).length;
     if (headlineCount) {
-      headlineCount.textContent = `${upcomingCount} upcoming · ${events.length} total (${currentYear}) · unreviewed`;
+      headlineCount.textContent = `${upcomingCount} upcoming · ${events.length} total (${currentYear})`;
     }
     renderEvents();
   } catch {
