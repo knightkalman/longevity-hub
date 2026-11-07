@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5ef">
+    <meta
+      name="description"
+      content="Longevity Hub — An open, source-led portal uniting geroscience, longevity research news, global scientific conferences, and evidence-based health pillars."
+    >
+    <title>Longevity Hub — Science, Gatherings &amp; Discoveries for a Healthier Lifespan</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./hub.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="Longevity Hub home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="20" fill="#1D3F31"/>
+              <circle cx="20" cy="20" r="14" stroke="#D6DF92" stroke-width="1.5" stroke-dasharray="2 3"/>
+              <path d="M20 9C14 15 13 22 20 29C27 22 26 15 20 9Z" stroke="#F6F5EF" stroke-width="1.75" stroke-linejoin="round"/>
+              <path d="M20 13V27" stroke="#F6F5EF" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="9" r="1.5" fill="#D6DF92"/>
+            </svg>
+          </span>
+          <span class="brand-name">longevity<span>hub</span></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./news/">Longevity News</a>
+          <a href="./events/">Conferences &amp; Events</a>
+          <a href="#pillars">Health Pillars</a>
+          <a href="#principles">Science &amp; Methods</a>
+        </nav>
+
+        <a class="header-cta" href="./news/">Explore Live Feeds <span aria-hidden="true">→</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Evidence-Led Lifespan Science</p>
+            <h1 id="hero-title">Live healthier.<br><em>For longer.</em></h1>
+            <p class="hero-lede">The meeting point for longevity science, daily health practices, global research, and scientific community.</p>
+            <p class="hero-desc">Longevity Hub aggregates daily peer-reviewed discoveries, tracks scientific congresses worldwide, and synthesizes key pillars of healthy human lifespan into transparent, open information.</p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="./news/">Browse Live News <span aria-hidden="true">→</span></a>
+              <a class="button button-secondary" href="./events/">Conferences &amp; Events <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary" href="#pillars">Health Pillars</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="number" id="metric-news-count">100+</span>
+                <span class="label">Curated Studies &amp; News</span>
+              </div>
+              <div class="metric-item">
+                <span class="number" id="metric-events-count">40+</span>
+                <span class="label">Global Conferences</span>
+              </div>
+              <div class="metric-item">
+                <span class="number">6</span>
+                <span class="label">Evidence-Based Pillars</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art-card">
+            <div class="art-badge">
+              <span class="badge badge-live"><span class="pulse-dot"></span> Open Knowledge Hub</span>
+              <span class="badge">Open Source</span>
+            </div>
+            <h3 class="art-title">Longevity Hub Framework</h3>
+            <p class="art-p">Connecting peer-reviewed biomedical literature directly with real-world healthspan understanding without hype or commercial claims.</p>
+
+            <div class="art-pills">
+              <div class="art-pill">
+                <span>Daily PubMed &amp; Journal Harvesting</span>
+                <span class="pill-tag">Automated</span>
+              </div>
+              <div class="art-pill">
+                <span>Global Geroscience Meetings Calendar</span>
+                <span class="pill-tag">Global</span>
+              </div>
+              <div class="art-pill">
+                <span>Zero Commercial or Sponsorship Biases</span>
+                <span class="pill-tag">Independent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integrated Subsites Showcase -->
+      <section class="section" id="portals" aria-labelledby="portals-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Integrated Intelligence</p>
+            <h2 id="portals-title">Live subsites &amp; <em>daily feeds.</em></h2>
+            <p>Direct access to our dedicated newsroom tracking scientific publications, and our worldwide directory of geroscience congresses.</p>
+          </div>
+
+          <div class="portals-grid">
+            <!-- News Portal Card -->
+            <article class="portal-card">
+              <div class="portal-header">
+                <div class="portal-icon" aria-hidden="true">📰</div>
+                <span class="badge badge-live"><span class="pulse-dot"></span> Daily Feed</span>
+              </div>
+              <h3>Longevity News Feed</h3>
+              <p class="portal-desc">
+                Source-led coverage across scientific research, clinical breakthroughs, nutrient science, and pharmaceutical interventions. Filter by topic and read primary sources.
+              </p>
+              
+              <div class="portal-preview">
+                <div class="preview-head">
+                  <span>Recent Headlines</span>
+                  <span>Direct PubMed Links</span>
+                </div>
+                <ul class="preview-items" id="news-preview-list">
+                  <li>Loading latest headlines...</li>
+                </ul>
+              </div>
+
+              <a class="portal-cta" href="./news/">
+                <span>Open Longevity News Feed</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <!-- Events Portal Card -->
+            <article class="portal-card">
+              <div class="portal-header">
+                <div class="portal-icon" aria-hidden="true">🗓️</div>
+                <span class="badge">Calendar</span>
+              </div>
+              <h3>Longevity Events Directory</h3>
+              <p class="portal-desc">
+                A regional and global calendar of academic conferences, medical symposia, and longevity summits across Vienna, Europe, the United States, Asia, and worldwide forums.
+              </p>
+
+              <div class="portal-preview">
+                <div class="preview-head">
+                  <span>Upcoming Gatherings</span>
+                  <span>Regional Breakdown</span>
+                </div>
+                <ul class="preview-items" id="events-preview-list">
+                  <li>Loading scheduled conferences...</li>
+                </ul>
+              </div>
+
+              <a class="portal-cta" href="./events/">
+                <span>Open Events Calendar</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Health Pillars Section -->
+      <section class="section" id="pillars" aria-labelledby="pillars-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> The Science of Lifespan</p>
+            <h2 id="pillars-title">Six pillars of <em>healthy longevity.</em></h2>
+            <p>Modern geroscience demonstrates that aging is driven by interconnected biological processes. Translating this evidence into daily practice centers around six foundational domains.</p>
+          </div>
+
+          <div class="pillars-grid">
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 01</span>
+                <span class="pillar-symbol" aria-hidden="true">🧬</span>
+              </div>
+              <h3>Cellular &amp; Molecular Biology</h3>
+              <p>Targeting the biological hallmarks of aging: cellular senescence, autophagy clearance, DNA repair efficiency, and telomere integrity to preserve tissue function.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Senolytics</span>
+                <span class="pillar-tag">Autophagy</span>
+                <span class="pillar-tag">Mitochondria</span>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 02</span>
+                <span class="pillar-symbol" aria-hidden="true">🥗</span>
+              </div>
+              <h3>Metabolic &amp; Nutritional Health</h3>
+              <p>Harnessing nutrient-sensing pathways (mTOR, AMPK, sirtuins) through circadian-aligned nutrition, glycemic regulation, and polyphenol-dense whole foods.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Insulin Sensitivity</span>
+                <span class="pillar-tag">mTOR/AMPK</span>
+                <span class="pillar-tag">Fasting</span>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 03</span>
+                <span class="pillar-symbol" aria-hidden="true">🏃</span>
+              </div>
+              <h3>Physical Resilience &amp; Exercise</h3>
+              <p>Building functional capacity via Zone 2 cardiovascular endurance, progressive resistance training against sarcopenia, and optimizing VO2 max for extended healthspan.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Zone 2</span>
+                <span class="pillar-tag">Resistance Training</span>
+                <span class="pillar-tag">VO2 Max</span>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 04</span>
+                <span class="pillar-symbol" aria-hidden="true">🌙</span>
+              </div>
+              <h3>Sleep &amp; Circadian Rhythms</h3>
+              <p>Prioritizing slow-wave deep sleep for brain glymphatic clearance and metabolic reset, reinforced by daylight exposure timing and circadian regularity.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Glymphatic Clearance</span>
+                <span class="pillar-tag">Slow-Wave Sleep</span>
+                <span class="pillar-tag">Chronobiology</span>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 05</span>
+                <span class="pillar-symbol" aria-hidden="true">📊</span>
+              </div>
+              <h3>Biomarkers &amp; Early Diagnostics</h3>
+              <p>Tracking biological age through epigenetic methylation clocks (GrimAge, DunedinPACE), comprehensive lipid profiling (ApoB), and subclinical inflammatory panels.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Epigenetic Clocks</span>
+                <span class="pillar-tag">ApoB / Lipids</span>
+                <span class="pillar-tag">hs-CRP</span>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-top">
+                <span class="pillar-number">PILLAR 06</span>
+                <span class="pillar-symbol" aria-hidden="true">🧠</span>
+              </div>
+              <h3>Neuroprotection &amp; Mental Health</h3>
+              <p>Sustaining cognitive reserve through neuroplastic challenges, stress resilience (autonomic vagal regulation), purposeful engagement, and strong social connection.</p>
+              <div class="pillar-tags">
+                <span class="pillar-tag">Cognitive Reserve</span>
+                <span class="pillar-tag">Hormesis</span>
+                <span class="pillar-tag">Vagal Tone</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Principles & Methods Section -->
+      <section class="section" id="principles" aria-labelledby="principles-title">
+        <div class="shell">
+          <div class="principles-box">
+            <div class="principles-left">
+              <p class="eyebrow" style="color: var(--lime);"><span class="eyebrow-dot" style="background: var(--lime);"></span> Open Methodology</p>
+              <h2 id="principles-title">Clear sources.<br><em>No commercial bias.</em></h2>
+              <p>Longevity Hub is engineered as an open, source-led knowledge infrastructure. We believe understanding human health requires clear evidence, verifiable citations, and complete transparency.</p>
+            </div>
+
+            <div class="principles-list">
+              <div class="principle-item">
+                <h4>Primary Source Integrity</h4>
+                <p>Every news entry and conference record cites and links directly to original peer-reviewed literature, PubMed identifiers, or registered conference organizers.</p>
+              </div>
+
+              <div class="principle-item">
+                <h4>Automated &amp; Uneditorialized Feeds</h4>
+                <p>Our daily collection scripts run automatically via transparent GitHub Actions workflows, applying rigorous schema validation without editorial distortions.</p>
+              </div>
+
+              <div class="principle-item">
+                <h4>Open Science Collaboration</h4>
+                <p>All data pipelines, schemas, and source code are open source and maintained collaboratively on GitHub for public audit and community contribution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" id="sources">
+      <div class="shell footer-main">
+        <a class="brand" href="./" aria-label="Longevity Hub home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="20" fill="#1D3F31"/>
+              <circle cx="20" cy="20" r="14" stroke="#D6DF92" stroke-width="1.5" stroke-dasharray="2 3"/>
+              <path d="M20 9C14 15 13 22 20 29C27 22 26 15 20 9Z" stroke="#F6F5EF" stroke-width="1.75" stroke-linejoin="round"/>
+              <path d="M20 13V27" stroke="#F6F5EF" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="9" r="1.5" fill="#D6DF92"/>
+            </svg>
+          </span>
+          <span class="brand-name">longevity<span>hub</span></span>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="./news/">Longevity News</a>
+          <a href="./events/">Conferences &amp; Events</a>
+          <a href="#pillars">Health Pillars</a>
+          <a href="https://github.com/knightkalman/longevity-hub" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+        </nav>
+      </div>
+
+      <div class="shell footer-bottom">
+        <p class="disclaimer">
+          © Longevity Hub. Educational and scientific discovery resource. Content provided on this site and its subpages is for informational purposes only and does not constitute medical, diagnosis, or treatment advice. Consult qualified healthcare professionals regarding personal medical conditions.
+        </p>
+        <p><a href="#main">Back to top ↑</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
