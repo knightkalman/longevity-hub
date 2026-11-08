@@ -1,0 +1,661 @@
+/* Longevity Hub — Highline Luxury Landing Page Styles */
+
+:root {
+  --gold: #c5a059;
+  --gold-dark: #9e7b36;
+  --gold-light: #f1e4c3;
+  --gold-glow: rgba(197, 160, 89, 0.28);
+  --gold-foil: linear-gradient(135deg, #c5a059 0%, #ecd99f 50%, #a88339 100%);
+  --emerald-midnight: #0c1c14;
+  --emerald-deep: #132a1e;
+  --emerald-card: #183526;
+  --emerald-border: rgba(197, 160, 89, 0.24);
+  --emerald-glow: rgba(35, 77, 59, 0.35);
+}
+
+/* Luxury Hero Enhancement */
+.landing-hero {
+  position: relative;
+  padding: 64px 0 72px;
+  background: radial-gradient(circle at 80% 20%, rgba(214, 223, 146, 0.16) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(197, 160, 89, 0.12) 0%, transparent 50%),
+              var(--paper);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.15) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.landing-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(197, 160, 89, 0.14);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  font-family: var(--display);
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-dark);
+  margin-bottom: 18px;
+}
+
+.landing-eyebrow .spark-icon {
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.landing-title {
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--forest-dark);
+  margin: 0 0 24px;
+}
+
+.landing-title em {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold-dark);
+  background: var(--gold-foil);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.landing-lede {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #384235;
+  font-weight: 400;
+  margin-bottom: 16px;
+  max-width: 680px;
+}
+
+.landing-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #556052;
+  margin-bottom: 32px;
+  max-width: 660px;
+}
+
+/* Luxurious Stat Ribbon */
+.luxury-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 36px 0 40px;
+}
+
+.luxury-stat-card {
+  position: relative;
+  background: #fbfbf8;
+  border: 1.5px solid rgba(197, 160, 89, 0.3);
+  box-shadow: 0 4px 16px rgba(32, 44, 36, 0.04), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  border-radius: 18px;
+  padding: 20px 22px;
+  transition: all 0.25s ease;
+}
+
+.luxury-stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 24px var(--gold-glow);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--forest-dark);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-gold-accent {
+  color: var(--gold-dark);
+  background: var(--gold-foil);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #636d5f;
+  line-height: 1.4;
+}
+
+/* Highline Showcase Card (Right Column) */
+.luxury-showcase-card {
+  position: relative;
+  background: linear-gradient(145deg, var(--emerald-midnight) 0%, var(--emerald-deep) 60%, #163827 100%);
+  border: 1.5px solid var(--emerald-border);
+  box-shadow: 0 20px 50px rgba(12, 28, 20, 0.45), 0 0 30px var(--gold-glow) inset;
+  border-radius: 28px;
+  padding: 38px 36px;
+  color: #f6f5ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.luxury-showcase-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.22) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.showcase-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.showcase-pill-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  background: rgba(197, 160, 89, 0.2);
+  border: 1px solid var(--gold);
+  color: #f1e4c3;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.showcase-kicker {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14.5px;
+  color: #cbd5b5;
+  margin: 0 0 10px;
+}
+
+.showcase-heading {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.showcase-heading em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--lime);
+}
+
+.showcase-body {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #cfd8c7;
+  margin-bottom: 24px;
+}
+
+.showcase-keypoints {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.showcase-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #e4ebe0;
+}
+
+.showcase-point-icon {
+  color: var(--gold);
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+.showcase-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(214, 223, 146, 0.15);
+  padding-top: 18px;
+  font-size: 11.5px;
+  color: #a4b39b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Highline Feature Section (The Geroscience Trifecta) */
+.section-highlines {
+  padding: 80px 0 60px;
+  background: #fbfbf8;
+  border-bottom: 1px solid var(--line);
+}
+
+.trifecta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 36px;
+}
+
+.trifecta-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1.5px solid rgba(197, 160, 89, 0.28);
+  box-shadow: 0 8px 30px rgba(32, 44, 36, 0.06);
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.trifecta-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gold-foil);
+  opacity: 0.8;
+}
+
+.trifecta-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 40px var(--gold-glow);
+}
+
+.trifecta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.trifecta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(197, 160, 89, 0.12);
+  color: var(--gold-dark);
+}
+
+.trifecta-num {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--moss);
+}
+
+.trifecta-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--forest-dark);
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.trifecta-title em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-dark);
+}
+
+.trifecta-body {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4a5448;
+  margin-bottom: 20px;
+}
+
+.trifecta-highlight-box {
+  background: #f6f5ef;
+  border-left: 3px solid var(--gold);
+  padding: 12px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #27342b;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.trifecta-highlight-box strong {
+  color: var(--forest-dark);
+}
+
+.trifecta-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ebeae0;
+  padding-top: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--moss);
+}
+
+/* Luxury Interactive Summary Bubbles Section */
+.section-summary-bubbles {
+  padding: 80px 0;
+  background: var(--paper);
+}
+
+.summary-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.summary-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.summary-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: #ffffff;
+  border: 1.5px solid #dcdccd;
+  border-radius: 999px;
+  font-family: var(--display);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #424e41;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(32, 44, 36, 0.03);
+}
+
+.summary-filter-btn:hover {
+  border-color: var(--gold);
+  background: #fcfbf7;
+  transform: translateY(-1px);
+}
+
+.summary-filter-btn.is-active {
+  background: var(--forest-dark);
+  border-color: var(--forest-dark);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(29, 63, 49, 0.3);
+}
+
+.summary-filter-btn.is-active .filter-count-badge {
+  background: var(--gold);
+  color: #ffffff;
+}
+
+.filter-count-badge {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #eae8dc;
+  font-size: 11px;
+  font-weight: 700;
+  color: #555f52;
+}
+
+/* Luxurious Bubble Cards */
+.luxury-bubble {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 26px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1.5px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 4px 20px rgba(32, 44, 36, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.luxury-bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.luxury-bubble:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+  box-shadow: 0 14px 34px var(--gold-glow);
+}
+
+.bubble-category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pill-biomarkers {
+  background: #fbf5e6;
+  color: #8c6820;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+}
+
+.pill-ai {
+  background: #eef5f2;
+  color: #1a4d36;
+  border: 1px solid rgba(35, 77, 59, 0.25);
+}
+
+.pill-nutrition {
+  background: #f7f9e8;
+  color: #5e6b22;
+  border: 1px solid rgba(140, 160, 48, 0.3);
+}
+
+.pill-hallmarks {
+  background: #f9f0f5;
+  color: #8a2e5d;
+  border: 1px solid rgba(170, 70, 120, 0.25);
+}
+
+.pill-clinical {
+  background: #f0f4f8;
+  color: #274d6b;
+  border: 1px solid rgba(45, 95, 135, 0.25);
+}
+
+.bubble-headline {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--forest-dark);
+  line-height: 1.3;
+  margin: 12px 0 10px;
+}
+
+.bubble-headline a {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+.bubble-headline a:hover {
+  color: var(--gold-dark);
+}
+
+.bubble-quote-callout {
+  background: #f7f6ef;
+  border-left: 2.5px solid var(--gold);
+  padding: 9px 12px;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #2c382e;
+  font-weight: 500;
+  margin: 8px 0 14px;
+}
+
+.bubble-evidence-text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #576254;
+  margin-bottom: 16px;
+}
+
+.bubble-slide-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eeede4;
+  padding-top: 12px;
+  font-size: 11.5px;
+  color: #798375;
+}
+
+.slide-ref-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f0eee3;
+  color: #4b5548;
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Epochal Quote Section */
+.section-quote {
+  padding: 70px 0;
+  background: linear-gradient(135deg, var(--emerald-midnight) 0%, var(--emerald-deep) 100%);
+  color: #ffffff;
+  border-top: 1px solid var(--emerald-border);
+  border-bottom: 1px solid var(--emerald-border);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-quote::before {
+  content: "“";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 220px;
+  line-height: 1;
+  color: rgba(197, 160, 89, 0.08);
+  pointer-events: none;
+}
+
+.quote-content {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-text {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 32px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #f7f6f0;
+  margin: 0 0 20px;
+}
+
+.quote-author {
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .luxury-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trifecta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 40px 0 48px;
+  }
+  .luxury-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .summary-filter-options {
+    gap: 8px;
+  }
+  .summary-filter-btn {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}

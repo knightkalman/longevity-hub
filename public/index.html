@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f6f5ef">
+    <meta name="theme-color" content="#1d3f31">
     <meta
       name="description"
-      content="Longevity Hub — An open, source-led portal uniting geroscience, longevity research news, global scientific conferences, and evidence-based health pillars."
+      content="Longevity Hub — Executive intelligence, clinical breakthroughs, and multi-omics insights from the landmark Longevity '26 global gathering."
     >
     <title>Longevity Hub — Science, Gatherings &amp; Discoveries for a Healthier Lifespan</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./hub.js" defer></script>
+    <link rel="stylesheet" href="./landing.css">
+    <script src="./landing.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -34,9 +35,9 @@
         <nav class="primary-nav" aria-label="Main navigation">
           <a href="./news/">Longevity News</a>
           <a href="./events/">Conferences &amp; Events</a>
-          <a href="#featured-events">Featured Events</a>
-          <a href="#pillars">Health Pillars</a>
-          <a href="#principles">Science &amp; Methods</a>
+          <a href="./mission/">Our Mission</a>
+          <a href="#highlines">Key Breakthroughs</a>
+          <a href="#intelligence">Conference Intelligence</a>
         </nav>
 
         <a class="header-cta" href="./news/">Explore Live Feeds <span aria-hidden="true">→</span></a>
@@ -44,97 +45,555 @@
     </header>
 
     <main id="main">
-      <!-- Hero Section -->
-      <section class="hero-section" aria-labelledby="hero-title">
+      <!-- Luxury Hero Section -->
+      <section class="landing-hero" aria-labelledby="hero-title">
         <div class="shell hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> Evidence-Led Lifespan Science</p>
-            <h1 id="hero-title">Live healthier.<br><em>For longer.</em></h1>
-            <p class="hero-lede">The meeting point for longevity science, daily health practices, global research, and scientific community.</p>
-            <p class="hero-desc">Longevity Hub aggregates daily peer-reviewed discoveries, tracks scientific congresses worldwide, and synthesizes key pillars of healthy human lifespan into transparent, open information.</p>
+            <div class="landing-eyebrow">
+              <span class="spark-icon" aria-hidden="true">✳</span>
+              <span>Longevity '26 · Executive Science Synthesis</span>
+            </div>
+            <h1 class="landing-title" id="hero-title">
+              The Architecture of<br><em>Living Longer.</em>
+            </h1>
+            <p class="landing-lede">
+              An exclusive clinical synthesis of 148 presentations, cellular biomarker breakthroughs, and multi-omics protocols from the landmark Longevity '26 international congress.
+            </p>
+            <p class="landing-desc">
+              Moving medicine from late-stage firefighting to early trajectory course-correction. Discover how validated immune clocks, AI digital twins, and multi-domain interventions are redefining the outer limits of human healthspan.
+            </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="./news/">Browse Live News <span aria-hidden="true">→</span></a>
-              <a class="button button-secondary" href="#featured-events">Featured Events <span aria-hidden="true">↓</span></a>
-              <a class="button button-secondary" href="./events/">Events Directory</a>
-              <a class="button button-secondary" href="#pillars">Health Pillars</a>
+              <a class="button button-primary" href="#intelligence">
+                Explore 12 Breakthrough Insights <span aria-hidden="true">↓</span>
+              </a>
+              <a class="button button-secondary" href="#highlines">
+                The Geroscience Trifecta <span aria-hidden="true">→</span>
+              </a>
+              <a class="button button-secondary" href="./mission/">
+                Our Mission &amp; Framework
+              </a>
             </div>
 
-            <div class="hero-metrics">
-              <div class="metric-item">
-                <span class="number" id="metric-news-count">100+</span>
-                <span class="label">Curated Studies &amp; News</span>
+            <!-- Luxury Stat Ribbon -->
+            <div class="luxury-stats-grid">
+              <div class="luxury-stat-card">
+                <span class="stat-number stat-gold-accent">148</span>
+                <span class="stat-label">Scientific Sessions &amp; Posters Analyzed</span>
               </div>
-              <div class="metric-item">
-                <span class="number" id="metric-events-count">40+</span>
-                <span class="label">Global Conferences</span>
+              <div class="luxury-stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Core Geroscience Pillars Unveiled</span>
               </div>
-              <div class="metric-item">
-                <span class="number">6</span>
-                <span class="label">Evidence-Based Pillars</span>
+              <div class="luxury-stat-card">
+                <span class="stat-number stat-gold-accent">&lt; 2.0</span>
+                <span class="stat-label">ng/ml suPAR Optimal Cellular Threshold</span>
+              </div>
+              <div class="luxury-stat-card">
+                <span class="stat-number">80%</span>
+                <span class="stat-label">Elder Morbidity Reduction with Ambient AI</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-art-card">
-            <div class="art-badge">
-              <span class="badge badge-live"><span class="pulse-dot"></span> Open Knowledge Hub</span>
-              <span class="badge">Open Source</span>
-            </div>
-            <h3 class="art-title">Longevity Hub Framework</h3>
-            <p class="art-p">Connecting peer-reviewed biomedical literature directly with real-world healthspan understanding without hype or commercial claims.</p>
+          <!-- Highline Showcase Card -->
+          <div class="luxury-showcase-card">
+            <div>
+              <div class="showcase-badge-row">
+                <span class="showcase-pill-gold">★ Landmark Proceedings</span>
+                <span class="badge badge-live"><span class="pulse-dot"></span> Peer-Reviewed</span>
+              </div>
+              <p class="showcase-kicker">From Bench to Biosphere</p>
+              <h2 class="showcase-heading">
+                From Reactive Care to <em>Biological Reversal.</em>
+              </h2>
+              <p class="showcase-body">
+                The overarching consensus of Longevity '26 is unequivocal: aging is a malleable biological program driven by measurable, modifiable cellular cascades.
+              </p>
 
-            <div class="art-pills">
-              <div class="art-pill">
-                <span>Daily PubMed &amp; Journal Harvesting</span>
-                <span class="pill-tag">Automated</span>
+              <div class="showcase-keypoints">
+                <div class="showcase-point">
+                  <span class="showcase-point-icon" aria-hidden="true">◆</span>
+                  <span><strong>Immune Clock Precision:</strong> Replacing fluctuating hsCRP with stable suPAR to measure chronic cellular inflammation.</span>
+                </div>
+                <div class="showcase-point">
+                  <span class="showcase-point-icon" aria-hidden="true">◆</span>
+                  <span><strong>In-Silico Patient Twins:</strong> Multi-omics deep learning to model multi-organ disease risk years before symptoms emerge.</span>
+                </div>
+                <div class="showcase-point">
+                  <span class="showcase-point-icon" aria-hidden="true">◆</span>
+                  <span><strong>The FINGER Synergy:</strong> Proof that single-factor interventions fail, while multi-domain synergy preserves human cognition.</span>
+                </div>
               </div>
-              <div class="art-pill">
-                <span>Global Geroscience Meetings Calendar</span>
-                <span class="pill-tag">Global</span>
-              </div>
-              <div class="art-pill">
-                <span>Zero Commercial or Sponsorship Biases</span>
-                <span class="pill-tag">Independent</span>
-              </div>
+            </div>
+
+            <div class="showcase-footer">
+              <span>Longevity Hub Executive Brief</span>
+              <span>Geneva · June 2026</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Integrated Subsites Showcase -->
+      <!-- The Geroscience Trifecta (Highline Features) -->
+      <section class="section-highlines" id="highlines" aria-labelledby="highlines-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow" style="color: var(--gold-dark);"><span class="eyebrow-dot" style="background: var(--gold-dark);"></span> Landmark Discoveries</p>
+            <h2 id="highlines-title">The Geroscience <em>Trifecta.</em></h2>
+            <p>Three paradigm-shifting scientific pillars presented at Longevity '26 that represent the modern vanguard of lifespan medicine.</p>
+          </div>
+
+          <div class="trifecta-grid">
+            <!-- Trifecta 1: suPAR -->
+            <article class="trifecta-card">
+              <div>
+                <div class="trifecta-top">
+                  <span class="trifecta-tag">Biomarker Breakthrough</span>
+                  <span class="trifecta-num">01</span>
+                </div>
+                <h3 class="trifecta-title">The suPAR Revolution in <em>Biological Clocks</em></h3>
+                <p class="trifecta-body">
+                  While conventional hsCRP spikes with transient infections or minor stress, soluble urokinase plasminogen activator receptor (<strong>suPAR</strong>) remains constant, reflecting deep cellular immune senescence, vascular vulnerability, and true rate of aging.
+                </p>
+                <div class="trifecta-highlight-box">
+                  <strong>Clinical Threshold:</strong> A suPAR score below <strong>1.8 ng/ml</strong> correlates with a biological rate of aging &lt; 0.87, moving individuals out of chronic multi-morbidity risk zones into longevity phenotypes.
+                </div>
+              </div>
+              <div class="trifecta-foot">
+                <span>Immune Aging &amp; Diagnostics</span>
+                <span>Session 1 · Slides 1–5</span>
+              </div>
+            </article>
+
+            <!-- Trifecta 2: Digital Twins -->
+            <article class="trifecta-card">
+              <div>
+                <div class="trifecta-top">
+                  <span class="trifecta-tag">Predictive Intelligence</span>
+                  <span class="trifecta-num">02</span>
+                </div>
+                <h3 class="trifecta-title">Multi-Scale Digital Twins: <em>Simulate Before Disease</em></h3>
+                <p class="trifecta-body">
+                  Instead of treating isolated diseases as they manifest, modern AI combines genomics (DNA), transcriptomics (RNA), proteomics, and continuous telemetry into <strong>Virtual Patient Digital Twins</strong> capable of testing interventions in silico.
+                </p>
+                <div class="trifecta-highlight-box">
+                  <strong>Predictive Power:</strong> Al algorithms simulate drug responses, metabolic fasting cycles, and lifestyle changes to select optimal individualized longevity protocols before clinical trial.
+                </div>
+              </div>
+              <div class="trifecta-foot">
+                <span>Artificial Intelligence</span>
+                <span>Session 1 · Slides 6–7</span>
+              </div>
+            </article>
+
+            <!-- Trifecta 3: FINGER Synergy -->
+            <article class="trifecta-card">
+              <div>
+                <div class="trifecta-top">
+                  <span class="trifecta-tag">Cognitive Protection</span>
+                  <span class="trifecta-num">03</span>
+                </div>
+                <h3 class="trifecta-title">The FINGER Synergy: <em>Multi-Domain Brain Resilience</em></h3>
+                <p class="trifecta-body">
+                  Data from the landmark Finnish Geriatric Intervention Study confirms that single-factor interventions (monotherapies or isolated supplements) fail to prevent neurodegeneration. Brain preservation demands simultaneous, coordinated synergy.
+                </p>
+                <div class="trifecta-highlight-box">
+                  <strong>The 4-Way Synergy:</strong> Mediterranean-style plant nutrition, progressive resistance &amp; Zone 2 exercise, intensive cognitive training, and strict vascular risk regulation reduce cognitive decline by up to 30%.
+                </div>
+              </div>
+              <div class="trifecta-foot">
+                <span>Neuroprotection</span>
+                <span>Session 3 · Slide 40</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Conference Summary Bubbles Section -->
+      <section class="section-summary-bubbles" id="intelligence" aria-labelledby="intelligence-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow" style="color: var(--gold-dark);"><span class="eyebrow-dot" style="background: var(--gold-dark);"></span> Curated Conference Intelligence</p>
+            <h2 id="intelligence-title">Longevity '26 in <em>stylish bubbles.</em></h2>
+            <p>12 essential breakthroughs extracted and transcribed from the 148 conference proceedings, organized by geroscience discipline.</p>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="summary-filter-bar" aria-label="Filter insights by discipline">
+            <div class="summary-filter-options" role="group" aria-label="Discipline filter">
+              <button class="summary-filter-btn is-active" type="button" data-summary-category="all" aria-pressed="true">
+                <span>All Insights</span>
+                <span class="filter-count-badge">12</span>
+              </button>
+              <button class="summary-filter-btn" type="button" data-summary-category="biomarkers" aria-pressed="false">
+                <span>Biomarkers &amp; Immune Age</span>
+                <span class="filter-count-badge">3</span>
+              </button>
+              <button class="summary-filter-btn" type="button" data-summary-category="ai" aria-pressed="false">
+                <span>AI &amp; Digital Twins</span>
+                <span class="filter-count-badge">2</span>
+              </button>
+              <button class="summary-filter-btn" type="button" data-summary-category="nutrition" aria-pressed="false">
+                <span>Metabolism &amp; Nutrition</span>
+                <span class="filter-count-badge">2</span>
+              </button>
+              <button class="summary-filter-btn" type="button" data-summary-category="hallmarks" aria-pressed="false">
+                <span>Cellular Hallmarks</span>
+                <span class="filter-count-badge">2</span>
+              </button>
+              <button class="summary-filter-btn" type="button" data-summary-category="clinical" aria-pressed="false">
+                <span>Clinical Policy &amp; Spa</span>
+                <span class="filter-count-badge">3</span>
+              </button>
+            </div>
+            <p class="sr-only" id="summary-filter-status" aria-live="polite">Showing 12 scientific summary insights.</p>
+          </div>
+
+          <!-- The Stylish Bubbles Grid -->
+          <div class="events-bubble-grid" id="summary-bubbles-container">
+            <!-- Bubble 1: suPAR vs hsCRP -->
+            <article class="luxury-bubble" data-category="biomarkers">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-biomarkers">Biomarkers</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 1</span>
+                  </div>
+                  <span class="bubble-date">2026-06-09</span>
+                </div>
+                <h3 class="bubble-headline">suPAR vs. hsCRP: The Cellular Aging Barometer</h3>
+                <div class="bubble-quote-callout">
+                  "Gold-standard hsCRP reflects acute spikes; suPAR reflects true, basal immune exhaustion."
+                </div>
+                <p class="bubble-evidence-text">
+                  suPAR captures the degree of chronic inflammation and immune system senescence. Maintaining scores under 2.0 ng/ml reliably lowers biological age below chronological age.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260609_095101~4.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 2: Digital Twins -->
+            <article class="luxury-bubble" data-category="ai">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-ai">Artificial Intelligence</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 1</span>
+                  </div>
+                  <span class="bubble-date">2026-06-09</span>
+                </div>
+                <h3 class="bubble-headline">Multi-Scale Digital Twins for Disease Prediction</h3>
+                <div class="bubble-quote-callout">
+                  "AI unifies multi-omics and telemetry to simulate biology before administering clinical therapies."
+                </div>
+                <p class="bubble-evidence-text">
+                  Fusing genomics (DNA), transcriptomics (RNA), and proteomics with clinical data enables virtual patient avatars that test drug interventions in silico with unprecedented fidelity.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260609_101651~3.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 3: Macronutrient Ratio -->
+            <article class="luxury-bubble" data-category="nutrition">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-nutrition">Metabolism</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 1</span>
+                  </div>
+                  <span class="bubble-date">2026-06-09</span>
+                </div>
+                <h3 class="bubble-headline">The 45–30–15 Pro-Longevity Macronutrient Matrix</h3>
+                <div class="bubble-quote-callout">
+                  "Plant-predominant macros suppress chronic mTOR and IGF-1 while stimulating AMPK and autophagy."
+                </div>
+                <p class="bubble-evidence-text">
+                  Clinical guidelines: 45–60% non-refined complex carbs, 25–35% plant-based healthy fats, and 10–15% protein. Limiting excess methionine and BCAAs slows oncogenic and neurodegenerative drivers.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260609_110423.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 4: CKM Syndrome -->
+            <article class="luxury-bubble" data-category="nutrition">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-nutrition">Metabolism</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 1</span>
+                  </div>
+                  <span class="bubble-date">2026-06-09</span>
+                </div>
+                <h3 class="bubble-headline">Cardiovascular-Kidney-Metabolic (CKM) Syndrome</h3>
+                <div class="bubble-quote-callout">
+                  "AHA staging highlights visceral adiposity and renal strain decades before acute cardiac events."
+                </div>
+                <p class="bubble-evidence-text">
+                  Intervening at early asymptomatic CKM stages with visceral fat reduction and glycemic regulation protects endothelial integrity and halts multi-organ metabolic collapse.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260609_151111~3.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 5: Tanita Sarcopenia -->
+            <article class="luxury-bubble" data-category="biomarkers">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-biomarkers">Biomarkers</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 2</span>
+                  </div>
+                  <span class="bubble-date">2026-06-11</span>
+                </div>
+                <h3 class="bubble-headline">Segmental Sarcopenia &amp; Limb Muscle Symmetry</h3>
+                <div class="bubble-quote-callout">
+                  "Skeletal muscle distribution is a more powerful functional longevity predictor than body mass index."
+                </div>
+                <p class="bubble-evidence-text">
+                  Multi-frequency medical bioimpedance identifies subclinical sarcopenic obesity and segmental muscle asymmetries across right/left limbs that lead to frailty and loss of independence.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260611_085437~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 6: Redox Glutathione -->
+            <article class="luxury-bubble" data-category="biomarkers">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-biomarkers">Biomarkers</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 2</span>
+                  </div>
+                  <span class="bubble-date">2026-06-11</span>
+                </div>
+                <h3 class="bubble-headline">Redox Glutathione Diagnostics: GSH/GSSG &amp; GGT</h3>
+                <div class="bubble-quote-callout">
+                  "The reduced-to-oxidized glutathione ratio serves as the cellular barometer of mitochondrial resilience."
+                </div>
+                <p class="bubble-evidence-text">
+                  Elevated serum GGT paired with depleted GSH/GSSG signals mitochondrial oxidative exhaustion and accelerated cardiovascular risk (ASCVD) before cholesterol metrics reflect danger.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260611_112219~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 7: FINGER Study -->
+            <article class="luxury-bubble" data-category="clinical">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-clinical">Clinical Protocol</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 3</span>
+                  </div>
+                  <span class="bubble-date">2026-06-12</span>
+                </div>
+                <h3 class="bubble-headline">The FINGER Multi-Domain Cognitive Protocol</h3>
+                <div class="bubble-quote-callout">
+                  "Single-target dementia therapies fail; multi-domain lifestyle synergy preserves cognitive reserve."
+                </div>
+                <p class="bubble-evidence-text">
+                  Longitudinal trials prove that combining plant-rich nutrition, progressive resistance training, cognitive exercises, and vascular monitoring protects executive brain function by 30%.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260612_110923~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 8: Stress & Hormesis -->
+            <article class="luxury-bubble" data-category="hallmarks">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-hallmarks">Cellular Hallmarks</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 3</span>
+                  </div>
+                  <span class="bubble-date">2026-06-12</span>
+                </div>
+                <h3 class="bubble-headline">Three Stress Strategies: Hormesis, Repair, Resilience</h3>
+                <div class="bubble-quote-callout">
+                  "Longevity requires controlled, pulsatile stress to activate endogenous repair enzymes and sirtuins."
+                </div>
+                <p class="bubble-evidence-text">
+                  Homeostatic regulation, hormesis (adaptive transient stress like cold, heat, fasting), and active cellular repair constitute the biological tripod keeping mammalian tissues youthfully adaptive.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260612_115810~3.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 9: DNA Repair in Nature -->
+            <article class="luxury-bubble" data-category="hallmarks">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-hallmarks">Cellular Hallmarks</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 3</span>
+                  </div>
+                  <span class="bubble-date">2026-06-12</span>
+                </div>
+                <h3 class="bubble-headline">Comparative Biology: Double-Strand DNA Repair</h3>
+                <div class="bubble-quote-callout">
+                  "Long-lived species don't escape damage — they repair DNA double-strand breaks with ultra-high fidelity."
+                </div>
+                <p class="bubble-evidence-text">
+                  Genomic analysis across bowhead whales, naked mole rats, and bats reveals hyper-efficient PARP1 and non-homologous end-joining mechanisms that prevent oncogenic transformation.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260612_115920~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 10: PRIMA Policy -->
+            <article class="luxury-bubble" data-category="clinical">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-clinical">Clinical Policy</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 4</span>
+                  </div>
+                  <span class="bubble-date">2026-06-13</span>
+                </div>
+                <h3 class="bubble-headline">PRIMA Longevity Policy Institute Standards</h3>
+                <div class="bubble-quote-callout">
+                  "Defining clinical governance, diagnostic criteria, and accreditation for accredited longevity centers."
+                </div>
+                <p class="bubble-evidence-text">
+                  PRIMA guidelines establish rigorous operational blueprints for clinical longevity centers, bridging academic geroscience research with insured preventative medical practices.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260613_103100~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 11: Balneotherapy -->
+            <article class="luxury-bubble" data-category="clinical">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-clinical">Clinical Protocol</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 4</span>
+                  </div>
+                  <span class="bubble-date">2026-06-13</span>
+                </div>
+                <h3 class="bubble-headline">Evidence-Based Balneotherapy &amp; HPA Modulation</h3>
+                <div class="bubble-quote-callout">
+                  "Thermal mineral balneotherapy significantly dampens cortisol, downregulates inflammation, and restores mobility."
+                </div>
+                <p class="bubble-evidence-text">
+                  Clinical trials presented confirm that structured medical spa interventions reset the Hypothalamic-Pituitary-Adrenal (HPA) axis, improving physical vitality and musculoskeletal pain.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260613_114435~2.md</span>
+              </div>
+            </article>
+
+            <!-- Bubble 12: Ambient AI Falls -->
+            <article class="luxury-bubble" data-category="ai">
+              <div>
+                <div class="bubble-top">
+                  <div class="bubble-badges">
+                    <span class="bubble-category-pill pill-ai">Artificial Intelligence</span>
+                    <span class="bubble-pill bubble-pill-upcoming">Day 1</span>
+                  </div>
+                  <span class="bubble-date">2026-06-09</span>
+                </div>
+                <h3 class="bubble-headline">Ambient AI &amp; 80% Elder Fall Prevention</h3>
+                <div class="bubble-quote-callout">
+                  "Smart ambient optical sensors prevent 4 out of 5 elderly falls without intrusive wearables."
+                </div>
+                <p class="bubble-evidence-text">
+                  Real-time gait degradation telemetry paired with empathetic AI companions (ElliQ) mitigates senior isolation and averts devastating hip fractures and catastrophic emergency visits.
+                </p>
+              </div>
+              <div class="bubble-slide-meta">
+                <span>OCR Archive File</span>
+                <span class="slide-ref-badge">20260609_141935~2.md</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Epochal Quote Callout Section -->
+      <section class="section-quote" aria-label="Conference Keynote Quote">
+        <div class="shell">
+          <div class="quote-content">
+            <blockquote class="quote-text">
+              “We must foster an epochal paradigm shift in healthcare — moving from treating healthy longevity as a cost factor to embracing it as humanity's greatest driver of innovation, economic prosperity, and cognitive resilience.”
+            </blockquote>
+            <p class="quote-author">Longevity '26 Plenary Address · Geneva</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ecosystem Portals Section -->
       <section class="section" id="portals" aria-labelledby="portals-title">
         <div class="shell">
           <div class="section-head">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> Integrated Intelligence</p>
-            <h2 id="portals-title">Live subsites &amp; <em>daily feeds.</em></h2>
-            <p>Direct access to our dedicated newsroom tracking scientific publications, and our worldwide directory of geroscience congresses.</p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Longevity Hub Ecosystem</p>
+            <h2 id="portals-title">Deepen your exploration.</h2>
+            <p>Access our foundational mission framework, real-time peer-reviewed literature feeds, and worldwide conferences calendar.</p>
           </div>
 
           <div class="portals-grid">
+            <!-- Mission Portal Card -->
+            <article class="portal-card">
+              <div class="portal-header">
+                <div class="portal-icon" aria-hidden="true">🏛️</div>
+                <span class="badge">Foundations</span>
+              </div>
+              <h3>Our Mission &amp; Framework</h3>
+              <p class="portal-desc">
+                Explore our six foundational health pillars, evidence-based lifestyle principles, and commitment to open science without commercial bias.
+              </p>
+              <a class="portal-cta" href="./mission/">
+                <span>Read Our Mission</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
             <!-- News Portal Card -->
             <article class="portal-card">
               <div class="portal-header">
                 <div class="portal-icon" aria-hidden="true">📰</div>
-                <span class="badge badge-live"><span class="pulse-dot"></span> Daily Feed</span>
+                <span class="badge badge-live"><span class="pulse-dot"></span> Live Feed</span>
               </div>
               <h3>Longevity News Feed</h3>
               <p class="portal-desc">
-                Source-led coverage across scientific research, clinical breakthroughs, nutrient science, and pharmaceutical interventions. Filter by topic and read primary sources.
+                Daily source-led harvesting of peer-reviewed PubMed discoveries, pharmaceutical trials, and clinical breakthroughs across aging biology.
               </p>
-              
-              <div class="portal-preview">
-                <div class="preview-head">
-                  <span>Recent Headlines</span>
-                  <span>Direct PubMed Links</span>
-                </div>
-                <ul class="preview-items" id="news-preview-list">
-                  <li>Loading latest headlines...</li>
-                </ul>
-              </div>
-
               <a class="portal-cta" href="./news/">
-                <span>Open Longevity News Feed</span>
+                <span>Open News Feed</span>
                 <span aria-hidden="true">→</span>
               </a>
             </article>
@@ -145,230 +604,15 @@
                 <div class="portal-icon" aria-hidden="true">🗓️</div>
                 <span class="badge">Calendar</span>
               </div>
-              <h3>Longevity Events Directory</h3>
+              <h3>Conferences &amp; Events</h3>
               <p class="portal-desc">
-                A regional and global calendar of academic conferences, medical symposia, and longevity summits across Vienna, Europe, the United States, Asia, and worldwide forums.
+                Directory of worldwide scientific meetings, academic congresses, and geroscience forums across Vienna, Europe, the US, Asia, and worldwide.
               </p>
-
-              <div class="portal-preview">
-                <div class="preview-head">
-                  <span>Upcoming Gatherings</span>
-                  <span>Regional Breakdown</span>
-                </div>
-                <ul class="preview-items" id="events-preview-list">
-                  <li>Loading scheduled conferences...</li>
-                </ul>
-              </div>
-
               <a class="portal-cta" href="./events/">
-                <span>Open Events Calendar</span>
+                <span>Open Events Directory</span>
                 <span aria-hidden="true">→</span>
               </a>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured Longevity Events Section in Stylish Bubbles -->
-      <section class="section section-featured-events" id="featured-events" aria-labelledby="featured-events-title">
-        <div class="shell">
-          <div class="featured-events-header">
-            <div class="section-head">
-              <p class="eyebrow"><span class="eyebrow-dot"></span> Community &amp; Gatherings</p>
-              <h2 id="featured-events-title">Featured <em>gatherings &amp; congresses.</em></h2>
-              <p>Top upcoming geroscience meetings and recent landmark proceedings across Vienna, Europe, the US, Asia, and worldwide forums.</p>
-            </div>
-
-            <!-- Visible Location & Schedule Selectors -->
-            <div class="featured-controls">
-              <!-- Location Filter Selector -->
-              <div class="featured-filter-row">
-                <span class="featured-filter-label">Location</span>
-                <div class="bubble-filters bubble-location-filters" role="group" aria-label="Filter featured events by location">
-                  <button class="bubble-filter-btn is-active" type="button" data-bubble-location="all" aria-pressed="true">
-                    <span>All Locations</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-location="vienna" aria-pressed="false">
-                    <span>Vienna</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-location="europe" aria-pressed="false">
-                    <span>Europe</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-location="us" aria-pressed="false">
-                    <span>US</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-location="asia" aria-pressed="false">
-                    <span>Asia</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- Schedule Filter Selector -->
-              <div class="featured-filter-row">
-                <span class="featured-filter-label">Schedule</span>
-                <div class="bubble-filters bubble-timeframe-filters" role="group" aria-label="Filter featured events by schedule">
-                  <button class="bubble-filter-btn is-active" type="button" data-bubble-filter="all" aria-pressed="true">
-                    <span>All Featured</span>
-                    <span class="filter-count" id="count-all">10</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-filter="upcoming" aria-pressed="false">
-                    <span class="pulse-dot"></span>
-                    <span>Upcoming</span>
-                    <span class="filter-count" id="count-upcoming">6</span>
-                  </button>
-                  <button class="bubble-filter-btn" type="button" data-bubble-filter="past" aria-pressed="false">
-                    <span>Recent Past</span>
-                    <span class="filter-count" id="count-past">4</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stylish Bubbles Container -->
-          <div class="events-bubble-grid" id="featured-bubbles-container" aria-live="polite">
-            <div class="bubbles-loading">
-              <span class="bubble-spinner" aria-hidden="true">✳</span>
-              <span>Loading featured events...</span>
-            </div>
-          </div>
-
-          <!-- Bottom bar leading to full directory -->
-          <div class="featured-events-foot">
-            <div class="foot-note">
-              <span class="foot-icon" aria-hidden="true">📍</span>
-              <span>Looking for dedicated regional views (Vienna, Europe, US, Asia) or past archives?</span>
-            </div>
-            <a class="button button-primary" href="./events/">
-              Explore Full Events Directory (140+ meetings) <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Health Pillars Section -->
-      <section class="section" id="pillars" aria-labelledby="pillars-title">
-        <div class="shell">
-          <div class="section-head">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> The Science of Lifespan</p>
-            <h2 id="pillars-title">Six pillars of <em>healthy longevity.</em></h2>
-            <p>Modern geroscience demonstrates that aging is driven by interconnected biological processes. Translating this evidence into daily practice centers around six foundational domains.</p>
-          </div>
-
-          <div class="pillars-grid">
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 01</span>
-                <span class="pillar-symbol" aria-hidden="true">🧬</span>
-              </div>
-              <h3>Cellular &amp; Molecular Biology</h3>
-              <p>Targeting the biological hallmarks of aging: cellular senescence, autophagy clearance, DNA repair efficiency, and telomere integrity to preserve tissue function.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Senolytics</span>
-                <span class="pillar-tag">Autophagy</span>
-                <span class="pillar-tag">Mitochondria</span>
-              </div>
-            </article>
-
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 02</span>
-                <span class="pillar-symbol" aria-hidden="true">🥗</span>
-              </div>
-              <h3>Metabolic &amp; Nutritional Health</h3>
-              <p>Harnessing nutrient-sensing pathways (mTOR, AMPK, sirtuins) through circadian-aligned nutrition, glycemic regulation, and polyphenol-dense whole foods.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Insulin Sensitivity</span>
-                <span class="pillar-tag">mTOR/AMPK</span>
-                <span class="pillar-tag">Fasting</span>
-              </div>
-            </article>
-
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 03</span>
-                <span class="pillar-symbol" aria-hidden="true">🏃</span>
-              </div>
-              <h3>Physical Resilience &amp; Exercise</h3>
-              <p>Building functional capacity via Zone 2 cardiovascular endurance, progressive resistance training against sarcopenia, and optimizing VO2 max for extended healthspan.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Zone 2</span>
-                <span class="pillar-tag">Resistance Training</span>
-                <span class="pillar-tag">VO2 Max</span>
-              </div>
-            </article>
-
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 04</span>
-                <span class="pillar-symbol" aria-hidden="true">🌙</span>
-              </div>
-              <h3>Sleep &amp; Circadian Rhythms</h3>
-              <p>Prioritizing slow-wave deep sleep for brain glymphatic clearance and metabolic reset, reinforced by daylight exposure timing and circadian regularity.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Glymphatic Clearance</span>
-                <span class="pillar-tag">Slow-Wave Sleep</span>
-                <span class="pillar-tag">Chronobiology</span>
-              </div>
-            </article>
-
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 05</span>
-                <span class="pillar-symbol" aria-hidden="true">📊</span>
-              </div>
-              <h3>Biomarkers &amp; Early Diagnostics</h3>
-              <p>Tracking biological age through epigenetic methylation clocks (GrimAge, DunedinPACE), comprehensive lipid profiling (ApoB), and subclinical inflammatory panels.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Epigenetic Clocks</span>
-                <span class="pillar-tag">ApoB / Lipids</span>
-                <span class="pillar-tag">hs-CRP</span>
-              </div>
-            </article>
-
-            <article class="pillar-card">
-              <div class="pillar-top">
-                <span class="pillar-number">PILLAR 06</span>
-                <span class="pillar-symbol" aria-hidden="true">🧠</span>
-              </div>
-              <h3>Neuroprotection &amp; Mental Health</h3>
-              <p>Sustaining cognitive reserve through neuroplastic challenges, stress resilience (autonomic vagal regulation), purposeful engagement, and strong social connection.</p>
-              <div class="pillar-tags">
-                <span class="pillar-tag">Cognitive Reserve</span>
-                <span class="pillar-tag">Hormesis</span>
-                <span class="pillar-tag">Vagal Tone</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Principles & Methods Section -->
-      <section class="section" id="principles" aria-labelledby="principles-title">
-        <div class="shell">
-          <div class="principles-box">
-            <div class="principles-left">
-              <p class="eyebrow" style="color: var(--lime);"><span class="eyebrow-dot" style="background: var(--lime);"></span> Open Methodology</p>
-              <h2 id="principles-title">Clear sources.<br><em>No commercial bias.</em></h2>
-              <p>Longevity Hub is engineered as an open, source-led knowledge infrastructure. We believe understanding human health requires clear evidence, verifiable citations, and complete transparency.</p>
-            </div>
-
-            <div class="principles-list">
-              <div class="principle-item">
-                <h4>Primary Source Integrity</h4>
-                <p>Every news entry and conference record cites and links directly to original peer-reviewed literature, PubMed identifiers, or registered conference organizers.</p>
-              </div>
-
-              <div class="principle-item">
-                <h4>Automated &amp; Uneditorialized Feeds</h4>
-                <p>Our daily collection scripts run automatically via transparent GitHub Actions workflows, applying rigorous schema validation without editorial distortions.</p>
-              </div>
-
-              <div class="principle-item">
-                <h4>Open Science Collaboration</h4>
-                <p>All data pipelines, schemas, and source code are open source and maintained collaboratively on GitHub for public audit and community contribution.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -393,7 +637,8 @@
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="./news/">Longevity News</a>
           <a href="./events/">Conferences &amp; Events</a>
-          <a href="#pillars">Health Pillars</a>
+          <a href="./mission/">Our Mission</a>
+          <a href="./mission/#pillars">Health Pillars</a>
           <a href="https://github.com/knightkalman/longevity-hub" target="_blank" rel="noopener noreferrer">GitHub Project</a>
         </nav>
       </div>

@@ -131,10 +131,12 @@
     return false;
   }
 
+  const basePath = document.querySelector('link[rel="stylesheet"]')?.getAttribute('href')?.startsWith('..') ? '../' : './';
+
   // Load News preview
   async function loadNewsPreview() {
     try {
-      const res = await fetch("./news/news.json", { cache: "no-store" });
+      const res = await fetch(`${basePath}news/news.json`, { cache: "no-store" });
       if (!res.ok) throw new Error("Status " + res.status);
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
@@ -178,7 +180,7 @@
   // Load Events and render reactive featured bubbles
   async function loadEventsAndFeaturedBubbles() {
     try {
-      const res = await fetch("./events/events.json", { cache: "no-store" });
+      const res = await fetch(`${basePath}events/events.json`, { cache: "no-store" });
       if (!res.ok) throw new Error("Status " + res.status);
       const feed = await res.json();
       const items = Array.isArray(feed.items) ? feed.items : [];
