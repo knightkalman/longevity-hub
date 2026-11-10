@@ -1,23 +1,21 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-09T06:47:34Z",
-  "last_successful_collection": "2026-11-09T06:47:28Z",
-  "collection_status": "success",
-  "sources_succeeded": 7,
+  "generated_at": "2026-11-10T06:39:34Z",
+  "last_successful_collection": "2026-11-10T06:39:27Z",
+  "collection_status": "partial",
+  "sources_succeeded": 6,
   "sources_total": 7,
   "source_results": [
     {
       "source_id": "nature_aging_events",
-      "status": "success",
-      "fetched": 0,
-      "new": 0
+      "status": "failed"
     },
     {
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 1
+      "new": 9
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -210,6 +208,190 @@
       "publication_date": null,
       "publication_date_precision": "month",
       "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "005e5553ca4ef0505be160bae0ea5dcdec978d346f89437826db4b1164dd2bb8",
+      "title": "Building Consensus Among Intensive Care Nurses on the Scope of Practice for Registered Nurses Deployed to Intensive Care During Surge Events: A Real-Time Delphi Study.",
+      "publisher": "Nursing in critical care",
+      "author": "Causby B",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001415",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b5c38dde033658217e124e0d331f951d087b970dd3569e076fbacb33d2292486",
+      "title": "Experiences and visions for physiotherapy and occupational therapy in oncological rehabilitation: results from a transdisciplinary research workshop programme with people living with and beyond cancer and health professionals.",
+      "publisher": "Disability and rehabilitation",
+      "author": "Ley C",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001634",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "95361f91756acf9a598e41fa8f1da7dde9517bdeb87004abb996b3ad677bcca2",
+      "title": "Reimagining Dental Education: Consensus Recommendations for Innovation, Technology Integration, and Practice Transformation.",
+      "publisher": "Journal of dental education",
+      "author": "Wu DT",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002539",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7d5b06379bfa8276b0a737afcc3f385bfd21c3c85121e9a1db7cbab6615daeb7",
+      "title": "Shared management of patients with concomitant rheumatological disease and neoplasia: A collaborative Delphi consensus by the Italian Association of Medical Oncology and the Italian Society of Rheumatology.",
+      "publisher": "Autoimmunity reviews",
+      "author": "De Marco L",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003172",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6ff1b0685ddc066a7b50fa4a22e7afdd6c302cfae62294d8f2367da219b70c42",
+      "title": "Clinical Consensus Guidelines on Antibiotic Prescribing Practices for Infants with Gastroschisis Utilizing Modified Delphi Methodology.",
+      "publisher": "Journal of pediatric surgery",
+      "author": "Riddle S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003280",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2a79d33c6ba43281e5f6a095b85ef9a57c9e07212e9ad6215ff4ea200e13dcd9",
+      "title": "Bioanalysis of antibody-drug conjugates: current practices and future directions-a workshop report.",
+      "publisher": "Bioanalysis",
+      "author": "Xu W",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001791",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "285d774b2133044877565dec857bf4c0a90ce1492bf9faa4fbc557f78005c23a",
+      "title": "Redefining Research Priorities for Youth and Family Behavioral Health in the United States: Results from an Expert Consensus Process.",
+      "publisher": "Administration and policy in mental health",
+      "author": "Bruns EJ",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002352",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "22fdb72fe930502891a17fdb28662241f6ba2650be7944ec58abd7ae9568dc74",
+      "title": "PROphylactic use of closed incision negative Pressure wound thERapy for VASCular surgery groin incisions: recommendations from an international expert-based consensus (PROPER-VASC).",
+      "publisher": "Annals of vascular surgery",
+      "author": "D'Oria M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003226",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "087978c723d54f0c4136ddcb9e7de4d4d1e605e41469e3d2eae142f1f0a400ef",
+      "title": "Revising Terminology and Phenotype Definitions for AI-Based Decision Support in Fluid Therapy: Call for Consensus.",
+      "publisher": "Journal of medical Internet research",
+      "author": "Andrijauskas A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002738",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
       "location": "other",
       "location_groups": [],
       "tags": [
