@@ -1,21 +1,23 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-10T06:39:34Z",
-  "last_successful_collection": "2026-11-10T06:39:27Z",
-  "collection_status": "partial",
-  "sources_succeeded": 6,
+  "generated_at": "2026-11-11T06:43:05Z",
+  "last_successful_collection": "2026-11-11T06:42:59Z",
+  "collection_status": "success",
+  "sources_succeeded": 7,
   "sources_total": 7,
   "source_results": [
     {
       "source_id": "nature_aging_events",
-      "status": "failed"
+      "status": "success",
+      "fetched": 0,
+      "new": 0
     },
     {
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 9
+      "new": 11
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -220,6 +222,27 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "aa405b2cc1bcc3bed6b916a77445ecec1d813e32cd8fac7d9fb7ef7c2d87416d",
+      "title": "International Consensus Meeting on Preclinical Models of Osteoarthritis: Summary From the Aging Section.",
+      "publisher": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+      "author": "Zhu S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006177",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "geroscience",
+        "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "005e5553ca4ef0505be160bae0ea5dcdec978d346f89437826db4b1164dd2bb8",
       "title": "Building Consensus Among Intensive Care Nurses on the Scope of Practice for Registered Nurses Deployed to Intensive Care During Surge Events: A Real-Time Delphi Study.",
       "publisher": "Nursing in critical care",
@@ -232,6 +255,222 @@
       "location_groups": [],
       "tags": [
         "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "d62a8908b1d958485d55eec5700b22599cda913f3b9d527800499171849d2a15",
+      "title": "Early ambulatory re-evaluation and follow-up of patients admitted in the acute cardiac care unit - Practical aspects on ambulatory follow-up of acute care patients: acute coronary syndromes, heart failure, ventricular arrhythmias, atrial arrhythmias, conductance disorders, myocarditis, pericarditis, other acute cardiac settings A Clinical Consensus Statement of the Association for Acute CardioVascular Care of the ESC.",
+      "publisher": "European heart journal. Acute cardiovascular care",
+      "author": "Roubille F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008190",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c5145d7a6969c56d85130752f1bf65bdce2db441595aa769ec0e1692a0398917",
+      "title": "Clinical role, biomechanical aspects, and barriers to the use of hip protectors in fracture prevention: insights from an Italian Delphi consensus panel.",
+      "publisher": "Reviews in endocrine & metabolic disorders",
+      "author": "Giustina A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43004130",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "bfd15a0614c7687e7868f6e7ba154b98173a9e764225c00b897718dcef38a241",
+      "title": "When Stakeholder Consensus Diverges From Patient Preferences: Selecting Patient-Reported Outcome Measures (PROMs) for Kidney Replacement Therapy.",
+      "publisher": "Hemodialysis international. International Symposium on Home Hemodialysis",
+      "author": "de Souza Maciel Ferreira JE",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006255",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "needs_review",
+        "symposium"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "78bb80422833bb293d8c139001ac66fb297c192290ac8a0f2e67b40370b9df35",
+      "title": "International Cross-Age Consensus Guideline on Measurable Residual Disease Assessment in Acute Lymphoblastic Leukemia.",
+      "publisher": "Blood",
+      "author": "Kotrova M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008231",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6e96b4b8883c9e1fa27f1dcfb5a0fbdacde1a6bb897c42b96d7cf24cdbdea055",
+      "title": "Sonostandard: Sonication for implant-associated infections: A Swiss consensus protocol.",
+      "publisher": "Journal of microbiological methods",
+      "author": "Maai N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008977",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "69fafa5eb7b46d4d25f69d5cfb8823f0b18905f4c038b9a8ca188571d1ab8695",
+      "title": "Designing inclusive and impactful learning experiences: the evolving pedagogy of the UNESCO Chair 'Global Health & Education' Annual Community Health Workshop.",
+      "publisher": "Global health promotion",
+      "author": "Jourdan D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006212",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3783c0549f970554532b1fdddbceb16258e7c3fe2592d1ac3e230b34691284ef",
+      "title": "Improving junior personnel engagement in military health research: a PPIE workshop.",
+      "publisher": "BMJ military health",
+      "author": "Slavin M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009208",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2ec1b133d62a358e3160d167a2deb1735c7563de17d27351e909530036b41ba6",
+      "title": "Advancing gastric cancer prevention in the United States: perspectives from a congressional forum.",
+      "publisher": "Journal of the National Cancer Institute",
+      "author": "Hyun CS",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006918",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "forum",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2da2a9f54c7b5d6eab584a114023a33060fe81c0760ac9f643c77f79ac455538",
+      "title": "Multidisciplinary Delphi Consensus on the Current Management and Future Outlook for the Treatment of Chronic Graft-versus-Host Disease in Spain.",
+      "publisher": "Revista clinica espanola",
+      "author": "Duarte R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009053",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "dcfed70049062a15f0efcad3ce5ddb5d94eed2585724bdacda0fdc351ccf4905",
+      "title": "Noninvasive assessments for identifying peripheral artery disease described within guidelines, consensus, and best practice statements: A rapid systematic review.",
+      "publisher": "Vascular medicine (London, England)",
+      "author": "Weerasekara I",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003793",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
         "event",
         "needs_review"
       ],
