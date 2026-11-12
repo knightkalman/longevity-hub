@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-11T06:43:05Z",
-  "last_successful_collection": "2026-11-11T06:42:59Z",
+  "generated_at": "2026-11-12T06:45:07Z",
+  "last_successful_collection": "2026-11-12T06:45:02Z",
   "collection_status": "success",
   "sources_succeeded": 7,
   "sources_total": 7,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 11
+      "new": 13
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -263,6 +263,189 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "e59d0a5c5c5cbbbd0a2bfcebc87b5323914ed0bfcfd581b11c2bfddc86eabe84",
+      "title": "Consensus document on the diagnosis and treatment of metabolic alterations in urinary stone disease.",
+      "publisher": "Nefrologia",
+      "author": "Ramos Cebrián M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015164",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c89dc43582e3b484abd6c9fc8379869a7c447d03f30757ce29ed26e386a3ba9e",
+      "title": "Consensus-Based Recommendations for the Management of Deep and Extremely Deep Carious Lesions and Vital Pulp Treatment in Permanent Teeth: A National Delphi Study.",
+      "publisher": "International endodontic journal",
+      "author": "Kérourédan O",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012168",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "814322a9bca87dac4ba5435f14f805c9f2ce62f1e52d85f0294be4a49fc028b7",
+      "title": "SPROUT Guidelines for Molecular Profiling for Children with Solid Tumors: A Consensus Recommendation from the American Association for Cancer Research.",
+      "publisher": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "author": "Gestrich C",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43013345",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "50ce7169d0b0dea7c7a0024f173554c2233acec0d7f11104d48b7617cc774013",
+      "title": "Item selection and content validation of the nurse triage quality audit tool (N-TriQAT) in emergency departments: A consensus study.",
+      "publisher": "International emergency nursing",
+      "author": "Ouellet S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43013994",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "30ceb29522d8f66920a0b7286f06e663cbfdcd0569889fbddc043ed211d98df8",
+      "title": "Validation to NANDA-I of the Nursing Diagnosis Ineffective Community Process Based on Community Assessment, Intervention and Empowerment Model (MAIEC): A Focus Group Consensus Study.",
+      "publisher": "International journal of nursing knowledge",
+      "author": "Melo P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012301",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "23a3d93e75ac8324599da59b1e09b33eca1cef83e8559e038c2e8a0c3af070cc",
+      "title": "A review of tuberculosis diagnostic guidelines: identification of areas of consensus and divergence to support diagnostic access decision-making.",
+      "publisher": "Journal of clinical microbiology",
+      "author": "Léveillé N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012554",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "1804b57741cccab147a1f12b4ce9c6ba732f1b87c81a62352299ff9252fcf634",
+      "title": "Thrombolysis and thrombectomy in acute ischemic stroke: A RAND/UCLA consensus.",
+      "publisher": "Anales de pediatria",
+      "author": "Carlos-Gil AM",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015222",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0e636725d2ce8c3e2aa436a65335295bdd0aa31c28f8e1e24383574002a287e3",
+      "title": "Consensus on the definition, components, and grading of composite postoperative pulmonary complication outcomes (PrECiSIOn): insights from an international Delphi expert panel.",
+      "publisher": "The Lancet. Respiratory medicine",
+      "author": "PrECiSIOn investigators",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43014330",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0ba6531c3aa55fa5c78138737eeabd73c526bd194ac194af1037e0c47ea14fc9",
+      "title": "From Hibakusha to the TPNW: public health, survivorship, and medical advocacy at the 24th IPPNW World Congress in Nagasaki.",
+      "publisher": "Medicine, conflict, and survival",
+      "author": "Khadka B",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012664",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "d62a8908b1d958485d55eec5700b22599cda913f3b9d527800499171849d2a15",
       "title": "Early ambulatory re-evaluation and follow-up of patients admitted in the acute cardiac care unit - Practical aspects on ambulatory follow-up of acute care patients: acute coronary syndromes, heart failure, ventricular arrhythmias, atrial arrhythmias, conductance disorders, myocarditis, pericarditis, other acute cardiac settings A Clinical Consensus Statement of the Association for Acute CardioVascular Care of the ESC.",
       "publisher": "European heart journal. Acute cardiovascular care",
@@ -324,6 +507,47 @@
         "consensus",
         "needs_review",
         "symposium"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b88ec425c222970c8603f78960880c4c9530cea11727986b0c7c63bb1b72dbf8",
+      "title": "[Expert consensus on the application of energy metabolism monitoring in nutritional support therapy (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "China International Exchange and Promotive Association for Medical and Health Care Clinical Nutrition Health Branch",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43010752",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7f6f3027933f470a4deb7f11bc059955bd1663dd96d9d4773bafc059f82e3424",
+      "title": "[Expert consensus on light therapy for the treatment of insomnia disorder (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Chinese Sleep Research Society",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43010753",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -405,6 +629,28 @@
       "tags": [
         "needs_review",
         "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "352f7ba66f4338956f86118a348c1fda9aa004f45ae911326cb1b21ba04882f8",
+      "title": "Perspectives on cell and gene therapy: insights from the 5th China Annual Congress on CGT.",
+      "publisher": "Gene therapy",
+      "author": "Xu Y",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009539",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "congress",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -2783,6 +3029,25 @@
         "hybrid_or_online",
         "needs_review",
         "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "999feb88923d0b6c047d7b685ddad5726a65cb66a962bf28c86b62666d9f9e53",
+      "title": "From Reflection to Action: A Reflective Learning Workshop to Bridge Gaps in Pediatric Health.",
+      "publisher": "MedEdPORTAL : the journal of teaching and learning resources",
+      "author": "Mancho A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43011685",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
       ],
       "summary": null,
       "evidence_notes": null,
