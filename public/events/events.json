@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-12T06:45:07Z",
-  "last_successful_collection": "2026-11-12T06:45:02Z",
+  "generated_at": "2026-11-13T06:43:32Z",
+  "last_successful_collection": "2026-11-13T06:43:26Z",
   "collection_status": "success",
   "sources_succeeded": 7,
   "sources_total": 7,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 13
+      "new": 14
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -263,6 +263,146 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "c592b5178107f65c879be9863609a429bbc69709d0885505b35ebd48a299c4a8",
+      "title": "[Extracorporeal cardiopulmonary resuscitation (ECPR) : Consensus statement of the DGK, DGTHG, DGAI, DGPTM, DIVI, GRC, DRG, ALKK and DGIIN].",
+      "publisher": "Medizinische Klinik, Intensivmedizin und Notfallmedizin",
+      "author": "Michels G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43018718",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a58fda233c3aeb750726e86b65ca1e4a5f3a4fbbeca17d893352d05b395c65e2",
+      "title": "International Delphi Consensus on the Use of Near-infrared Spectroscopy for Wound Care and Procedural Decision-making, With Adjunctive Workflow and Time Analysis.",
+      "publisher": "Advances in skin & wound care",
+      "author": "Kelso MR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43018111",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "979d8476a99c7d96bf6a900ba3e60049f6f862c740d06938d4ef86135b4c151c",
+      "title": "Patient-360 consensus for enhanced primary healthcare management in Egypt.",
+      "publisher": "Family medicine and community health",
+      "author": "Ragy H",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43020527",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "79e912035b5713919b21564301ccb0f3d0250fc955be84b24e7c9f36bbb2986a",
+      "title": "Federated, Accessible, Inclusive, and Responsive Virtual Biorepository: Delphi Consensus Study.",
+      "publisher": "JMIR public health and surveillance",
+      "author": "Price A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019383",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "hybrid_or_online",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "30f462e7ed0f3a9056c244c344d54b1835e74ad8a22bc9bc0ac09a80529600e6",
+      "title": "[Extracorporeal cardiopulmonary resuscitation (ECPR) : Consensus statement of the DGK, DGTHG, DGAI, DGPTM, DIVI, GRC, DRG, ALKK and DGIIN].",
+      "publisher": "Die Anaesthesiologie",
+      "author": "Michels G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43018747",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "16a1ae751fca9623ae0670299494b1d462a04afeba52a95a36a4f81cac46841f",
+      "title": "Rethinking Digital Outcome Measures for Amyotrophic Lateral Sclerosis Trials: Consensus Priorities for Actigraphy Harmonization, Validation, and Regulatory Readiness.",
+      "publisher": "Journal of medical Internet research",
+      "author": "Steyn F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019526",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0a2c0c571fb8ebec238297b60634109579443e860c40c6f08408a1920ef89169",
+      "title": "The 2026 National Congress of Parasitology: advancing parasite research and public health.",
+      "publisher": "Trends in parasitology",
+      "author": "Chaudhary A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43020686",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "e59d0a5c5c5cbbbd0a2bfcebc87b5323914ed0bfcfd581b11c2bfddc86eabe84",
       "title": "Consensus document on the diagnosis and treatment of metabolic alterations in urinary stone disease.",
       "publisher": "Nefrologia",
@@ -304,6 +444,46 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "aa494b14cb5f8aaf014c222085cb1ebfa838ade764c91c842483a981b0ddab89",
+      "title": "Guiding Proton Pump Inhibitor Use Across Common Clinical Settings: A Narrative Review of Guidelines and Expert Consensus.",
+      "publisher": "Journal of general internal medicine",
+      "author": "Diaz Lizarraga CA",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015562",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a8c53f124090e5e966c6bedb7924c101e59055ec597d95b12da405fe7ecff955",
+      "title": "International multidisciplinary Delphi consensus on advanced practice in non-metastatic upper tract urothelial carcinoma (IMPACT UTUC).",
+      "publisher": "Nature reviews. Urology",
+      "author": "Pandolfo SD",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015446",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "814322a9bca87dac4ba5435f14f805c9f2ce62f1e52d85f0294be4a49fc028b7",
       "title": "SPROUT Guidelines for Molecular Profiling for Children with Solid Tumors: A Consensus Recommendation from the American Association for Cancer Research.",
       "publisher": "Clinical cancer research : an official journal of the American Association for Cancer Research",
@@ -321,6 +501,26 @@
         "event",
         "needs_review",
         "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5ad046d312191b3ff6f78909bc7fda3fa371efc4f9258630cac41130c5cf04bc",
+      "title": "Diagnostic agreement between ChatGPT-based interpretation of laboratory-generated flow cytometry graphical outputs and hematologist consensus in suspected acute leukemia.",
+      "publisher": "Cytometry. Part B, Clinical cytometry",
+      "author": "Göçer M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015946",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -439,6 +639,29 @@
       "location_groups": [],
       "tags": [
         "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "09c34b716fa887e1722fe8e2be2636d734899de27e9d88670ed308fc13e91ead",
+      "title": "Chinese expert consensus on the clinical pathway for oblique lumbar interbody fusion.",
+      "publisher": "Chinese medical journal",
+      "author": "Zhang Z",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015255",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
         "needs_review"
       ],
       "summary": null,
@@ -1298,6 +1521,52 @@
       "publisher": "European journal of oncology nursing : the official journal of European Oncology Nursing Society",
       "author": "Cranstoun D",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994282",
+      "publication_date": "2026-11-03",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 3",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "358a4e68340ce9950f15a1718e8a5e20b196dae2c2bb9270871cb3474886cb9b",
+      "title": "Treatment of pulmonary hypertension in infants, children and young adults. 2026 consensus statement from the European Pediatric Pulmonary Vascular Disease Network (EPPVDN), endorsed by AHA, AEPC, EACTS, ESPR, PASCAR, PCS, and PICS.",
+      "publisher": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "author": "Hansmann G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43018529",
+      "publication_date": "2026-11-03",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 3",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0cdf1ebb75da04fdd36c91eb69f0c895885736992b027c9df5b7af75bad53870",
+      "title": "Treatment of children and young adults with a Fontan circulation and cardiovascular dysfunction. 2026 Consensus Statement from the European Pediatric Pulmonary Vascular Disease Network (EPPVDN), endorsed by AHA, AEPC, EACTS, ISACHD, ISHLT and PICS.",
+      "publisher": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "author": "Opotowsky AR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43018530",
       "publication_date": "2026-11-03",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 3",
@@ -3048,6 +3317,26 @@
       "tags": [
         "needs_review",
         "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "8a64d2531bd0ebb906a6687ce039c92614a72fc883b1146bb68cea979c5e5056",
+      "title": "Expert Consensus-Based Development of a Multidisciplinary Weekly Goal-Setting Framework for Subacute Stroke Rehabilitation.",
+      "publisher": "Journal of multidisciplinary healthcare",
+      "author": "Kang K",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43017128",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
