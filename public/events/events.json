@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-13T06:43:32Z",
-  "last_successful_collection": "2026-11-13T06:43:26Z",
+  "generated_at": "2026-11-14T06:32:33Z",
+  "last_successful_collection": "2026-11-14T06:32:27Z",
   "collection_status": "success",
   "sources_succeeded": 7,
   "sources_total": 7,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 14
+      "new": 7
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -222,6 +222,27 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "c2a1f7af026961e177090d29fd53e99d2fa587c65be2787be519f6d6e773834b",
+      "title": "Understanding the exposome across the life course to promote healthy aging: consensus recommendations from the Gateway Exposome Coordinating Center.",
+      "publisher": "Nature aging",
+      "author": "Lee J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43020849",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "geroscience",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "aa405b2cc1bcc3bed6b916a77445ecec1d813e32cd8fac7d9fb7ef7c2d87416d",
       "title": "International Consensus Meeting on Preclinical Models of Osteoarthritis: Summary From the Aging Section.",
       "publisher": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
@@ -243,6 +264,29 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "a95e5588c6e7d8f116a36f345118c1a149b5bf51d2d3504c0c20e65cb078ad85",
+      "title": "Indian Consensus Guidelines for the Diagnosis and Management of Aplastic Anemia.",
+      "publisher": "Indian journal of hematology & blood transfusion : an official journal of Indian Society of Hematology and Blood Transfusion",
+      "author": "Dolai TK",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43022131",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "005e5553ca4ef0505be160bae0ea5dcdec978d346f89437826db4b1164dd2bb8",
       "title": "Building Consensus Among Intensive Care Nurses on the Scope of Practice for Registered Nurses Deployed to Intensive Care During Surge Events: A Real-Time Delphi Study.",
       "publisher": "Nursing in critical care",
@@ -257,6 +301,66 @@
         "consensus",
         "event",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7e5f6e353cfd9909e9736385ae494800a1d7e1fe066dd8c7467c86f6b5e8e857",
+      "title": "Clinician Competencies for Self-Management Support in Cancer: Expert Consensus Recommendations From the Multinational Association of Supportive Care in Cancer.",
+      "publisher": "JCO oncology practice",
+      "author": "Knowles R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43024835",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "39b67db0226d80568818520763029221d48b829e25b2a8dd047a51f70587bc67",
+      "title": "Defining the terminology of hip and groin pain in 2026: A scoping review of consensus statements.",
+      "publisher": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "author": "Becker N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43024645",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "028e1a0007358f2945ead709b6a0100275bd3051c7341bf7921418de1bcdee3e",
+      "title": "Defining and managing NF1-related peripheral nerve sheath tumors at risk for malignant transformation: Consensus from the Atypical Neurofibroma Symposium.",
+      "publisher": "Neuro-oncology",
+      "author": "Romo CG",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43021633",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "needs_review",
+        "symposium"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -337,6 +441,26 @@
         "consensus",
         "event",
         "hybrid_or_online",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "63c14e277d84efe2e8ae26d3c9a71c812fe19f2059e0e51c3b1bc729d2701339",
+      "title": "Cardiovascular risk, evaluation and management in patients with hypertriglyceridaemia: a Consensus Statement from the International Atherosclerosis Society.",
+      "publisher": "Nature reviews. Cardiology",
+      "author": "Aggarwal R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43020860",
+      "publication_date": "2026-11-12",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 12",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
         "needs_review"
       ],
       "summary": null,
@@ -3336,6 +3460,25 @@
       "tags": [
         "consensus",
         "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0e64f1cfbf004a4e0f50c4f9c843ffa28a878ff870b4eaa9990ea3939881cb60",
+      "title": "Correction: Promising results of HIV prevention trials highlight the benefits of collaboration in global health: The perspective of the Forum HIV Recency Assay Working Group.",
+      "publisher": "PLOS global public health",
+      "author": "PLOS Global Public Health Staff",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43024567",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "forum",
         "needs_review"
       ],
       "summary": null,
