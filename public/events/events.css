@@ -748,8 +748,16 @@ h2 em {
   transform: translate(2px, -2px);
   color: var(--gold-dark);
 }
-  transform: translate(2px, -2px);
-  color: var(--forest);
+
+.bubble-desc {
+  margin: 0 0 12px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #495447;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .bubble-meta {

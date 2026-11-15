@@ -59,7 +59,11 @@
         "source_type": {
           "enum": [
             "rss",
-            "pubmed_eutils"
+            "pubmed_eutils",
+            "openalex",
+            "crossref",
+            "search_engine",
+            "eventbrite"
           ]
         },
         "format": {
@@ -139,6 +143,61 @@
         "last_checked_date": {
           "type": "string",
           "format": "date"
+        },
+        "seed_events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "url",
+              "publisher"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "date_raw": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "publisher": {
+                "type": "string"
+              },
+              "author": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "summary": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "api_key_env": {
+          "type": "string"
         }
       },
       "allOf": [

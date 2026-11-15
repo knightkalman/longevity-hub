@@ -221,7 +221,10 @@
           "then": {
             "properties": {
               "summary": {
-                "type": "null"
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "evidence_notes": {
                 "type": "null"
@@ -283,7 +286,10 @@
                   "const": "candidate"
                 },
                 "summary": {
-                  "type": "null"
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 },
                 "evidence_notes": {
                   "type": "null"

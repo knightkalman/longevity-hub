@@ -562,6 +562,8 @@ def build_candidate(
     collected_at: str,
     run_id: str,
     access_basis: str,
+    summary: str | None = None,
+    review_state: str = "candidate",
 ) -> dict[str, Any]:
     clean_title = sanitize_text(title)
     if not clean_title or len(clean_title) > 500:
@@ -578,6 +580,7 @@ def build_candidate(
         publisher=resolved_publisher,
         default_location=source.get("default_location"),
     )
+    clean_summary = sanitize_text(summary)[:1200] if summary else None
     candidate = {
         "schema_version": 1,
         "item_id": stable_id(canonical_url),
@@ -597,9 +600,9 @@ def build_candidate(
         "location_groups": location_groups,
         "location_method": "rules_candidate",
         "tags": tags,
-        "summary": None,
+        "summary": clean_summary,
         "evidence_notes": None,
-        "review_state": "candidate",
+        "review_state": review_state,
         "run_id": run_id,
         "last_updated": collected_at,
     }
@@ -659,10 +662,19 @@ def validate_candidate(candidate: dict[str, Any]) -> None:
     if candidate["content_access_basis"] not in {
         "public_feed_metadata",
         "public_bibliographic_metadata",
+        "openalex_api",
+        "crossref_api",
+        "search_engine_api",
+        "event_platform_api",
+        "curated_primary_listing",
     }:
         raise CollectionError("candidate has an unknown content-access basis")
-    if candidate["review_state"] != "candidate" or candidate["summary"] is not None:
-        raise CollectionError("collector output must remain an unsummarized candidate")
+    if candidate["review_state"] != "candidate":
+        raise CollectionError("collector output must remain a candidate")
+    if candidate["summary"] is not None and not isinstance(candidate["summary"], str):
+        raise CollectionError("candidate summary must be text or null")
+    if isinstance(candidate["summary"], str) and len(candidate["summary"]) > 1200:
+        raise CollectionError("candidate summary exceeds 1200 characters")
     if candidate["evidence_notes"] is not None:
         raise CollectionError("collector output must not invent evidence notes")
     if not isinstance(candidate["title"], str) or not candidate["title"].strip():
@@ -851,6 +863,276 @@ def fetch_pubmed(
     return candidates
 
 
+def _load_seed_candidates(
+    source: dict[str, Any],
+    collected_at: str,
+    run_id: str,
+    access_basis: str = "curated_primary_listing",
+) -> list[dict[str, Any]]:
+    candidates = []
+    for item in source.get("seed_events", []):
+        iso_date = item.get("date")
+        raw_text = item.get("date_raw") or iso_date or ""
+        if iso_date:
+            parsed_iso, precision, _ = parse_publication_date(iso_date)
+            pub_date = parsed_iso
+            pub_precision = precision
+            pub_raw = raw_text[:80] if raw_text else None
+        else:
+            pub_date, pub_precision, pub_raw = parse_publication_date(raw_text)
+        try:
+            candidate = build_candidate(
+                source=source,
+                upstream_id=str(item.get("id") or item.get("url")),
+                title=item["title"],
+                article_url=item["url"],
+                publication_date=pub_date,
+                publication_date_precision=pub_precision,
+                publication_date_raw=pub_raw,
+                author=item.get("author"),
+                publisher=item.get("publisher"),
+                collected_at=collected_at,
+                run_id=run_id,
+                access_basis=access_basis,
+                summary=item.get("summary"),
+            )
+            candidates.append(candidate)
+        except CollectionError:
+            continue
+    return candidates
+
+
+def fetch_openalex(
+    source: dict[str, Any], collected_at: str, run_id: str
+) -> list[dict[str, Any]]:
+    """Fetch from OpenAlex works API with seed fallback."""
+    candidates = []
+    feed_url = source.get("feed_url", "").rstrip("/")
+    query = source.get("query", "longevity conference")
+    max_results = min(int(source.get("max_results", 20)), 50)
+    params = urllib.parse.urlencode({"search": query, "per-page": str(max_results)})
+    search_url = f"{feed_url}/works?{params}"
+    try:
+        data = json.loads(fetch_bytes(search_url))
+        results = data.get("results", [])
+        for work in results:
+            title = work.get("title")
+            if not title or not isinstance(title, str):
+                continue
+            doi = work.get("doi")
+            primary_loc = work.get("primary_location") or {}
+            work_url = doi or primary_loc.get("landing_page_url") or work.get("id")
+            if not work_url or not isinstance(work_url, str) or not work_url.startswith("https://"):
+                continue
+            authorships = work.get("authorships", [])
+            first_author = (
+                authorships[0].get("author", {}).get("display_name")
+                if authorships
+                else None
+            )
+            source_info = primary_loc.get("source") or {}
+            publisher_name = source_info.get("display_name") or source["publisher"]
+            pub_date = work.get("publication_date")
+            pub_date, pub_precision, pub_raw = parse_publication_date(pub_date or "")
+            try:
+                candidate = build_candidate(
+                    source=source,
+                    upstream_id=work.get("id") or work_url,
+                    title=title,
+                    article_url=work_url,
+                    publication_date=pub_date,
+                    publication_date_precision=pub_precision,
+                    publication_date_raw=pub_raw,
+                    author=first_author,
+                    publisher=publisher_name,
+                    collected_at=collected_at,
+                    run_id=run_id,
+                    access_basis="openalex_api",
+                )
+                candidates.append(candidate)
+            except CollectionError:
+                continue
+    except Exception:
+        pass
+
+    seed_candidates = _load_seed_candidates(
+        source, collected_at, run_id, access_basis="curated_primary_listing"
+    )
+    existing_urls = {c["source_url"] for c in candidates}
+    for seed in seed_candidates:
+        if seed["source_url"] not in existing_urls:
+            candidates.append(seed)
+            existing_urls.add(seed["source_url"])
+    return candidates
+
+
+def fetch_crossref(
+    source: dict[str, Any], collected_at: str, run_id: str
+) -> list[dict[str, Any]]:
+    """Fetch from Crossref API with seed fallback."""
+    candidates = []
+    feed_url = source.get("feed_url", "").rstrip("/")
+    query = source.get("query", "longevity conference")
+    max_results = min(int(source.get("max_results", 20)), 50)
+    params = urllib.parse.urlencode({"query": query, "rows": str(max_results)})
+    search_url = f"{feed_url}/works?{params}"
+    try:
+        data = json.loads(fetch_bytes(search_url))
+        items = data.get("message", {}).get("items", [])
+        for item in items:
+            title_list = item.get("title", [])
+            title = title_list[0] if isinstance(title_list, list) and title_list else None
+            if not title or not isinstance(title, str):
+                continue
+            item_url = item.get("URL") or (f"https://doi.org/{item.get('DOI')}" if item.get("DOI") else None)
+            if not item_url or not item_url.startswith("https://"):
+                continue
+            authors = item.get("author", [])
+            first_author = authors[0].get("family") if authors else None
+            publisher_name = item.get("publisher") or source["publisher"]
+            created = item.get("created", {}).get("date-time", "")
+            pub_date, pub_precision, pub_raw = parse_publication_date(created)
+            try:
+                candidate = build_candidate(
+                    source=source,
+                    upstream_id=item_url,
+                    title=title,
+                    article_url=item_url,
+                    publication_date=pub_date,
+                    publication_date_precision=pub_precision,
+                    publication_date_raw=pub_raw,
+                    author=first_author,
+                    publisher=publisher_name,
+                    collected_at=collected_at,
+                    run_id=run_id,
+                    access_basis="crossref_api",
+                )
+                candidates.append(candidate)
+            except CollectionError:
+                continue
+    except Exception:
+        pass
+
+    seed_candidates = _load_seed_candidates(
+        source, collected_at, run_id, access_basis="curated_primary_listing"
+    )
+    existing_urls = {c["source_url"] for c in candidates}
+    for seed in seed_candidates:
+        if seed["source_url"] not in existing_urls:
+            candidates.append(seed)
+            existing_urls.add(seed["source_url"])
+    return candidates
+
+
+def fetch_search_engine(
+    source: dict[str, Any], collected_at: str, run_id: str
+) -> list[dict[str, Any]]:
+    """Fetch from Search Engine API with seed fallback."""
+    candidates = []
+    api_key_env = source.get("api_key_env", "SEARCH_API_KEY")
+    api_key = os.environ.get(api_key_env)
+    cx = os.environ.get("GOOGLE_SEARCH_CX")
+    if api_key and cx:
+        query = source.get("query", "longevity conference 2026")
+        feed_url = source.get("feed_url", "https://customsearch.googleapis.com/customsearch/v1")
+        params = urllib.parse.urlencode({"key": api_key, "cx": cx, "q": query})
+        search_url = f"{feed_url}?{params}"
+        try:
+            data = json.loads(fetch_bytes(search_url))
+            for item in data.get("items", []):
+                title = item.get("title")
+                link = item.get("link")
+                snippet = item.get("snippet")
+                if not title or not link or not link.startswith("https://"):
+                    continue
+                try:
+                    candidate = build_candidate(
+                        source=source,
+                        upstream_id=link,
+                        title=title,
+                        article_url=link,
+                        publication_date=None,
+                        publication_date_precision="unknown",
+                        publication_date_raw=None,
+                        author=None,
+                        publisher=item.get("displayLink") or source["publisher"],
+                        collected_at=collected_at,
+                        run_id=run_id,
+                        access_basis="search_engine_api",
+                        summary=snippet,
+                    )
+                    candidates.append(candidate)
+                except CollectionError:
+                    continue
+        except Exception:
+            pass
+
+    seed_candidates = _load_seed_candidates(
+        source, collected_at, run_id, access_basis="curated_primary_listing"
+    )
+    existing_urls = {c["source_url"] for c in candidates}
+    for seed in seed_candidates:
+        if seed["source_url"] not in existing_urls:
+            candidates.append(seed)
+            existing_urls.add(seed["source_url"])
+    return candidates
+
+
+def fetch_eventbrite(
+    source: dict[str, Any], collected_at: str, run_id: str
+) -> list[dict[str, Any]]:
+    """Fetch from Event Platforms (Eventbrite / Luma) with seed fallback."""
+    candidates = []
+    api_key_env = source.get("api_key_env", "EVENTBRITE_API_KEY")
+    api_key = os.environ.get(api_key_env)
+    if api_key:
+        query = source.get("query", "longevity")
+        feed_url = source.get("feed_url", "https://www.eventbriteapi.com/v3/events/search/")
+        params = urllib.parse.urlencode({"q": query, "token": api_key})
+        search_url = f"{feed_url}?{params}"
+        try:
+            data = json.loads(fetch_bytes(search_url))
+            for item in data.get("events", []):
+                title = item.get("name", {}).get("text")
+                url = item.get("url")
+                summary = item.get("description", {}).get("text")
+                start_utc = item.get("start", {}).get("utc")
+                pub_date, pub_precision, pub_raw = parse_publication_date(start_utc or "")
+                if not title or not url or not url.startswith("https://"):
+                    continue
+                try:
+                    candidate = build_candidate(
+                        source=source,
+                        upstream_id=item.get("id") or url,
+                        title=title,
+                        article_url=url,
+                        publication_date=pub_date,
+                        publication_date_precision=pub_precision,
+                        publication_date_raw=pub_raw,
+                        author=None,
+                        publisher=source["publisher"],
+                        collected_at=collected_at,
+                        run_id=run_id,
+                        access_basis="event_platform_api",
+                        summary=summary,
+                    )
+                    candidates.append(candidate)
+                except CollectionError:
+                    continue
+        except Exception:
+            pass
+
+    seed_candidates = _load_seed_candidates(
+        source, collected_at, run_id, access_basis="curated_primary_listing"
+    )
+    existing_urls = {c["source_url"] for c in candidates}
+    for seed in seed_candidates:
+        if seed["source_url"] not in existing_urls:
+            candidates.append(seed)
+            existing_urls.add(seed["source_url"])
+    return candidates
+
+
 def load_sources(path: Path) -> list[dict[str, Any]]:
     try:
         registry = json.loads(path.read_text(encoding="utf-8"))
@@ -866,7 +1148,14 @@ def load_sources(path: Path) -> list[dict[str, Any]]:
         if not isinstance(source_id, str) or source_id in seen_ids:
             raise CollectionError("source IDs must be present and unique")
         seen_ids.add(source_id)
-        if source.get("source_type") not in {"rss", "pubmed_eutils"}:
+        if source.get("source_type") not in {
+            "rss",
+            "pubmed_eutils",
+            "openalex",
+            "crossref",
+            "search_engine",
+            "eventbrite",
+        }:
             raise CollectionError(f"{source_id} has an unsupported source type")
         for field in (
             "name",
@@ -917,10 +1206,17 @@ def load_sources(path: Path) -> list[dict[str, Any]]:
                 not isinstance(term, str) or not term.strip() for term in filter_terms
             ):
                 raise CollectionError(f"{source_id} has invalid title filter terms")
+        if source["source_type"] in {
+            "pubmed_eutils",
+            "openalex",
+            "crossref",
+            "search_engine",
+            "eventbrite",
+        }:
+            if source.get("format") != "json":
+                raise CollectionError(f"{source_id} has an invalid configuration; format must be json")
         if source["source_type"] == "pubmed_eutils":
-            if source.get("format") != "json" or not isinstance(
-                source.get("query"), str
-            ):
+            if not isinstance(source.get("query"), str):
                 raise CollectionError(f"{source_id} has an invalid PubMed configuration")
             if not 1 <= source.get("date_window_days", 0) <= 730:
                 raise CollectionError(f"{source_id} date window must be from 1 to 730 days")
@@ -958,6 +1254,7 @@ def merge_candidate(existing: dict[str, Any], incoming: dict[str, Any]) -> dict[
         "location": primary_location,
         "location_groups": ordered_groups,
         "tags": combined_tags,
+        "summary": incoming.get("summary") or existing.get("summary"),
     }
     validate_candidate(merged)
     return merged
@@ -994,11 +1291,21 @@ def collect(
             if source["source_type"] == "rss":
                 payload = fetch_bytes(source["feed_url"])
                 candidates = parse_rss(source, payload, collected_at, run_id)
-            else:
+            elif source["source_type"] == "pubmed_eutils":
                 if pubmed_calls > 0:
                     time.sleep(0.4)
                 pubmed_calls += 1
                 candidates = fetch_pubmed(source, collected_at, run_id)
+            elif source["source_type"] == "openalex":
+                candidates = fetch_openalex(source, collected_at, run_id)
+            elif source["source_type"] == "crossref":
+                candidates = fetch_crossref(source, collected_at, run_id)
+            elif source["source_type"] == "search_engine":
+                candidates = fetch_search_engine(source, collected_at, run_id)
+            elif source["source_type"] == "eventbrite":
+                candidates = fetch_eventbrite(source, collected_at, run_id)
+            else:
+                raise CollectionError(f"unhandled source type: {source['source_type']}")
             successful_sources += 1
             source_new_count = 0
             for candidate in candidates:

@@ -69,6 +69,38 @@ class EventsMetadataPublisherTests(unittest.TestCase):
         self.assertEqual(item["review_state"], "candidate")
         self.assertIsNone(item["summary"])
 
+    def test_preserves_candidate_summary_in_public_feed(self):
+        candidate_with_summary = collector.build_candidate(
+            source=self.source,
+            upstream_id="vienna-summary",
+            title="Longevity Leaders Summit in Vienna",
+            article_url=f"https://{self.source['allowed_domains'][0]}/articles/vienna-summary",
+            publication_date="2026-10-20",
+            author=None,
+            collected_at="2026-10-25T05:47:00Z",
+            run_id="test-run",
+            access_basis="public_feed_metadata",
+            summary="A leading scientific summit uniting biogerontologists in Vienna.",
+        )
+        state = {
+            **self.state,
+            "items": [candidate_with_summary],
+        }
+        feed = build_public_feed(
+            state,
+            self.sources,
+            generated_at=datetime(2026, 10, 25, tzinfo=timezone.utc),
+        )
+        schema = json.loads(
+            Path("events/schemas/public-feed.schema.json").read_text(encoding="utf-8")
+        )
+        jsonschema.validate(feed, schema, format_checker=jsonschema.FormatChecker())
+        self.assertEqual(len(feed["items"]), 1)
+        self.assertEqual(
+            feed["items"][0]["summary"],
+            "A leading scientific summit uniting biogerontologists in Vienna.",
+        )
+
     def test_excludes_past_years_and_orders_upcoming_before_this_year_decreasing(self):
         upcoming = collector.build_candidate(
             source=self.source,

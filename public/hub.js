@@ -341,6 +341,7 @@
                   <span class="bubble-arrow" aria-hidden="true">↗</span>
                 </a>
               </h3>
+              ${item.summary ? `<p class="bubble-desc">${escapeHtml(stripHtmlTags(item.summary))}</p>` : ""}
               <div class="bubble-meta">
                 <span class="bubble-publisher">${pub}</span>
                 ${author}

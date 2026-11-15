@@ -35,8 +35,8 @@ def project_candidate(
         for domain in source["allowed_domains"]
     ):
         raise CollectionError("candidate event URL is outside its source allowlist")
-    if candidate["summary"] is not None or candidate["evidence_notes"] is not None:
-        raise CollectionError("metadata-only publication cannot include generated summaries")
+    if candidate.get("evidence_notes") is not None:
+        raise CollectionError("metadata-only publication cannot include unreviewed evidence notes")
 
     return {
         "item_id": candidate["item_id"],
@@ -50,9 +50,9 @@ def project_candidate(
         "location": candidate["location"],
         "location_groups": candidate["location_groups"],
         "tags": candidate["tags"],
-        "summary": None,
+        "summary": candidate.get("summary"),
         "evidence_notes": None,
-        "review_state": "candidate",
+        "review_state": candidate.get("review_state", "candidate"),
     }
 
 

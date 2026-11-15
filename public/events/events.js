@@ -327,6 +327,7 @@ function renderEvents() {
               <span class="bubble-arrow" aria-hidden="true">↗</span>
             </a>
           </h3>
+          ${eventItem.summary ? `<p class="bubble-desc">${escapeHtml(stripHtmlTags(eventItem.summary))}</p>` : ""}
           <div class="bubble-meta">
             <span class="bubble-publisher">${escapeHtml(eventItem.publisher)}</span>
             ${author}

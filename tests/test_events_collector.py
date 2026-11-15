@@ -182,6 +182,54 @@ class EventParserTests(unittest.TestCase):
         self.assertEqual(candidate["review_state"], "candidate")
         self.assertIsNone(candidate["summary"])
 
+    def test_new_options_seed_fetchers_extract_candidates_with_summaries(self):
+        openalex_source = {
+            "source_id": "openalex_events_longevity",
+            "name": "OpenAlex Longevity",
+            "publisher": "OurResearch",
+            "feed_url": "https://api.openalex.org",
+            "source_type": "openalex",
+            "format": "json",
+            "allowed_domains": ["agingpharma.org"],
+            "seed_events": [
+                {
+                    "id": "ardd-2026",
+                    "title": "ARDD 2026: 13th Aging Research & Drug Discovery",
+                    "url": "https://agingpharma.org/",
+                    "date": "2026-08-31",
+                    "publisher": "University of Copenhagen",
+                    "summary": "The world's premier biogerontology summit in Copenhagen.",
+                }
+            ],
+        }
+        candidates = collector.fetch_openalex(openalex_source, "2026-10-25T05:47:00Z", "r1")
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]["summary"], "The world's premier biogerontology summit in Copenhagen.")
+        self.assertEqual(candidates[0]["source_url"], "https://agingpharma.org/")
+
+        search_source = {
+            "source_id": "google_search_events",
+            "name": "Search Events",
+            "publisher": "Google",
+            "feed_url": "https://customsearch.googleapis.com/customsearch/v1",
+            "source_type": "search_engine",
+            "format": "json",
+            "allowed_domains": ["lsxleaders.com"],
+            "seed_events": [
+                {
+                    "id": "longevity-leaders-2026",
+                    "title": "Longevity Leaders World Congress 2026",
+                    "url": "https://www.lsxleaders.com/longevity-leaders-world-congress",
+                    "date": "2026-05-18",
+                    "publisher": "LSX Leaders",
+                    "summary": "Commercial summit connecting biotech leaders and investors.",
+                }
+            ],
+        }
+        search_candidates = collector.fetch_search_engine(search_source, "2026-10-25T05:47:00Z", "r1")
+        self.assertEqual(len(search_candidates), 1)
+        self.assertEqual(search_candidates[0]["summary"], "Commercial summit connecting biotech leaders and investors.")
+
     def test_merges_duplicate_candidates_across_regional_and_global_queries(self):
         global_source = {**NATURE_EVENTS_SOURCE, "source_id": "global_src"}
         vienna_source = {

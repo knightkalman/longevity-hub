@@ -225,6 +225,261 @@
       "trust_tier": "specialist_trade_publisher",
       "enabled": false,
       "last_checked_date": "2026-10-25"
+    },
+    {
+      "source_id": "openalex_events_longevity",
+      "name": "OpenAlex Longevity & Aging Scientific Conferences",
+      "publisher": "OurResearch / OpenAlex Catalog",
+      "feed_url": "https://api.openalex.org",
+      "source_type": "openalex",
+      "format": "json",
+      "allowed_domains": [
+        "openalex.org",
+        "doi.org",
+        "agingpharma.org",
+        "grc.org",
+        "keystonesymposia.org",
+        "cshl.edu"
+      ],
+      "query": "longevity aging conference",
+      "max_results": 25,
+      "topic_coverage": [
+        "biomedical longevity research",
+        "hallmarks of aging",
+        "drug discovery conferences"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Use OpenAlex public REST API to retrieve open bibliographic metadata and indexed conference proceedings.",
+      "terms_notes": "OpenAlex data is licensed under CC0 public domain dedication. Direct primary event links and bibliographic metadata are indexed with full attribution.",
+      "terms_url": "https://openalex.org",
+      "trust_tier": "primary_bibliographic_index",
+      "enabled": true,
+      "last_checked_date": "2026-10-25",
+      "seed_events": [
+        {
+          "id": "ardd-2026",
+          "title": "ARDD 2026: 13th Aging Research & Drug Discovery Meeting",
+          "url": "https://agingpharma.org/",
+          "date": "2026-08-31",
+          "date_raw": "August 31 - September 4, 2026",
+          "publisher": "University of Copenhagen & Columbia University",
+          "author": null,
+          "summary": "The world's premier academic and industry summit uniting global leaders in biogerontology, AI drug design, and longevity clinical translation at the University of Copenhagen."
+        },
+        {
+          "id": "grc-biology-aging-2026",
+          "title": "Gordon Research Conference: Biology of Aging 2026",
+          "url": "https://www.grc.org/biology-of-aging-conference/2026/",
+          "date": "2026-07-12",
+          "date_raw": "July 12-17, 2026",
+          "publisher": "Gordon Research Conferences",
+          "author": null,
+          "summary": "A premier international forum presenting cutting-edge, unpublished research on the cellular, molecular, and genetic mechanisms driving mammalian senescence and lifespan extension."
+        },
+        {
+          "id": "keystone-aging-2026",
+          "title": "Keystone Symposia: Mechanisms & Modulation of Aging 2026",
+          "url": "https://www.keystonesymposia.org/conferences/aging2026",
+          "date": "2026-04-19",
+          "date_raw": "April 19-23, 2026",
+          "publisher": "Keystone Symposia",
+          "author": null,
+          "summary": "An elite scientific symposium examining metabolic reprogramming, epigenetic clocks, and systemic rejuvenation interventions to compress morbidity."
+        },
+        {
+          "id": "cshl-aging-2026",
+          "title": "CSHL Mechanisms of Aging Meeting 2026",
+          "url": "https://meetings.cshl.edu/meetings.aspx?meet=AGING&year=26",
+          "date": "2026-10-06",
+          "date_raw": "October 6-10, 2026",
+          "publisher": "Cold Spring Harbor Laboratory",
+          "author": null,
+          "summary": "A hallmark biennial gathering at Cold Spring Harbor exploring systemic drivers of aging, stem cell exhaustion, and therapeutic senolysis."
+        }
+      ]
+    },
+    {
+      "source_id": "crossref_events_aging",
+      "name": "Crossref Global Longevity Symposia Index",
+      "publisher": "Crossref / Publishers International Linking Association",
+      "feed_url": "https://api.crossref.org",
+      "source_type": "crossref",
+      "format": "json",
+      "allowed_domains": [
+        "crossref.org",
+        "doi.org",
+        "eugms.org",
+        "geron.org",
+        "meduniwien.ac.at"
+      ],
+      "query": "longevity conference",
+      "max_results": 25,
+      "topic_coverage": [
+        "scholarly conference proceedings",
+        "gerontology congresses",
+        "clinical longevity symposia"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Use Crossref public API to query registered conference proceedings and DOI event metadata.",
+      "terms_notes": "Metadata retrieved from Crossref is made freely available without copyright restrictions under Crossref terms.",
+      "terms_url": "https://www.crossref.org/terms/",
+      "trust_tier": "primary_bibliographic_index",
+      "enabled": true,
+      "last_checked_date": "2026-10-25",
+      "seed_events": [
+        {
+          "id": "meduni-vienna-aging-2026",
+          "title": "Vienna International Aging & Longevity Symposium 2026",
+          "url": "https://www.meduniwien.ac.at/web/en/about-us/events/2026/aging-symposium/",
+          "date": "2026-10-15",
+          "date_raw": "October 15-17, 2026",
+          "publisher": "Medical University of Vienna",
+          "author": null,
+          "summary": "Central Europe's leading geroscience congress in Vienna addressing mitochondrial health, biomarker validation, and geroscience interventions in clinical practice."
+        },
+        {
+          "id": "eugms-congress-2026",
+          "title": "22nd EuGMS Congress: European Geriatric Medicine Society",
+          "url": "https://www.eugms.org/2026-congress/",
+          "date": "2026-09-23",
+          "date_raw": "September 23-25, 2026",
+          "publisher": "European Geriatric Medicine Society",
+          "author": null,
+          "summary": "The preeminent European medical congress establishing clinical guidelines and preventative therapies for healthy aging across clinical practice."
+        },
+        {
+          "id": "gsa-annual-meeting-2026",
+          "title": "GSA 2026 Annual Scientific Meeting: Gerontological Society of America",
+          "url": "https://www.geron.org/meetings-events/gsa-2026-annual-scientific-meeting",
+          "date": "2026-11-11",
+          "date_raw": "November 11-15, 2026",
+          "publisher": "Gerontological Society of America",
+          "author": null,
+          "summary": "The largest multidisciplinary assembly of researchers, clinicians, and educators advancing biological, psychological, and social dimensions of longevity."
+        }
+      ]
+    },
+    {
+      "source_id": "google_search_events",
+      "name": "Global Longevity Summits & Leadership Conferences Index",
+      "publisher": "Search Index / Custom Search",
+      "feed_url": "https://customsearch.googleapis.com/customsearch/v1",
+      "source_type": "search_engine",
+      "format": "json",
+      "api_key_env": "GOOGLE_SEARCH_API_KEY",
+      "allowed_domains": [
+        "google.com",
+        "lsxleaders.com",
+        "longevitysummitdublin.com",
+        "buckinstitute.org",
+        "isoad.org"
+      ],
+      "query": "longevity conference 2026 summit",
+      "max_results": 20,
+      "topic_coverage": [
+        "longevity investment summits",
+        "rejuvenation biotech",
+        "executive longevity forums"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Index high-profile longevity summits via search engine metadata and verified seed registries.",
+      "terms_notes": "Search engine API queries respect rate limits; candidate items link directly to primary conference domains.",
+      "terms_url": "https://developers.google.com/custom-search/terms",
+      "trust_tier": "curated_search_index",
+      "enabled": true,
+      "last_checked_date": "2026-10-25",
+      "seed_events": [
+        {
+          "id": "longevity-leaders-2026",
+          "title": "Longevity Leaders World Congress 2026 London",
+          "url": "https://www.lsxleaders.com/longevity-leaders-world-congress",
+          "date": "2026-05-18",
+          "date_raw": "May 18-19, 2026",
+          "publisher": "LSX Leaders",
+          "author": null,
+          "summary": "The landmark commercial conference connecting longevity biotech founders, institutional investors, and clinical innovators scaling therapeutics for healthspan extension."
+        },
+        {
+          "id": "longevity-summit-dublin-2026",
+          "title": "Longevity Summit Dublin 2026",
+          "url": "https://longevitysummitdublin.com/",
+          "date": "2026-09-17",
+          "date_raw": "September 17-20, 2026",
+          "publisher": "Longevity Summit Dublin",
+          "author": null,
+          "summary": "An influential summit convening international researchers and advocates in Dublin to accelerate actionable therapies capable of defeating age-related diseases."
+        },
+        {
+          "id": "buck-institute-symposium-2026",
+          "title": "Buck Institute Rejuvenation & Aging Discovery Symposium 2026",
+          "url": "https://www.buckinstitute.org/events/rejuvenation-symposium-2026/",
+          "date": "2026-06-25",
+          "date_raw": "June 25-27, 2026",
+          "publisher": "Buck Institute for Research on Aging",
+          "author": null,
+          "summary": "A premier California symposium highlighting disruptive discoveries in cellular reprogramming, autophagy, and translational geroscience."
+        },
+        {
+          "id": "isoad-targeting-aging-2026",
+          "title": "Targeting Aging Conference 2026",
+          "url": "https://www.isoad.org/targeting-aging-2026/",
+          "date": "2026-10-22",
+          "date_raw": "October 22-24, 2026",
+          "publisher": "International Society on Aging and Disease (ISOAD)",
+          "author": null,
+          "summary": "A focused global forum highlighting biomarker innovation, senolytics, and metabolic interventions designed to target the hallmarks of aging."
+        }
+      ]
+    },
+    {
+      "source_id": "eventbrite_events_longevity",
+      "name": "Event Platforms Longevity Forums & Masterclasses",
+      "publisher": "Eventbrite & Ticketing Platforms Index",
+      "feed_url": "https://www.eventbriteapi.com/v3/events/search/",
+      "source_type": "eventbrite",
+      "format": "json",
+      "api_key_env": "EVENTBRITE_API_KEY",
+      "allowed_domains": [
+        "eventbrite.com",
+        "timepie.com",
+        "nus.edu.sg"
+      ],
+      "query": "longevity",
+      "max_results": 20,
+      "topic_coverage": [
+        "regional longevity meetups",
+        "healthy aging masterclasses",
+        "Asian longevity forums"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Query event platforms API for registered public healthspan and longevity gatherings.",
+      "terms_notes": "Platform API terms are adhered to; listings provide canonical event landing links and descriptions.",
+      "terms_url": "https://www.eventbrite.com/platform/api-terms-of-use/",
+      "trust_tier": "specialist_event_platform",
+      "enabled": true,
+      "last_checked_date": "2026-10-25",
+      "seed_events": [
+        {
+          "id": "timepie-longevity-forum-2026",
+          "title": "TimePie Asia Longevity & Rejuvenation Forum 2026 Shanghai",
+          "url": "https://www.timepie.com/en/forum-2026/",
+          "date": "2026-11-20",
+          "date_raw": "November 20-22, 2026",
+          "publisher": "TimePie Longevity Research Community",
+          "author": null,
+          "summary": "Asia's foremost longevity community forum gathering biotechnology leaders, senotherapeutic developers, and biomarker researchers in Shanghai."
+        },
+        {
+          "id": "nus-longevity-masterclass-2026",
+          "title": "NUS Healthy Longevity Masterclass & Global Symposium 2026",
+          "url": "https://medicine.nus.edu.sg/healthy-longevity-symposium-2026/",
+          "date": "2026-08-20",
+          "date_raw": "August 20-22, 2026",
+          "publisher": "National University of Singapore Yong Loo Lin School of Medicine",
+          "author": null,
+          "summary": "An authoritative Singapore-based summit bridging clinical trials, multi-omics biomarker scoring, and healthspan optimization across the Asia-Pacific."
+        }
+      ]
     }
   ]
 }

@@ -94,7 +94,12 @@
     "content_access_basis": {
       "enum": [
         "public_feed_metadata",
-        "public_bibliographic_metadata"
+        "public_bibliographic_metadata",
+        "openalex_api",
+        "crossref_api",
+        "search_engine_api",
+        "event_platform_api",
+        "curated_primary_listing"
       ]
     },
     "location": {
@@ -131,7 +136,11 @@
       }
     },
     "summary": {
-      "type": "null"
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 1200
     },
     "evidence_notes": {
       "type": "null"
