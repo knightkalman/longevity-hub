@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-14T06:32:33Z",
-  "last_successful_collection": "2026-11-14T06:32:27Z",
+  "generated_at": "2026-11-15T06:38:07Z",
+  "last_successful_collection": "2026-11-15T06:38:01Z",
   "collection_status": "success",
   "sources_succeeded": 7,
   "sources_total": 7,
@@ -17,13 +17,13 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 7
+      "new": 6
     },
     {
       "source_id": "pubmed_events_vienna",
       "status": "success",
       "fetched": 25,
-      "new": 0
+      "new": 1
     },
     {
       "source_id": "pubmed_events_europe",
@@ -51,6 +51,45 @@
     }
   ],
   "items": [
+    {
+      "item_id": "60738ea10f589b479d9e2a71cc4d9eb9baca12849dbeac9fd4d77f229c98e269",
+      "title": "Recommendations on the Use of Computed Tomography in Severe Asthma: A Consensus Document.",
+      "publisher": "Open respiratory archives",
+      "author": "Arismendi E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43032439",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2027 Jan-Mar",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f6047fd96e7efa1dfcbf0bcaa20b4de678aa706d4abd570aa5ab973fa2600c34",
+      "title": "Education Research: The Complex Case Conference (CCC): A Multispecialty Conference to Enhance Clinical Collaboration Within Neurology.",
+      "publisher": "Neurology. Education",
+      "author": "Weber H",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43032760",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Dec",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
     {
       "item_id": "ae0f07969e4f3e454f464e798ca701152454eed204340ae98baa3c14147e0bac",
       "title": "Announcing the 19th International Congress on Circumpolar Health.",
@@ -299,6 +338,73 @@
       "location_groups": [],
       "tags": [
         "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "78dfa163405f0928536e120561938c8609f00affdf845d1245ba87b67b305036",
+      "title": "Unlocking Canada's Food Innovation Potential through Regulatory Modernization: Key Insights and a Proposed Framework from a Multi-Stakeholder Workshop.",
+      "publisher": "Applied physiology, nutrition, and metabolism = Physiologie appliquee, nutrition et metabolisme",
+      "author": "Hotson M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43033484",
+      "publication_date": "2026-11-14",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 14",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "nutrition",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "abed3eacd9e98db871f4cfde707710e271bb1c4ddb0dc9db58d40db08e6ed1f1",
+      "title": "A Ten-Year Single-Center Evaluation of In-Hospital Versus Seven- Versus Thirty-Day Outcomes as Quality Standards After Carotid Endarterectomy.",
+      "publisher": "World journal of surgery",
+      "author": "Konstantiniuk P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43026151",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "vienna",
+      "location_groups": [
+        "vienna",
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "event",
+        "needs_review",
+        "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "9d651445f681f91cf8e8ae6a7431280d9b82d55060a6eef7b261fb447a3896c1",
+      "title": "Optimizing Frontline Targeted Therapies in Chronic Lymphocytic Leukemia: An Italian Inter-Regional Delphi Consensus on Patient Risk Stratification, Cardiovascular Safety, and Endpoint Interpretation.",
+      "publisher": "European journal of haematology",
+      "author": "Molica S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43025972",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
         "event",
         "needs_review"
       ],
@@ -613,6 +719,29 @@
       "publisher": "Clinical cancer research : an official journal of the American Association for Cancer Research",
       "author": "Gestrich C",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43013345",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5f68e8a37f350dbefa7920ca4613e1a81bb3f7e5b423640809538cb5ae0f6185",
+      "title": "Time to complete hematopoietic stem cell transplant and cellular therapy pharmacist tasks: real-world comparison to consensus recommendations.",
+      "publisher": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+      "author": "Griffin SP",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43026691",
       "publication_date": "2026-11-11",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 11",
@@ -3441,6 +3570,25 @@
       "tags": [
         "needs_review",
         "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "93ce980c564b46cd47784f9238243aae1a0b1129d42e518d86c856a7f0ebb88e",
+      "title": "The Perth Declaration to Eliminate Rheumatic Fever and Rheumatic Heart Disease: Adopted at the Second World Congress on Rheumatic Heart Disease Perth, Australia, 11-14 November 2026 Convened by the World Heart Federation the National Heart Foundation of Australia.",
+      "publisher": "Global heart",
+      "author": "Narula J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43032267",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
