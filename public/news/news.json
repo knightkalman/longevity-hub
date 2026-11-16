@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-15T06:04:09Z",
-  "last_successful_collection": "2026-11-15T06:04:08Z",
+  "generated_at": "2026-11-16T06:41:14Z",
+  "last_successful_collection": "2026-11-16T06:41:13Z",
   "collection_status": "success",
   "sources_succeeded": 2,
   "sources_total": 2,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_longevity",
       "status": "success",
       "fetched": 50,
-      "new": 50
+      "new": 22
     }
   ],
   "items": [
@@ -638,6 +638,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "f984cfc7b9265ad40a3a0bb044aaac2d71881bec3484d1a34eedaefcb2cfb4e4",
+      "title": "Asprosin Promotes Vascular Endothelial Senescence Through STING Pathway Activation Mediated by mtROS-mtDNA Leakage Axis.",
+      "publisher": "Aging cell",
+      "author": "Liu J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035371",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "f7d58a65675262f3fdcab8504492f7a3637b2359941ea751035db487fb33838b",
       "title": "NNMT Safeguards Vascular Aging by Modulating an Endothelial LMNA-HSP Stress-Response Axis.",
       "publisher": "Circulation research",
@@ -701,6 +719,24 @@
       "publication_date": null,
       "publication_date_precision": "unknown",
       "publication_date_raw": "2026 Nov 11",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f66a9071c4308a2478d9b8bca672cd4bf69991310ad174cf92e880bc119e563d",
+      "title": "Aryl hydrocarbon receptor cytoplasmic retention by p27^Kip1 in senescent astrocytes.",
+      "publisher": "Molecular biology reports",
+      "author": "Juárez-Solano AH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034942",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
       "category": "scientific",
       "tags": [
         "needs_review",
@@ -1274,6 +1310,44 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "e1daddaa56cab06e3a85a90945d76649a6d6f36ab4b09e7afbdf94f6e400fa94",
+      "title": "Multimorbidity Extent and Contributing Factors Among Hospitalized Chronic Kidney Disease Patients in Resource-Limited Settings.",
+      "publisher": "International journal of nephrology",
+      "author": "Zeleke TK",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034584",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "human_study",
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "e17b8e04d697aa01036875975da41f9dceb23ccc7967a73f6de51a861bed7493",
+      "title": "The Scandinavian Neurotrauma Committee 2026 guidelines for initial management of minimal, mild and moderate head injuries in adults: a systematic review, meta-analysis and modified Delphi consensus study.",
+      "publisher": "The Lancet regional health. Europe",
+      "author": "Yang LJ",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034829",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2027 Jan",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "e13c6b0f8f107a03057948db20ebfc8850579198925e89ce45d8fc45a57c8375",
       "title": "Synovial fluid biomarker changes after acute anterior cruciate ligament injury: comparison with primary osteoarthritis as a biological comparator.",
       "publisher": "Injury",
@@ -1767,6 +1841,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "cfe7f851a4d4453e4b6134591e5eeab19ee82c507ea87f003b65a02a626beb8a",
+      "title": "Predictive performance of lifestyle-informed multimodal brain features for cognition in healthy older adults.",
+      "publisher": "npj aging",
+      "author": "Zhang M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034159",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 14",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "cf7ff6039ca9331f971e117631c8d462d097ddba0ea17bf48e0de69daa9f55d1",
       "title": "MLL, TERRA, and telomere chromatin dynamics in replicative senescence and aging.",
       "publisher": "Biogerontology",
@@ -1793,6 +1885,24 @@
       "publication_date": null,
       "publication_date_precision": "unknown",
       "publication_date_raw": "2026 Oct 30",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "cece5a108468db8686de4ed25bdcfb5d746f9db6cc210be674f53c01a7cacc5c",
+      "title": "A transcriptomic atlas of grass senescence reveals divergent underground sink networks promote nitrogen recycling in perennials.",
+      "publisher": "The Plant cell",
+      "author": "Ojeda-Rivera JO",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034289",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
       "category": "scientific",
       "tags": [
         "needs_review",
@@ -2125,6 +2235,25 @@
       "tags": [
         "medication",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c36ebb533164353721a7ff5f0c1e71496b17ce96a48b4576ce00cd315a6b8533",
+      "title": "Plasma biomarker signatures in patients with rapidly progressive dementia.",
+      "publisher": "Alzheimer's & dementia (Amsterdam, Netherlands)",
+      "author": "Kuchenbecker LA",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034373",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Oct-Dec",
+      "category": "scientific",
+      "tags": [
+        "human_study",
+        "needs_review",
+        "scientific"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -2590,6 +2719,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "b282c7aeab39be2cc8c52a9537d02f15b3c10718bbda8d501adbd697e176f406",
+      "title": "Burden and Temporal Trends of Female Breast Cancer Attributable to High Fasting Plasma Glucose in China and G20 Countries, 1990-2023: An Analysis of the Global Burden of Disease Study 2023.",
+      "publisher": "International journal of women's health",
+      "author": "Zheng J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034638",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "b183e6619e0c569f6e027c06672eca616b14f4d9145eb57587fb4296e2268114",
       "title": "Epigenetic age acceleration in the brain and blood of people with epilepsy and in a mouse model of focal cortical dysplasia: a retrospective cross-sectional study.",
       "publisher": "EBioMedicine",
@@ -2956,6 +3103,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "a481fc5301790871d5f476e0ee0c021700c1210a6df07b86a6086c7a2d9a7d56",
+      "title": "Erectile Dysfunction and Low Testosterone Concentrations in Men with COPD: Prevalence, Clinical Correlates and Predictors Using Routine Clinical Indices.",
+      "publisher": "International journal of chronic obstructive pulmonary disease",
+      "author": "Lopez-Gonzalez A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034743",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "a446172a2485d48e258b70895b78912376a2e9095dc4062fcccd3baaf227dbaf",
       "title": "Applicability of cognitive decline risk scores in a high socioeconomic preventive medicine cohort.",
       "publisher": "Journal of Alzheimer's disease : JAD",
@@ -3093,6 +3258,24 @@
       "publication_date": null,
       "publication_date_precision": "year",
       "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "9fab126657e9cb5c9cd4894f96305d43f24f87b28edafc0eae52017737c3b049",
+      "title": "Plasma biomarkers of muscle atrophy in senior horses with or without pituitary pars intermedia dysfunction.",
+      "publisher": "Journal of equine veterinary science",
+      "author": "Galinelli NC",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035136",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
       "category": "scientific",
       "tags": [
         "needs_review",
@@ -5120,6 +5303,26 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "5c551635cfc6cf38d612d7c60fde99890704cc73c6f6f27a2615ea8585285346",
+      "title": "Effects of Aging and High-Fat Diet on Hepatic Fatty Acid Composition and Delta-6 Desaturase Activity in Male Mice.",
+      "publisher": "Molecular and cellular endocrinology",
+      "author": "Kobylnik G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035143",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
+      "category": "scientific",
+      "tags": [
+        "animal_study",
+        "needs_review",
+        "nutrition",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "5c52f359859baced42b5f2e1b4bdb800e2f8aaa5c66e38bfdeaaf5219393ba3d",
       "title": "Cytosolic DNA sensing through the cGAS-STING pathway contributes to neuroinflammation and dopaminergic neuron loss in Parkinson's disease.",
       "publisher": "Cytokine & growth factor reviews",
@@ -5210,6 +5413,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "598293ace0f18a193fab556b0ae818b6f9d596f63e250f3ca8f173b7adbc4227",
+      "title": "Sex Differences in the Burden of Rheumatoid Arthritis in China, 1990-2021: Trends, Projections to 2050, and Mendelian Randomization of Modifiable Risk Factors.",
+      "publisher": "International journal of women's health",
+      "author": "Chen Z",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034773",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "58ac8cda65767ad505f6a7b93f93c12a0898f6b38f2198eaa42388479d9f6bed",
       "title": "Identifying Exploratory Physical Activity Thresholds Associated With Symptom Severity in Older Adults With Parkinson's Disease.",
       "publisher": "Adapted physical activity quarterly : APAQ",
@@ -5276,6 +5497,25 @@
       "category": "scientific",
       "tags": [
         "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "578837eaf6b0b17516bb253991b7bb97d1f8323f69e4303bb07b08646f7a1ab3",
+      "title": "Circulating C-Terminal Agrin Fragment is Associated with Impaired Physical Performance in Aging and Chronic Disease: A Systematic Review and Meta-Analysis.",
+      "publisher": "Molecular diagnosis & therapy",
+      "author": "Qaisar R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034948",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "review",
         "scientific"
       ],
       "summary": null,
@@ -5366,6 +5606,25 @@
       "publication_date_raw": "2026 Nov 9",
       "category": "scientific",
       "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "54c1400c0e38004d4f9630cd317f0b8b4eaa7c662ccaf542eed5e29e13d9f9d8",
+      "title": "Ultrasound-Guided Pudendal Nerve Block in Elderly Pelvic Organ Prolapse Surgery: Impact on Anesthetic Consumption and Postoperative Recovery-A Randomized Clinical Trial.",
+      "publisher": "Clinical interventions in aging",
+      "author": "Yang C",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034767",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "scientific",
+      "tags": [
+        "clinical_trial",
         "needs_review",
         "scientific"
       ],
@@ -5591,6 +5850,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "4d5a6e2206d0daec1f680031a5053bec298235442cb14e6122cee53741460166",
+      "title": "Nanotherapeutic Strategies Targeting Senescent Microenvironment for Aging-Related Chronic Diseases.",
+      "publisher": "International journal of nanomedicine",
+      "author": "Ma J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034621",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "category": "medication",
+      "tags": [
+        "medication",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "4bbe27eed482f49ad9e038adf17e36cc56ea6234cf5d1c99e416421d48414d32",
       "title": "A qualitative study of police officers' experiences of solidarity and belonging through social activities.",
       "publisher": "PloS one",
@@ -5657,6 +5934,24 @@
       "tags": [
         "needs_review",
         "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "4a8a1511845c62e25ae2b73e09930991e4ede917bb1d100b023a9fa2a71cc31d",
+      "title": "Integrating Social Determinants of Health Into Emergency Medicine Clerkships: A Qualitative Study of Student Reflections.",
+      "publisher": "AEM education and training",
+      "author": "Olaf MF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034468",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Dec",
+      "category": "medication",
+      "tags": [
+        "medication",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -5735,6 +6030,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "489aace15653c145887d93a950b40d8a6d1f1668ce23baebf65725059113fb6b",
+      "title": "The disrupted navigational compass: pathophysiological mechanisms and clinical interventions for spatial navigation deficits.",
+      "publisher": "Neuroscience and biobehavioral reviews",
+      "author": "Zhen Y",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035211",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "482129803f7af5712bf8a3289d0db3d1cfcfae8df5f57ad280b3b2f21a9ec0e8",
       "title": "Insights into the mechanism of oaky flavor enhancement by Brettanomyces bruxellensis 23 during beer fermentation.",
       "publisher": "Food chemistry",
@@ -5803,6 +6116,24 @@
       "tags": [
         "needs_review",
         "nutrition",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "46aa8022289cd8668aff09948eee565271dbe1507c4c1dcd0ad67901832517b3",
+      "title": "Ultraviolet-aged microplastics increase cadmium bioaccumulation and trigger oxidative stress-mediated toxicity in the big-belly seahorse, Hippocampus abdominalis.",
+      "publisher": "Comparative biochemistry and physiology. Toxicology & pharmacology : CBP",
+      "author": "Jeong WC",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035202",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
         "scientific"
       ],
       "summary": null,
@@ -6020,6 +6351,24 @@
       "publication_date": null,
       "publication_date_precision": "unknown",
       "publication_date_raw": "2026 Nov 1",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3da5b28ca1145033ade581b84e1bd159362aefde119caacc697cbae6b74991a3",
+      "title": "[Research progress on early biomarkers of Alzheimer's disease].",
+      "publisher": "Zhonghua yu fang yi xue za zhi [Chinese journal of preventive medicine]",
+      "author": "Cai WJ",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035305",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 6",
       "category": "scientific",
       "tags": [
         "needs_review",
@@ -6982,6 +7331,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "1b7c177ba5e63383306065547d8842c7bfc3712e583f11310cc717e456d6acb1",
+      "title": "Disruptions in and continued absence of different social ties and the risk of central obesity: a prospective investigation of women and men in the CLSA (2011-2021).",
+      "publisher": "International journal of obesity (2005)",
+      "author": "Conklin AI",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034176",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 14",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "1a4fd21dbfaed93fc44a44f2cfdc77ef97a6e79e3cb6cf49194680273285e54c",
       "title": "Age-Dependent Alterations in Glutathione Metabolites Following Muscle Injury.",
       "publisher": "Canadian journal of physiology and pharmacology",
@@ -7353,6 +7720,24 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "0d5a1f4cc182a4bfe552a7be6a4c79579da51fe21682cb5ab00bf690a52cc067",
+      "title": "Cutaneous Manifestations of the Menopausal Transition - Part 1: Epidemiology, Biology, Diagnosis and Workup.",
+      "publisher": "Journal of the American Academy of Dermatology",
+      "author": "Kim U",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035217",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 15",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "0c1aca76bb8deebf050859d11c29c9c05e16f38a0c4b059bbae2e863cffe1ed8",
       "title": "Macrophage lipid metabolism: a hidden driver of aging and chronic diseases.",
       "publisher": "Science China. Life sciences",
@@ -7524,6 +7909,24 @@
       "publication_date": null,
       "publication_date_precision": "unknown",
       "publication_date_raw": "2026 Nov 12",
+      "category": "scientific",
+      "tags": [
+        "needs_review",
+        "scientific"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "03914d8e9532a239abb3af4e191968ea06d20ecae312bd168430b412d8010b11",
+      "title": "Loneliness and the social brain: the mediating role of social functioning between nucleus accumbens structure and loneliness in aging.",
+      "publisher": "Social neuroscience",
+      "author": "Kim A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034272",
+      "publication_date": null,
+      "publication_date_precision": "unknown",
+      "publication_date_raw": "2026 Nov 14",
       "category": "scientific",
       "tags": [
         "needs_review",
