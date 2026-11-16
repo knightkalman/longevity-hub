@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-15T11:43:25Z",
-  "last_successful_collection": "2026-11-15T11:43:13Z",
+  "generated_at": "2026-11-16T07:21:36Z",
+  "last_successful_collection": "2026-11-16T07:21:28Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 0
+      "new": 5
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -59,7 +59,7 @@
       "source_id": "crossref_events_aging",
       "status": "success",
       "fetched": 25,
-      "new": 3
+      "new": 9
     },
     {
       "source_id": "google_search_events",
@@ -158,24 +158,19 @@
       "review_state": "candidate"
     },
     {
-      "item_id": "8b31a0b8b972f152b7064bf4034fcb166db73bc4b834c6f0ea0dcb1834f9a46f",
-      "title": "Empowerment and change: Women in paediatric urology.",
-      "publisher": "Journal of pediatric urology",
-      "author": "Yankovic F",
-      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42823241",
-      "publication_date": null,
-      "publication_date_precision": "month",
-      "publication_date_raw": "2026 Dec",
-      "location": "vienna",
-      "location_groups": [
-        "vienna",
-        "europe"
-      ],
+      "item_id": "ae0f07969e4f3e454f464e798ca701152454eed204340ae98baa3c14147e0bac",
+      "title": "Announcing the 19th International Congress on Circumpolar Health.",
+      "publisher": "International journal of circumpolar health",
+      "author": "Hennessy TW",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42995685",
+      "publication_date": "2026-12-31",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Dec 31",
+      "location": "other",
+      "location_groups": [],
       "tags": [
-        "europe",
-        "event",
-        "needs_review",
-        "vienna"
+        "congress",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -230,6 +225,27 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "ff4b740c64e92493a145637494fdb12ecafa06c407e39c5c1d9bbb948c0c7150",
+      "title": "Lung Cancer Screening Recommendations in the Elderly: International Society for Geriatric Oncology Consensus Statement.",
+      "publisher": "JTO clinical and research reports",
+      "author": "Steimer D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42990988",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "geroscience",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "fdbd341cf44c8c0e8a20af0f07c5ce1ef6f3a18c8ae61fedfa2bfc8cd98de5fa",
       "title": "Think BIG, Stay Connected: A Regional Immunology Meeting as a Durable Model for Scientific Community Building.",
       "publisher": "Immunology and cell biology",
@@ -242,6 +258,26 @@
       "location_groups": [],
       "tags": [
         "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f7a5563adb58dd210493004fce95a3a46529e014e5e3362974e7f8dcd4053e6b",
+      "title": "Diagnosis and Management of Achalasia in Children, BSPGHAN and BAPS Consensus Statement.",
+      "publisher": "Neurogastroenterology and motility",
+      "author": "Mutalib M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42989846",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
         "needs_review"
       ],
       "summary": null,
@@ -263,6 +299,26 @@
       ],
       "tags": [
         "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c62cdbd8da5fbf62dfa0b8d3ff712d3ff97cf26a2afa5b38cdec080fb57e9c48",
+      "title": "Prostate cancer screening beyond opportunistic testing: A Delphi consensus and evidence integration.",
+      "publisher": "Investigative and clinical urology",
+      "author": "Ryu JH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42990037",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
         "consensus",
         "event",
         "needs_review"
@@ -337,6 +393,26 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "005e5553ca4ef0505be160bae0ea5dcdec978d346f89437826db4b1164dd2bb8",
+      "title": "Building Consensus Among Intensive Care Nurses on the Scope of Practice for Registered Nurses Deployed to Intensive Care During Surge Events: A Real-Time Delphi Study.",
+      "publisher": "Nursing in critical care",
+      "author": "Causby B",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001415",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "c165a1a8058ef56de0d9175d1f04d02f11d9173f4966b6eb3b700d2356f4bda7",
       "title": "TimePie Asia Longevity & Rejuvenation Forum 2026 Shanghai",
       "publisher": "TimePie Longevity Research Community",
@@ -356,6 +432,25 @@
         "needs_review"
       ],
       "summary": "Asia's foremost longevity community forum gathering biotechnology leaders, senotherapeutic developers, and biomarker researchers in Shanghai.",
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "37880c53bb25546fdf47e5dacfb8fe3ba989db2250b4ff251e2e22d95f8f6d56",
+      "title": "The challenge of Adenomyosis across the ART journey: insights from the Naples Workshop group.",
+      "publisher": "Fertility and sterility",
+      "author": "Cozzolino M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035194",
+      "publication_date": "2026-11-15",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 15",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
       "evidence_notes": null,
       "review_state": "candidate"
     },
@@ -647,6 +742,47 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "e59d0a5c5c5cbbbd0a2bfcebc87b5323914ed0bfcfd581b11c2bfddc86eabe84",
+      "title": "Consensus document on the diagnosis and treatment of metabolic alterations in urinary stone disease.",
+      "publisher": "Nefrologia",
+      "author": "Ramos Cebrián M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015164",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c89dc43582e3b484abd6c9fc8379869a7c447d03f30757ce29ed26e386a3ba9e",
+      "title": "Consensus-Based Recommendations for the Management of Deep and Extremely Deep Carious Lesions and Vital Pulp Treatment in Permanent Teeth: A National Delphi Study.",
+      "publisher": "International endodontic journal",
+      "author": "Kérourédan O",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012168",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "aa494b14cb5f8aaf014c222085cb1ebfa838ade764c91c842483a981b0ddab89",
       "title": "Guiding Proton Pump Inhibitor Use Across Common Clinical Settings: A Narrative Review of Guidelines and Expert Consensus.",
       "publisher": "Journal of general internal medicine",
@@ -681,6 +817,29 @@
         "consensus",
         "event",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "814322a9bca87dac4ba5435f14f805c9f2ce62f1e52d85f0294be4a49fc028b7",
+      "title": "SPROUT Guidelines for Molecular Profiling for Children with Solid Tumors: A Consensus Recommendation from the American Association for Cancer Research.",
+      "publisher": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "author": "Gestrich C",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43013345",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -730,6 +889,26 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "50ce7169d0b0dea7c7a0024f173554c2233acec0d7f11104d48b7617cc774013",
+      "title": "Item selection and content validation of the nurse triage quality audit tool (N-TriQAT) in emergency departments: A consensus study.",
+      "publisher": "International emergency nursing",
+      "author": "Ouellet S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43013994",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "465c21768ff93b58cd44d9787e363b3004baeaafe92d17773037266f216e7578",
       "title": "GSA 2026 Annual Scientific Meeting: Gerontological Society of America",
       "publisher": "Gerontological Society of America",
@@ -749,6 +928,105 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "30ceb29522d8f66920a0b7286f06e663cbfdcd0569889fbddc043ed211d98df8",
+      "title": "Validation to NANDA-I of the Nursing Diagnosis Ineffective Community Process Based on Community Assessment, Intervention and Empowerment Model (MAIEC): A Focus Group Consensus Study.",
+      "publisher": "International journal of nursing knowledge",
+      "author": "Melo P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012301",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "23a3d93e75ac8324599da59b1e09b33eca1cef83e8559e038c2e8a0c3af070cc",
+      "title": "A review of tuberculosis diagnostic guidelines: identification of areas of consensus and divergence to support diagnostic access decision-making.",
+      "publisher": "Journal of clinical microbiology",
+      "author": "Léveillé N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012554",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "1804b57741cccab147a1f12b4ce9c6ba732f1b87c81a62352299ff9252fcf634",
+      "title": "Thrombolysis and thrombectomy in acute ischemic stroke: A RAND/UCLA consensus.",
+      "publisher": "Anales de pediatria",
+      "author": "Carlos-Gil AM",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43015222",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0e636725d2ce8c3e2aa436a65335295bdd0aa31c28f8e1e24383574002a287e3",
+      "title": "Consensus on the definition, components, and grading of composite postoperative pulmonary complication outcomes (PrECiSIOn): insights from an international Delphi expert panel.",
+      "publisher": "The Lancet. Respiratory medicine",
+      "author": "PrECiSIOn investigators",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43014330",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0ba6531c3aa55fa5c78138737eeabd73c526bd194ac194af1037e0c47ea14fc9",
+      "title": "From Hibakusha to the TPNW: public health, survivorship, and medical advocacy at the 24th IPPNW World Congress in Nagasaki.",
+      "publisher": "Medicine, conflict, and survival",
+      "author": "Khadka B",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43012664",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "09c34b716fa887e1722fe8e2be2636d734899de27e9d88670ed308fc13e91ead",
       "title": "Chinese expert consensus on the clinical pathway for oblique lumbar interbody fusion.",
       "publisher": "Chinese medical journal",
@@ -764,6 +1042,899 @@
       "tags": [
         "asia",
         "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "d62a8908b1d958485d55eec5700b22599cda913f3b9d527800499171849d2a15",
+      "title": "Early ambulatory re-evaluation and follow-up of patients admitted in the acute cardiac care unit - Practical aspects on ambulatory follow-up of acute care patients: acute coronary syndromes, heart failure, ventricular arrhythmias, atrial arrhythmias, conductance disorders, myocarditis, pericarditis, other acute cardiac settings A Clinical Consensus Statement of the Association for Acute CardioVascular Care of the ESC.",
+      "publisher": "European heart journal. Acute cardiovascular care",
+      "author": "Roubille F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008190",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c5145d7a6969c56d85130752f1bf65bdce2db441595aa769ec0e1692a0398917",
+      "title": "Clinical role, biomechanical aspects, and barriers to the use of hip protectors in fracture prevention: insights from an Italian Delphi consensus panel.",
+      "publisher": "Reviews in endocrine & metabolic disorders",
+      "author": "Giustina A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43004130",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "bfd15a0614c7687e7868f6e7ba154b98173a9e764225c00b897718dcef38a241",
+      "title": "When Stakeholder Consensus Diverges From Patient Preferences: Selecting Patient-Reported Outcome Measures (PROMs) for Kidney Replacement Therapy.",
+      "publisher": "Hemodialysis international. International Symposium on Home Hemodialysis",
+      "author": "de Souza Maciel Ferreira JE",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006255",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "needs_review",
+        "symposium"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b88ec425c222970c8603f78960880c4c9530cea11727986b0c7c63bb1b72dbf8",
+      "title": "[Expert consensus on the application of energy metabolism monitoring in nutritional support therapy (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "China International Exchange and Promotive Association for Medical and Health Care Clinical Nutrition Health Branch",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43010752",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7f6f3027933f470a4deb7f11bc059955bd1663dd96d9d4773bafc059f82e3424",
+      "title": "[Expert consensus on light therapy for the treatment of insomnia disorder (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Chinese Sleep Research Society",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43010753",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "78bb80422833bb293d8c139001ac66fb297c192290ac8a0f2e67b40370b9df35",
+      "title": "International Cross-Age Consensus Guideline on Measurable Residual Disease Assessment in Acute Lymphoblastic Leukemia.",
+      "publisher": "Blood",
+      "author": "Kotrova M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008231",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6e96b4b8883c9e1fa27f1dcfb5a0fbdacde1a6bb897c42b96d7cf24cdbdea055",
+      "title": "Sonostandard: Sonication for implant-associated infections: A Swiss consensus protocol.",
+      "publisher": "Journal of microbiological methods",
+      "author": "Maai N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43008977",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "69fafa5eb7b46d4d25f69d5cfb8823f0b18905f4c038b9a8ca188571d1ab8695",
+      "title": "Designing inclusive and impactful learning experiences: the evolving pedagogy of the UNESCO Chair 'Global Health & Education' Annual Community Health Workshop.",
+      "publisher": "Global health promotion",
+      "author": "Jourdan D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006212",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3783c0549f970554532b1fdddbceb16258e7c3fe2592d1ac3e230b34691284ef",
+      "title": "Improving junior personnel engagement in military health research: a PPIE workshop.",
+      "publisher": "BMJ military health",
+      "author": "Slavin M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009208",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "352f7ba66f4338956f86118a348c1fda9aa004f45ae911326cb1b21ba04882f8",
+      "title": "Perspectives on cell and gene therapy: insights from the 5th China Annual Congress on CGT.",
+      "publisher": "Gene therapy",
+      "author": "Xu Y",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009539",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2ec1b133d62a358e3160d167a2deb1735c7563de17d27351e909530036b41ba6",
+      "title": "Advancing gastric cancer prevention in the United States: perspectives from a congressional forum.",
+      "publisher": "Journal of the National Cancer Institute",
+      "author": "Hyun CS",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43006918",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "forum",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2da2a9f54c7b5d6eab584a114023a33060fe81c0760ac9f643c77f79ac455538",
+      "title": "Multidisciplinary Delphi Consensus on the Current Management and Future Outlook for the Treatment of Chronic Graft-versus-Host Disease in Spain.",
+      "publisher": "Revista clinica espanola",
+      "author": "Duarte R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43009053",
+      "publication_date": "2026-11-10",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 10",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "dcfed70049062a15f0efcad3ce5ddb5d94eed2585724bdacda0fdc351ccf4905",
+      "title": "Noninvasive assessments for identifying peripheral artery disease described within guidelines, consensus, and best practice statements: A rapid systematic review.",
+      "publisher": "Vascular medicine (London, England)",
+      "author": "Weerasekara I",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003793",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b5c38dde033658217e124e0d331f951d087b970dd3569e076fbacb33d2292486",
+      "title": "Experiences and visions for physiotherapy and occupational therapy in oncological rehabilitation: results from a transdisciplinary research workshop programme with people living with and beyond cancer and health professionals.",
+      "publisher": "Disability and rehabilitation",
+      "author": "Ley C",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001634",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "95361f91756acf9a598e41fa8f1da7dde9517bdeb87004abb996b3ad677bcca2",
+      "title": "Reimagining Dental Education: Consensus Recommendations for Innovation, Technology Integration, and Practice Transformation.",
+      "publisher": "Journal of dental education",
+      "author": "Wu DT",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002539",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7d5b06379bfa8276b0a737afcc3f385bfd21c3c85121e9a1db7cbab6615daeb7",
+      "title": "Shared management of patients with concomitant rheumatological disease and neoplasia: A collaborative Delphi consensus by the Italian Association of Medical Oncology and the Italian Society of Rheumatology.",
+      "publisher": "Autoimmunity reviews",
+      "author": "De Marco L",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003172",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6ff1b0685ddc066a7b50fa4a22e7afdd6c302cfae62294d8f2367da219b70c42",
+      "title": "Clinical Consensus Guidelines on Antibiotic Prescribing Practices for Infants with Gastroschisis Utilizing Modified Delphi Methodology.",
+      "publisher": "Journal of pediatric surgery",
+      "author": "Riddle S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003280",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2a79d33c6ba43281e5f6a095b85ef9a57c9e07212e9ad6215ff4ea200e13dcd9",
+      "title": "Bioanalysis of antibody-drug conjugates: current practices and future directions-a workshop report.",
+      "publisher": "Bioanalysis",
+      "author": "Xu W",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43001791",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "285d774b2133044877565dec857bf4c0a90ce1492bf9faa4fbc557f78005c23a",
+      "title": "Redefining Research Priorities for Youth and Family Behavioral Health in the United States: Results from an Expert Consensus Process.",
+      "publisher": "Administration and policy in mental health",
+      "author": "Bruns EJ",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002352",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "22fdb72fe930502891a17fdb28662241f6ba2650be7944ec58abd7ae9568dc74",
+      "title": "PROphylactic use of closed incision negative Pressure wound thERapy for VASCular surgery groin incisions: recommendations from an international expert-based consensus (PROPER-VASC).",
+      "publisher": "Annals of vascular surgery",
+      "author": "D'Oria M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43003226",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "087978c723d54f0c4136ddcb9e7de4d4d1e605e41469e3d2eae142f1f0a400ef",
+      "title": "Revising Terminology and Phenotype Definitions for AI-Based Decision Support in Fluid Therapy: Call for Consensus.",
+      "publisher": "Journal of medical Internet research",
+      "author": "Andrijauskas A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002738",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "68f7e768ae89a13170ee456c0d6ad033837ffbf6f370aaf7f547f63752de5b14",
+      "title": "AustrAIHANZ - consensus guidelines on the investigation and management of autoimmune haemolytic anaemia in Australia and New Zealand.",
+      "publisher": "Internal medicine journal",
+      "author": "Choi P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43000214",
+      "publication_date": "2026-11-08",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 8",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "63f75531b68ecbcd0f0786e39ef35a5957eca6d296fb1ea5c2e06e9b0aca63b4",
+      "title": "Long COVID: A Modified Delphi Consensus on Definition, Burden, Diagnosis and Management in Southeast Asia.",
+      "publisher": "Pulmonary therapy",
+      "author": "Burhan E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42998216",
+      "publication_date": "2026-11-07",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 7",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5d8187259d0ccaa14b9d5dce33cfb885efc4f7d4bfa99b4924794a09c30e4d47",
+      "title": "Correction: Time to rethink washout periods in inflammatory bowel disease clinical trials: an international Delphi consensus.",
+      "publisher": "Journal of Crohn's & colitis",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42998369",
+      "publication_date": "2026-11-07",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 7",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f9c0291294659a2c9c68b7b5074782f0dfbe085047d07ab68c224ad27e34f5cf",
+      "title": "Consensus Without the Difficult Questions: Clinical and Methodological Reflections on the International Idiopathic Short Stature Delphi Statements.",
+      "publisher": "Hormone research in paediatrics",
+      "author": "Yilmaz E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42993096",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f37cc1df55f1e16a61e453070ddb99d6bcf62aee0a45bad9d359d322ae30e02e",
+      "title": "Beyond measurement: a strategic perspective on antibody-drug conjugates bioanalysis from the European Bioanalysis Forum.",
+      "publisher": "Bioanalysis",
+      "author": "Sirtori FR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42992632",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "forum",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "e8e39d30acad3c64d5df1c9b5e0ec23cf238b67484e017b24407f7fa080e1f0a",
+      "title": "Post-Treatment Follow-up, Rehabilitation, and Return to Sport: Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
+      "publisher": "Foot & ankle specialist",
+      "author": "Rubin J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42992615",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "dbedba9d68c46fe8ff5967c4463c315cf38afdd7612f3a52368113f1822bfebe",
+      "title": "JAMA Health Forum.",
+      "publisher": "JAMA health forum",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42993536",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "forum",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a01bea593fc74918c1a9e6a288a8be71a9952be29cfba6829606d865e8cdb7c3",
+      "title": "Pathology of the Parietal Pericardium: A Consensus Statement on Pericardial Disease from the Society for Cardiovascular Pathology and the Association for European Cardiovascular Pathology.",
+      "publisher": "Cardiovascular pathology : the official journal of the Society for Cardiovascular Pathology",
+      "author": "Tan CD",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994658",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "853c0cba158a01a588137cc01cf336c48d68a197e1f9c32b1dc2e491cf47a758",
+      "title": "Comprehensive vaccination guidelines for patients with inborn errors of immunity: A European Society for Immunodeficiencies Consensus.",
+      "publisher": "The Journal of allergy and clinical immunology",
+      "author": "Haerynck F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994533",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "81e7cfb3998f89e9a07a13eb33f3e3871513767eacceda319d57950d332a017a",
+      "title": "National Gaps in Appendiceal Cancer Care and Implementation of a Regional Virtual Multidisciplinary Care Conference.",
+      "publisher": "The oncologist",
+      "author": "Kaur H",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42992953",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "hybrid_or_online",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "74935bbdae32b631a7e188e8e3903bc3a74159ca32e9b7c3c30b799effa31cc0",
+      "title": "Recommendations for the Examination, Processing, and Reporting of Non-neoplastic Pericardial Diseases: A Consensus Statement on Pericardial Disease from the Society for Cardiovascular Pathology and the Association for European Cardiovascular Pathology.",
+      "publisher": "Cardiovascular pathology : the official journal of the Society for Cardiovascular Pathology",
+      "author": "Tan CD",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994659",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6be2c5bbe2517c9095125ce40c08e0e10d9fee8aab5229c6edfc5c340e44ae8a",
+      "title": "Development and pilot feasibility testing of an evidence-based endotracheal tube maintenance protocol for critically ill patients: A delphi consensus study.",
+      "publisher": "Medicine",
+      "author": "Wang Y",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994848",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "63e035338d2d957f15de9f62b4931a3925e9aa1811c747cacab1de0c1b0f1be7",
+      "title": "[Expert consensus on medical-preventive integration education for clinical medicine and related majors (2026 Edition)].",
+      "publisher": "Zhonghua yu fang yi xue za zhi [Chinese journal of preventive medicine]",
+      "author": "Expert Group on Medical-Preventive Integration Education in Clinical Medicine and Related Specialties",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035287",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3ffbd7590c0f27b6c92eea71d7bdab151fc03ebdd6a4b1dfb1b8b4fe8e2d166c",
+      "title": "JAMA Health Forum and AcademyHealth Annual Research Meeting.",
+      "publisher": "JAMA health forum",
+      "author": "Galea S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42993541",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "forum",
+        "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "39d83139e8b752b27450c08a73fe971aa3621c7769313a4fc3016d8bcf1112a3",
+      "title": "Total Small Bowel Length and Limb-length Decision-making in Metabolic and Bariatric Surgery for Asian Populations: An APMBSS 2026 Modified Delphi Expert Consensus Statement.",
+      "publisher": "Obesity surgery",
+      "author": "Chang TW",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42988958",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "055d9cd3f1a22269de7507a7f00c1057a8b495a71fe0727b678be8667464818f",
+      "title": "Image-Based Consensus Molecular Subtyping Refines Prognostication in Stage II/III Colorectal Cancer: A Retrospective Analysis of the SCOT Trial.",
+      "publisher": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "author": "Lafarge MW",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42993920",
+      "publication_date": "2026-11-06",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 6",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "fe4b12df8003602a1207300e1bf315aa69894f722224857e0b1fd5cbe71d7706",
+      "title": "Developing content validity of a questionnaire exploring various relationships with one's body in obesity: A Delphi expert consensus.",
+      "publisher": "Obesity research & clinical practice",
+      "author": "Foucaut AM",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42988700",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "e023b240c58e150888a93fff89d77facdcd68cd2b5c3f8d8283bfaafb63ba684",
+      "title": "Classification of brain variants on fetal ultrasound: international Delphi consensus.",
+      "publisher": "Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+      "author": "Lesieur E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42989497",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "82407cb61c59fb102d33edab42e92a6de7683f65f8e706798c757f4265c8855c",
+      "title": "Evidence-based clinical practice national guideline for elective female genital aesthetic labiaplasty: recommendations from the pelvic floor and cosmetic gynecology (PETKOZ) association and expert consensus.",
+      "publisher": "Journal of the Turkish German Gynecological Association",
+      "author": "Doğan O",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42985885",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "645650110b4bb08491942e255942e6e4d970bee6f9f47b5a793b21e87768ba37",
+      "title": "Consensus on a core outcome set for ventilation trials in critically ill patients with acute brain injury: results of an international Delphi consensus study.",
+      "publisher": "Intensive care medicine",
+      "author": "Fong N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42986439",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "69d40755d1e12dc72b07fc15c9fce2bb35181d06fe61904179eb26a37f7a9b4b",
+      "title": "Consensus-based guidelines for Clinical Nurse Specialists providing psychological support in cancer care: A modified Delphi study.",
+      "publisher": "European journal of oncology nursing : the official journal of European Oncology Nursing Society",
+      "author": "Cranstoun D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42994282",
+      "publication_date": "2026-11-03",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 3",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
         "event",
         "needs_review"
       ],
@@ -810,6 +1981,112 @@
       "tags": [
         "consensus",
         "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a200eda580143c9ec5b6cf7a3925c298d20ec92059b3b44ed50c6bc93de9c642",
+      "title": "Consensus Statements on Minimally Invasive Surgical Treatments for Male Lower Urinary Tract Symptoms Secondary to Benign Prostatic Enlargement and Obstruction.",
+      "publisher": "The world journal of men's health",
+      "author": "Chung E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42989561",
+      "publication_date": "2026-11-02",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 2",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "78b0e52f799593d7bf1dfc273e17d573b98b2a5aaea7dd03e5f38571ef7534a9",
+      "title": "Ketamine/Esketamine in Clinical Practice: Areas of Consensus and Nonconsensus from an American Society of Clinical Psychopharmacology (ASCP) Delphi Panel Task Force.",
+      "publisher": "The Journal of clinical psychiatry",
+      "author": "Sanacora G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42981371",
+      "publication_date": "2026-11-02",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 2",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3621f0a2a981a38ab355700a3c0dce68e4c57590c2a1ffaac1a0163253fe60b1",
+      "title": "Insulin therapy with enteral and parenteral nutrition: a consensus statement endorsed by the Swiss Society for Endocrinology and Diabetology and the Swiss Society for Clinical Nutrition and Metabolism.",
+      "publisher": "Swiss medical weekly",
+      "author": "König L",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42981478",
+      "publication_date": "2026-11-02",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 2",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "12d74324881cbf2ab02dc578011a852bd87abd1c6c81ea7b7bed118efa5d805c",
+      "title": "Global Practice Patterns in the Diagnosis and Management of Adolescent Varicocele: Results of an International Survey and Global Andrology Forum Experts' Recommendations.",
+      "publisher": "The world journal of men's health",
+      "author": "Hashimi MA",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42989560",
+      "publication_date": "2026-11-02",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 2",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "forum",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "694cd5365d6db70d45b64668c57c27033a2d7ed987c247093bd0c54217899088",
+      "title": "[Expert consensus on artificial intelligence optical navigation-assisted CT-guided percutaneous for thoracic lesions].",
+      "publisher": "Zhonghua nei ke za zhi",
+      "author": "Ablation Expert Committee of the Chinese Society of Clinical Oncology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035265",
+      "publication_date": "2026-11-01",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 1",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
         "event",
         "needs_review"
       ],
@@ -1187,7 +2464,7 @@
     },
     {
       "item_id": "1acc6f18801db7ee6ace0aed627561cbc393b0bc30f2a7ad5d1326deb6b2278f",
-      "title": "[Perimenopause and postmenopause: acute diagnostic and therapeutic aspects for the DACH region : Consensus paper of the Austrian Society for Gynecology and Obstetrics (OEGGG), the German Society for Gynecology and Obstetrics (DGGG) and the Swiss Society for Gynecology and Obstetrics (SGGG)].",
+      "title": "[Perimenopause and postmenopause: acute diagnostic and therapeutic aspects for the DACH region : Consensus paper of the Austrian Society for Gynecology and Obstetrics (OEGGG), the German Society for Gynecology and Obstetrics (DGGG), the German Menopause Society (DMG) and the Swiss Society for Gynecology and Obstetrics (SGGG)].",
       "publisher": "Wiener klinische Wochenschrift",
       "author": "Toth B",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42862303",
@@ -1727,6 +3004,30 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "8b31a0b8b972f152b7064bf4034fcb166db73bc4b834c6f0ea0dcb1834f9a46f",
+      "title": "Empowerment and change: Women in paediatric urology.",
+      "publisher": "Journal of pediatric urology",
+      "author": "Yankovic F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42823241",
+      "publication_date": "2026-08-27",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Aug 27",
+      "location": "vienna",
+      "location_groups": [
+        "vienna",
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "event",
+        "needs_review",
+        "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "4187d480756c186e9faa6f66bd38496bc1430fff51744e0f4380ba50ddfc3226",
       "title": "Delphi consensus on gene therapy of spinal muscular atrophy with onasemnogene abeparvovec in Germany, Austria and Switzerland - part II - expert based recommendations for surveillance and management of side-effects.",
       "publisher": "Journal of neuromuscular diseases",
@@ -1792,6 +3093,30 @@
         "consensus",
         "event",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "1ca1190becd69369647dcbd4b9c559282f2bf3366f4550acced731e684439105",
+      "title": "Measuring premenstrual disorders in adolescence: prevalence of premenstrual syndrome and premenstrual dysphoric disorder and psychometric validation of the PMS-I-Y in a German-speaking sample.",
+      "publisher": "BMC women's health",
+      "author": "Geßner J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42603788",
+      "publication_date": "2026-08-15",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Aug 15",
+      "location": "vienna",
+      "location_groups": [
+        "vienna",
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "event",
+        "needs_review",
+        "vienna"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -2763,6 +4088,25 @@
         "hybrid_or_online",
         "needs_review",
         "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "999feb88923d0b6c047d7b685ddad5726a65cb66a962bf28c86b62666d9f9e53",
+      "title": "From Reflection to Action: A Reflective Learning Workshop to Bridge Gaps in Pediatric Health.",
+      "publisher": "MedEdPORTAL : the journal of teaching and learning resources",
+      "author": "Mancho A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43011685",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
       ],
       "summary": null,
       "evidence_notes": null,
