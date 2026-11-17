@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-16T07:21:36Z",
-  "last_successful_collection": "2026-11-16T07:21:28Z",
+  "generated_at": "2026-11-17T14:55:36Z",
+  "last_successful_collection": "2026-11-17T14:55:27Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 5
+      "new": 12
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -53,25 +53,25 @@
       "source_id": "openalex_events_longevity",
       "status": "success",
       "fetched": 23,
-      "new": 4
+      "new": 0
     },
     {
       "source_id": "crossref_events_aging",
       "status": "success",
       "fetched": 25,
-      "new": 9
+      "new": 0
     },
     {
       "source_id": "google_search_events",
       "status": "success",
       "fetched": 4,
-      "new": 4
+      "new": 0
     },
     {
       "source_id": "eventbrite_events_longevity",
       "status": "success",
       "fetched": 2,
-      "new": 2
+      "new": 0
     }
   ],
   "items": [
@@ -124,6 +124,26 @@
       "publisher": "Clinical and translational radiation oncology",
       "author": "Valkenburg AC",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43034599",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2027 Jan",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "09fcdb29d3726901d4279fb7677994c62df3884394e9f6a17efe74f18977b09b",
+      "title": "ESTRO consensus recommendations for high dose rate interstitial liver brachytherapy.",
+      "publisher": "Clinical and translational radiation oncology",
+      "author": "Corradini S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43036317",
       "publication_date": null,
       "publication_date_precision": "month",
       "publication_date_raw": "2027 Jan",
@@ -436,6 +456,193 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "ce59c655090af2af66bc7c89d4fb2ba9ca53f8f241be7b2c3de2cd4099e59bb4",
+      "title": "[Interpreting the 2026 consensus guidance on immune checkpoint inhibitors: evolving landscape of perioperative therapy for locally advanced rectal cancer].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Tong HCY",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035279",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b6564f260da18d50c003231ffd0ca9cacb38c9867e92e774ea67e431ee0d0b12",
+      "title": "[Expert consensus on targeted biologic therapy for inflammatory airway diseases (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Chinese Society of Allergy, Chinese Medical Association",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035280",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2661487bc7027cecab209a7bc480a479ce90cff37c517deb5ef34fd2d5abd821",
+      "title": "KASL Consensus Statement for Pharmacologic Treatment of Metabolic Dysfunction-Associated Steatohepatitis: Focus on Semaglutide.",
+      "publisher": "Clinical and molecular hepatology",
+      "author": "Kim JH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43041053",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "cba307e9950c80363db0ad78d82df91c7a64fde73c6a57dc3ad67a8a471fd6cc",
+      "title": "Bridging borders and barriers: Insights from an international reproductive health conference in post-conflict Northern Uganda.",
+      "publisher": "African journal of reproductive health",
+      "author": "Pebolo PF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43036307",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "9276c14a5fbce56a82765d4bc405da85268b373cc6b5bc1c9716cd1621bee429",
+      "title": "Surgical Intervention for Massive Lesions (>3cm(2)): Proceedings of the International Congress on Cartilage Repair of the Ankle.",
+      "publisher": "Foot & ankle specialist",
+      "author": "Rubin J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43037232",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "79e8a1c8a5dd32b1b591f487a80d291c811d78d8a45ad584d9930456a28dd799",
+      "title": "Recommendations on key aspects of migraine prevention: A Delphi consensus among experts of the headache study group of the Spanish society of neurology (GECSEN).",
+      "publisher": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+      "author": "Santos-Lasaosa S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43035558",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "4cf6a3f07362fb0dfdacb6e458fd2befe3908e2517f39b45ffd9f3a43ffe772f",
+      "title": "Consensus Statements on the Clinical Practice for Patients With Fontan-Associated Liver Disease.",
+      "publisher": "Hepatology research : the official journal of the Japan Society of Hepatology",
+      "author": "Kanto T",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43038485",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "4ba73dff73eca020f59ac116fb099bb2971dce7a5daffddaf3d9b65819efba35",
+      "title": "Australian and New Zealand Living Guidelines for Cochlear Implantation in Adults: A Consensus-Based and Evidence-Informed Guideline Adaptation Process.",
+      "publisher": "ANZ journal of surgery",
+      "author": "Leigh J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43040621",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "20fab050320fefa3d1693b314363704d12e3352304a8cdd2af418c509abc3745",
+      "title": "Pulmonary and Critical Care for General Internists: Updates from the American Thoracic Society Conference 2026.",
+      "publisher": "JAMA internal medicine",
+      "author": "Brender TD",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43037974",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "conference",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "37880c53bb25546fdf47e5dacfb8fe3ba989db2250b4ff251e2e22d95f8f6d56",
       "title": "The challenge of Adenomyosis across the ART journey: insights from the Naples Workshop group.",
       "publisher": "Fertility and sterility",
@@ -553,6 +760,29 @@
       "location": "other",
       "location_groups": [],
       "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "320868a7e380a3424fae468af22bd2a5e036c4e0434734ec4bf80723fa472350",
+      "title": "Evidence-based expert consensus on long-acting injectable antipsychotics for bipolar disorder: Recommendations from the TSBPN.",
+      "publisher": "Asian journal of psychiatry",
+      "author": "Chu CS",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43038846",
+      "publication_date": "2026-11-13",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 13",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
         "consensus",
         "event",
         "needs_review"
@@ -3958,6 +4188,29 @@
       "tags": [
         "asia",
         "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f711e5c7c73b2fa8184b7f44f98345d8777f018f887cc64e18ee08d28eb45845",
+      "title": "Clinical management of CADASIL in Europe: bridging evidence gaps and harmonizing care - a consensus review.",
+      "publisher": "Cerebral circulation - cognition and behavior",
+      "author": "Rifino N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43036367",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
         "event",
         "needs_review"
       ],
