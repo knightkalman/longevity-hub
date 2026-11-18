@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-17T14:55:36Z",
-  "last_successful_collection": "2026-11-17T14:55:27Z",
+  "generated_at": "2026-11-18T14:36:14Z",
+  "last_successful_collection": "2026-11-18T14:36:04Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -52,7 +52,7 @@
     {
       "source_id": "openalex_events_longevity",
       "status": "success",
-      "fetched": 23,
+      "fetched": 4,
       "new": 0
     },
     {
@@ -456,6 +456,49 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "e6fb82459e1d9735cd00c2470a5b18c4cdaed108b8f938e0c90a8e050cb56433",
+      "title": "Trial Endpoints for Endemic Mycoses: Consensus Recommendations by the Mycoses Study Group Education and Research Consortium and European Confederation of Medical Mycology.",
+      "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "author": "Thompson GR 3rd",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043169",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "ddea3d0240ea3baa9a7bdc33c265e41f2de5fbe781bfb8152f65b2baef64f1b7",
+      "title": "International Expert Consensus Statement on Endoscopic Ultrasound-Guided Gastric Variceal Coil Embolization Using the Modified Delphi Process: Best Practices and Future Directions.",
+      "publisher": "Gastrointestinal endoscopy",
+      "author": "Magahis PT",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43044777",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "ce59c655090af2af66bc7c89d4fb2ba9ca53f8f241be7b2c3de2cd4099e59bb4",
       "title": "[Interpreting the 2026 consensus guidance on immune checkpoint inhibitors: evolving landscape of perioperative therapy for locally advanced rectal cancer].",
       "publisher": "Zhonghua yi xue za zhi",
@@ -496,6 +539,115 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "b4aa7723fc383e74e969a67159bb8b3170732b50eecbdfea02259635a22d2e83",
+      "title": "Clinical Trial Endpoints for Cryptococcosis: Consensus Recommendations by the Mycoses Study Group Education & Research Consortium and European Confederation of Medical Mycology.",
+      "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "author": "Boulware DR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043174",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "93a7cd04f17fbdfb818886f0a733cafd815c96c44abf9b3eda9c1fc60d166386",
+      "title": "Toward a Healthier Future Through Obesity Prevention and Care: The JAMA Summit Report on Obesity.",
+      "publisher": "JAMA",
+      "author": "Cappola AR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43042892",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "nutrition",
+        "summit"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "826d31fd0a1849695370ed53c4f2e27935df98ffbcb326e4f7ddc6c54d6e0440",
+      "title": "Trial Endpoints for Aspergillus and Rare Molds: Consensus Recommendations by the Mycoses Study Group Education and Research Consortium and the European Confederation of Medical Mycology.",
+      "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "author": "Hoenigl M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043132",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "366d8b84fc4e7c69e890848285410c2a3261496e30689b0b691d4978907806a3",
+      "title": "Trial Endpoints for Candidemia and Invasive Candidiasis: Consensus Recommendations by the Mycoses Study Group Education & Research Consortium and European Confederation of Medical Mycology.",
+      "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "author": "Vazquez JA",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043134",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "26b6569b0a4f14818c4d761d1081ef165f64bfc873e018720864027d91f66958",
+      "title": "Clinical recommendations on monitoring and management of bone health in adults with Duchenne Muscular Dystrophy and transition to adult care: A national Delphi consensus study.",
+      "publisher": "Bone",
+      "author": "Abdelrahman S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43044705",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "2661487bc7027cecab209a7bc480a479ce90cff37c517deb5ef34fd2d5abd821",
       "title": "KASL Consensus Statement for Pharmacologic Treatment of Metabolic Dysfunction-Associated Steatohepatitis: Focus on Semaglutide.",
       "publisher": "Clinical and molecular hepatology",
@@ -511,6 +663,49 @@
         "event",
         "needs_review",
         "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "1ba25c2113e65907900b71fca0fbf4052b1f8cd15bdc4765cc42d7fa114253ec",
+      "title": "Imaging for localizing and therapeutic management of primary aldosteronism: the primary aldosteronism imaging outcome consensus.",
+      "publisher": "Nature reviews. Endocrinology",
+      "author": "Völter F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43045815",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "07c878cd7cf4de000b91e180e3bd6a9e13003f4864d744858e68049013c7413b",
+      "title": "Revised Consensus Clinical Trial Response Criteria by the Mycoses Study Group Education & Research Consortium and European Confederation of Medical Mycology.",
+      "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "author": "Hoenigl M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43043133",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -656,6 +851,29 @@
       "tags": [
         "needs_review",
         "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0ce2abda895a6fa31668291a14bffc15e46f547bae1834180b1b16c797945ad1",
+      "title": "[Expert consensus on clinical trials of bilayer artificial dermis].",
+      "publisher": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "author": "Writing Group For Expert Consensus On Clinical Trials Of Bilayer Artificial Dermis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43046556",
+      "publication_date": "2026-11-15",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 15",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -4219,6 +4437,29 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "c331426b829c6ec55eed1f6602802637142ff5fa9df1041ab8e0b9c47f209743",
+      "title": "[Improving research reporting in primary care: the CRISP (Consensus Reporting Items for Studies in Primary Care) StatementAprimorando o relato de pesquisa em atenção primária: a Declaração CRISP (Itens de Relato Consensuais em Estudos em Atenção Primária)].",
+      "publisher": "Revista panamericana de salud publica = Pan American journal of public health",
+      "author": "Phillips WR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43042053",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "c04df28a4d7be51c7b2cf37f175759ffd2b16efe5e64f8357e8e5727c52d3785",
       "title": "Designing cross-sector leadership dialogue for successful aging: a forum-based case study and preliminary participant evaluation.",
       "publisher": "Frontiers in public health",
@@ -4399,6 +4640,25 @@
         "consensus",
         "event",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6d792c378ee665e850aaf8aa6b1df333866c7a3fa49aa073ba35bd7ba0c63d78",
+      "title": "Beyond the Black Box: A 30-Minute Artificial Intelligence Critical Appraisal Workshop for Internal Medicine Residents.",
+      "publisher": "MedEdPORTAL : the journal of teaching and learning resources",
+      "author": "Stephenson CR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43041771",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
       ],
       "summary": null,
       "evidence_notes": null,
