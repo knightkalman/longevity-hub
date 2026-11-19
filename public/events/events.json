@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-18T14:36:14Z",
-  "last_successful_collection": "2026-11-18T14:36:04Z",
+  "generated_at": "2026-11-19T14:42:32Z",
+  "last_successful_collection": "2026-11-19T14:42:24Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -52,7 +52,7 @@
     {
       "source_id": "openalex_events_longevity",
       "status": "success",
-      "fetched": 4,
+      "fetched": 23,
       "new": 0
     },
     {
@@ -456,6 +456,182 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "c424584bc130cccba83df060a9ee5063e19e7ee3208f2c0633744e67900ed3a6",
+      "title": "Consensus-based recommendations on cilostazol and standardized Ginkgo biloba combination therapy for secondary stroke prevention and post-stroke cognitive impairment (PSCI) management.",
+      "publisher": "Journal of cerebrovascular and endovascular neurosurgery",
+      "author": "Choi JH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43046669",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "03946c8feabd2c2090f99dcd586e3668b73ff81f1b5dd50c8035c8512af3109e",
+      "title": "Hazardous medicines: turning consensus into safer health care.",
+      "publisher": "British journal of nursing (Mark Allen Publishing)",
+      "author": "Barton A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43050335",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "db8ff2df5fd5abbf759704e79295e024c3b248fa4c3e39ab91f4f397118438fa",
+      "title": "DISC-OSA: A European Delphi Consensus on OSA Screening in People with Obesity.",
+      "publisher": "Advances in therapy",
+      "author": "Gordon J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43050104",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "da4d3d761a6999a0d6f1673adc9c830634bf23c62560b97ac9389fa2979bf217",
+      "title": "Guidelines for Diagnosis, Reporting and Management of Intraductal Papillary Neoplasm of the Bile Duct (IPNB): Recommendations of Bangkok Consensus Meeting.",
+      "publisher": "Journal of hepato-biliary-pancreatic sciences",
+      "author": "Luvira V",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43049212",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b0dac436afc9012f63f4ccf78f96cc46862d1b92492b34b21b81f51643628e50",
+      "title": "LabRI: A data-source-agnostic, multi-method statistical consensus framework for laboratory reference interval estimation.",
+      "publisher": "Clinica chimica acta; international journal of clinical chemistry",
+      "author": "Dias AC",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43051395",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a1cf1f7be743ac619f7472e3b9e17d2be0b34d1a261355f0a4f793c040b4a325",
+      "title": "International Consensus on Clinical Trial Endpoints in Autosomal Dominant Osteopetrosis.",
+      "publisher": "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research",
+      "author": "Polgreen LE",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43049183",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "8433c415ece0edd12f9777a06a3024fe531b451c11fbd8928c1860dc84be76cc",
+      "title": "Local ablative therapy for oligometastatic non-small cell lung cancer with actionable mutations: A consensus from Hong Kong SBRT Study Group.",
+      "publisher": "International journal of radiation oncology, biology, physics",
+      "author": "Nyaw JS",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43051603",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7c68bbeb03d25318fffd22ef1571ba2d825f66e717214f1a122f2499431e6f96",
+      "title": "Patient, caregiver, and other knowledge user engagement in research processes within consensus-building healthcare initiatives: a scoping review.",
+      "publisher": "Journal of clinical epidemiology",
+      "author": "Munce SEP",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43051500",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "e6fb82459e1d9735cd00c2470a5b18c4cdaed108b8f938e0c90a8e050cb56433",
       "title": "Trial Endpoints for Endemic Mycoses: Consensus Recommendations by the Mycoses Study Group Education and Research Consortium and European Confederation of Medical Mycology.",
       "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
@@ -539,6 +715,26 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "b5835ef66f70f4d40b87a4af0a1192881c1dd31098e86737a3b061f19c6daa7b",
+      "title": "Expert consensus on the diagnosis and treatment of recurrent wheezing in preschool children.",
+      "publisher": "World journal of pediatrics : WJP",
+      "author": "Zhang YY",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43050032",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "b4aa7723fc383e74e969a67159bb8b3170732b50eecbdfea02259635a22d2e83",
       "title": "Clinical Trial Endpoints for Cryptococcosis: Consensus Recommendations by the Mycoses Study Group Education & Research Consortium and European Confederation of Medical Mycology.",
       "publisher": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
@@ -597,6 +793,29 @@
       "tags": [
         "consensus",
         "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "579667a6c6ad412a60d6e0e8c78b07d8416d581834e22d113e1dcc6b7aed965e",
+      "title": "Consensus Statements on the Clinical Practice for Patients With Fontan-Associated Liver Disease.",
+      "publisher": "Circulation journal : official journal of the Japanese Circulation Society",
+      "author": "Kanto T",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43051890",
+      "publication_date": "2026-11-17",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 17",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
         "event",
         "needs_review"
       ],
@@ -4659,6 +4878,46 @@
       "tags": [
         "needs_review",
         "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6b27907ad2223e3f3ac0278faf3a46b86a9163c813fe652f2a1fd7cfc2a3bd99",
+      "title": "Defining meaningful treatment outcomes in adults with spinal muscular atrophy: an expert consensus approach.",
+      "publisher": "Frontiers in neurology",
+      "author": "Vázquez-Costa JF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43047903",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "21d118ff5447d9428c1799a2dc2369ac6f3004ae6700000d48084dfc6a4d1a0b",
+      "title": "Controversies and consensus on immune function and long-term health risks following adult thymectomy: a comprehensive review of molecular mechanisms and real-world evidence.",
+      "publisher": "Frontiers in immunology",
+      "author": "Zhao P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43047868",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
