@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-19T14:42:32Z",
-  "last_successful_collection": "2026-11-19T14:42:24Z",
+  "generated_at": "2026-11-20T14:24:01Z",
+  "last_successful_collection": "2026-11-20T14:23:53Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -17,13 +17,13 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 12
+      "new": 17
     },
     {
       "source_id": "pubmed_events_vienna",
       "status": "success",
       "fetched": 25,
-      "new": 0
+      "new": 1
     },
     {
       "source_id": "pubmed_events_europe",
@@ -456,6 +456,45 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "ac825c65d50e86185dea911d61093098bad114bc8e9c1d74a43168c6a2029300",
+      "title": "Expert clinical consensus on the application of vancomycin graft presoaking in anterior cruciate ligament reconstruction : a modified Delphi study.",
+      "publisher": "Bone & joint open",
+      "author": "Balachandar V",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057288",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "e9888f70366f5054b7b96c1bb25171d70ce7e183b3807cedbc0e9bb285882c9f",
+      "title": "2026 ACTRIMS forum Kenneth P Johnson lecture. Autologous hematopoietic stem cell transplantation in multiple sclerosis and other neuroinflammatory conditions: Current evidence and remaining questions.",
+      "publisher": "Multiple sclerosis (Houndmills, Basingstoke, England)",
+      "author": "Afzal S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055441",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "forum",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "c424584bc130cccba83df060a9ee5063e19e7ee3208f2c0633744e67900ed3a6",
       "title": "Consensus-based recommendations on cilostazol and standardized Ginkgo biloba combination therapy for secondary stroke prevention and post-stroke cognitive impairment (PSCI) management.",
       "publisher": "Journal of cerebrovascular and endovascular neurosurgery",
@@ -476,11 +515,240 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "bfbf77e0a7d23f7106198747aab48729a9f8962d917f27465c9586697ab755e6",
+      "title": "Development and content validation of entrustable professional activities for radiation oncology residency training: A modified Delphi and multi-specialty consensus study.",
+      "publisher": "Journal of the Formosan Medical Association = Taiwan yi zhi",
+      "author": "Liu TF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057985",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "ae4b0ffde1695f23d261130b810e925a90e6125096078c05c577b9ae9ad93d97",
+      "title": "International expert Delphi consensus on the management of metabolic dysfunction- and alcohol-associated liver disease (MetALD).",
+      "publisher": "Annals of hepatology",
+      "author": "Idalsoaga F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057653",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a153cb99136d605d1158228cec20e35daaf96eab75d27ad7d03b7d360b3e27ba",
+      "title": "GESS-AEEM consensus on testosterone therapy in women: a clinical implementation framework.",
+      "publisher": "Climacteric : the journal of the International Menopause Society",
+      "author": "Sánchez-Prieto M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43056697",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "90128aa6298fbf6f83a22ad9e4e949ef0638ce86cf1b1f73c509ad869c47a6fc",
+      "title": "From innovation to translation: highlights from the British Society for Nanomedicine Annual Meeting 2026.",
+      "publisher": "Nanomedicine (London, England)",
+      "author": "Townsend R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055335",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7ae594e91f06d98bf6ea313763410d3586ac652f32e1a02e141cb9e26a76ff19",
+      "title": "[\"Health is political! what value do we, as a society, place on health equity?\": conference report on the 2026 poverty and health congress].",
+      "publisher": "Bundesgesundheitsblatt, Gesundheitsforschung, Gesundheitsschutz",
+      "author": "Amler M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43058259",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "76466d28ad812d8f4b94a3f5ff605d761f54ea172582ba18d68c21105ef0f13d",
+      "title": "Developing endpoints for the cognitive burden in myotonic dystrophy type 1: A workshop report.",
+      "publisher": "Journal of neuromuscular diseases",
+      "author": "Ferrari Aggradi CR",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43056362",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6827226eaaf662ba234d86fc627b4959f7097ad1c6600cf9f48842c492a6ec3e",
+      "title": "From One Health Evidence to Food Safety Action: Reflections from the 9th World One Health Congress.",
+      "publisher": "Foodborne pathogens and disease",
+      "author": "Khan NA",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055533",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5b04066a2d6bc6d4216a79f1eb50e5af1e85f88d24acf18cfb2eae6aae03bc9d",
+      "title": "Consensus Reached: A Delphi Study to Def ine Public Health Advocacy.",
+      "publisher": "Public health reports (Washington, D.C. : 1974)",
+      "author": "Schneider GE",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055503",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "36e6815e968a44741d3ea3316f01e9316dc16bb44ef31d37a0f095637773f990",
+      "title": "International Expert Consensus Statement on Contemporary Prevention and Management of Postoperative Delirium in Cardiac Surgery.",
+      "publisher": "The Annals of thoracic surgery",
+      "author": "Abdulaziz S",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057642",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "277dda4fb3d34490e67e3200d781f2310a117b5806f79aefc8a6e5dd0bc363e8",
+      "title": "The Challenges and Opportunities of Artificial Intelligence for Supporting Health Behavior Change in Older Adults: A Research Centers Collaborative Network Workshop Report.",
+      "publisher": "The Gerontologist",
+      "author": "Fanning J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43058984",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "03946c8feabd2c2090f99dcd586e3668b73ff81f1b5dd50c8035c8512af3109e",
       "title": "Hazardous medicines: turning consensus into safer health care.",
       "publisher": "British journal of nursing (Mark Allen Publishing)",
       "author": "Barton A",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43050335",
+      "publication_date": "2026-11-19",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 19",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "02951b52c0d4f596c88fd7433748b702f4c3f6b9fb4863ebec9d1dc31563af71",
+      "title": "Expert consensus on clinical practice in pterygoid implant rehabilitation: A modified Delphi study.",
+      "publisher": "International journal of oral implantology (Berlin, Germany)",
+      "author": "Pastorino D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055192",
       "publication_date": "2026-11-19",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 19",
@@ -617,6 +885,26 @@
       "publisher": "Journal of clinical epidemiology",
       "author": "Munce SEP",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43051500",
+      "publication_date": "2026-11-18",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 18",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5b7f38569524f85a09269553573ae94cad4becb18c5351e5fce35c45d672a87b",
+      "title": "Expert Consensus Recommendations for Risk-Adapted Management of Myeloproliferative Neoplasms 2026.",
+      "publisher": "Cancer research and treatment",
+      "author": "Lee SE",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057127",
       "publication_date": "2026-11-18",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 18",
@@ -2140,6 +2428,29 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "0cb89a83acc2c786854e81d390d4bad8c0f29fa87df894d5a4689c5660c9311a",
+      "title": "The American Society of Clinical Psychopharmacology Task Force Consensus Statement on Combination Psychopharmacology.",
+      "publisher": "The Journal of clinical psychiatry",
+      "author": "Goldberg JF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055664",
+      "publication_date": "2026-11-09",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 9",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "087978c723d54f0c4136ddcb9e7de4d4d1e605e41469e3d2eae142f1f0a400ef",
       "title": "Revising Terminology and Phenotype Definitions for AI-Based Decision Support in Fluid Therapy: Call for Consensus.",
       "publisher": "Journal of medical Internet research",
@@ -2518,6 +2829,26 @@
         "event",
         "needs_review",
         "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "e5a396c407c76ae406d4362652a445e17b9d288883a241eb4ffa0ddae2e680dc",
+      "title": "Statement from the International Society for Heart and Lung Transplantation (ISHLT) Consensus Conference on the Evolving Role of Nursing Professionals in Thoracic Transplantation.",
+      "publisher": "The Journal of heart and lung transplantation : the official publication of the International Society for Heart Transplantation",
+      "author": "Coleman B",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43055710",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "consensus",
+        "needs_review"
       ],
       "summary": null,
       "evidence_notes": null,
@@ -4590,6 +4921,32 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "01a1b099dbe195490959d27ecbcd6b5353e86e482280927951bfeee2a10c74f9",
+      "title": "Idiopathic Intracranial Hypertension.",
+      "publisher": "U.S. National Library of Medicine, National Center for Biotechnology Information",
+      "author": "Hoffman H",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30725609",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Jan",
+      "location": "vienna",
+      "location_groups": [
+        "vienna",
+        "europe",
+        "us"
+      ],
+      "tags": [
+        "europe",
+        "event",
+        "needs_review",
+        "us",
+        "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "e15dc7c2640e956cf31a9ca144ba1571ce08515acff97fd746775be23a5dba63",
       "title": "The Lancet Healthy Longevity: looking to the future",
       "publisher": "Elsevier BV",
@@ -4937,6 +5294,25 @@
       "tags": [
         "forum",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "03b5c34c6bfc6d5ea86fdd9a7531dcf802eef2bf49b02d9dbd9f40f5fdc31e08",
+      "title": "Co-designing maternal mental health interventions and implementation strategies under climate stress in Nigeria: a participatory workshop.",
+      "publisher": "Frontiers in public health",
+      "author": "Idemili-Aronu N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43054056",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
       ],
       "summary": null,
       "evidence_notes": null,
