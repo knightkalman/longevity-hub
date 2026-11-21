@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-20T14:24:01Z",
-  "last_successful_collection": "2026-11-20T14:23:53Z",
+  "generated_at": "2026-11-21T13:44:17Z",
+  "last_successful_collection": "2026-11-21T13:44:06Z",
   "collection_status": "success",
   "sources_succeeded": 11,
   "sources_total": 11,
@@ -17,13 +17,13 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 17
+      "new": 7
     },
     {
       "source_id": "pubmed_events_vienna",
       "status": "success",
       "fetched": 25,
-      "new": 1
+      "new": 0
     },
     {
       "source_id": "pubmed_events_europe",
@@ -433,6 +433,27 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "f36616d59b8a4106155ec2fa0640371b6dab485a7f44d7be163ad24ed20bc37a",
+      "title": "Consensus document SED-SEEN-SEMERGEN-SEMFyC-SEMG on the use of continuous glucose monitoring in people with type 2 diabetes mellitus on basal insulin therapy.",
+      "publisher": "Endocrinologia, diabetes y nutricion",
+      "author": "Fernández-Rubio E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43064604",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "c165a1a8058ef56de0d9175d1f04d02f11d9173f4966b6eb3b700d2356f4bda7",
       "title": "TimePie Asia Longevity & Rejuvenation Forum 2026 Shanghai",
       "publisher": "TimePie Longevity Research Community",
@@ -461,6 +482,117 @@
       "publisher": "Bone & joint open",
       "author": "Balachandar V",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43057288",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7a4a0f9f08602e3443ae7d27b6a86811b4432519d4776edfc039b6adbb25d4d8",
+      "title": "Expert consensus on periodontal management for medically compromised patients.",
+      "publisher": "International journal of oral science",
+      "author": "Geng F",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43064699",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "683aa1d4e6ecb26002dc3050fca6826223f1bdf6367d7bdd3aa23000c0bb09a1",
+      "title": "Local Treatment for Perineal and Perianal Rhabdomyosarcoma: Clinical Practice Guidelines and Consensus Statement From the Children's Oncology Group, European Pediatric Soft Tissue Sarcoma Study Group, the Cooperative Weichteilsarkom Studiengruppe, and the International Soft Tissue Sarcoma Consortium.",
+      "publisher": "Pediatric blood & cancer",
+      "author": "Seitz G",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43062201",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "09ad65875e80253a47619e791fbf031ce99ee7252f94f73d0b162c68f461290b",
+      "title": "Core Entrustable Professional Activities for Postgraduate Pharmacist Training in Taiwan: A National Consensus Study.",
+      "publisher": "American journal of pharmaceutical education",
+      "author": "Chang YH",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43064360",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "us",
+      "location_groups": [
+        "us",
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "06fbb321f022e948ca153e599b6e0988dcf1fe48704b341f2f8128fdce2a67e3",
+      "title": "Consensus Statement on the Role of Dermoceuticals in the Management of Atopic Dermatitis in the United Arab Emirates.",
+      "publisher": "Dermatology and therapy",
+      "author": "Al Naeem A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43062795",
+      "publication_date": "2026-11-20",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 20",
+      "location": "asia",
+      "location_groups": [
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0252805077a9087e1dd8a39e4663f93f01fcac1b35f6dd514650e222720eafe0",
+      "title": "Terminology Without Consensus: A Thematic Analysis of Nomenclature Choice and Program Structure Among Expanded EMS Programs in a Single State.",
+      "publisher": "Prehospital emergency care",
+      "author": "Stanciu E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43062363",
       "publication_date": "2026-11-20",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 20",
@@ -5255,6 +5387,25 @@
         "consensus",
         "event",
         "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5dd8d8e0cd1675929727f0d859ea895bd7d896d6d9940ecd5128a202fbae3dca",
+      "title": "Navigating Identity Discordance Through Values-Based MentorSHIP: An Educational Workshop Anchored in a Tool From Clinical Psychology.",
+      "publisher": "MedEdPORTAL : the journal of teaching and learning resources",
+      "author": "Monasch EM",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43060832",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
       ],
       "summary": null,
       "evidence_notes": null,
