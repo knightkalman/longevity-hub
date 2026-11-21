@@ -58,6 +58,33 @@ class LocationClassificationTests(unittest.TestCase):
         self.assertIn("europe", tags)
         self.assertIn("meeting", tags)
 
+    def test_vienna_expanded_keywords_classification(self):
+        location, groups, tags = collector.classify_location(
+            "Longevity Forum + Expo at weXelerate ViennaUP 2027"
+        )
+        self.assertEqual(location, "vienna")
+        self.assertEqual(groups, ["vienna", "europe"])
+        self.assertIn("vienna", tags)
+        self.assertIn("forum", tags)
+        self.assertIn("expo", tags)
+
+        loc2, groups2, _ = collector.classify_location(
+            "Healthy Ageing in a Digital World at Alma Mater Europaea"
+        )
+        self.assertEqual(loc2, "vienna")
+        self.assertEqual(groups2, ["vienna", "europe"])
+
+    def test_rejects_predatory_conference_domains(self):
+        for bad_url in [
+            "https://10times.com/longevity-symposium",
+            "https://allconferencealert.net/eventdetails?id=101749742",
+            "https://researchleagues.com/event/index.php?id=101368284",
+            "https://waset.org/longevity-conference",
+            "https://www.cantonfair.net/event/17909-lebenslust",
+        ]:
+            with self.assertRaises(collector.CollectionError):
+                collector.canonicalize_url(bad_url, ["10times.com", "allconferencealert.net", "cantonfair.net", "waset.org", "researchleagues.com"])
+
     def test_disambiguates_vienna_virginia_as_us(self):
         location, groups, _ = collector.classify_location(
             "Healthy Aging Community Workshop in Vienna, Virginia"
@@ -229,6 +256,31 @@ class EventParserTests(unittest.TestCase):
         search_candidates = collector.fetch_search_engine(search_source, "2026-10-25T05:47:00Z", "r1")
         self.assertEqual(len(search_candidates), 1)
         self.assertEqual(search_candidates[0]["summary"], "Commercial summit connecting biotech leaders and investors.")
+
+        comm_source = {
+            "source_id": "vienna_longevity_ecosystem",
+            "name": "Vienna Hub",
+            "publisher": "Longevity Hub Austria",
+            "feed_url": "https://longevityhub.at/events",
+            "source_type": "community_directory",
+            "format": "json",
+            "allowed_domains": ["longevityhub.at"],
+            "seed_events": [
+                {
+                    "id": "lofo-2027",
+                    "title": "Longevity Business Forum (ViennaUP 2027)",
+                    "url": "https://longevityhub.at/business-forum/",
+                    "date": "2027-05-12",
+                    "publisher": "Longevity Hub Austria",
+                    "summary": "Flagship ViennaUP business forum at weXelerate.",
+                }
+            ],
+        }
+        comm_candidates = collector.fetch_community_directory(comm_source, "2026-10-25T05:47:00Z", "r1")
+        self.assertEqual(len(comm_candidates), 1)
+        self.assertEqual(comm_candidates[0]["location"], "vienna")
+        self.assertIn("vienna", comm_candidates[0]["location_groups"])
+        self.assertEqual(comm_candidates[0]["source_url"], "https://longevityhub.at/business-forum")
 
     def test_merges_duplicate_candidates_across_regional_and_global_queries(self):
         global_source = {**NATURE_EVENTS_SOURCE, "source_id": "global_src"}

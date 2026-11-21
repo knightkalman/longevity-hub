@@ -41,6 +41,17 @@ US_VIENNA_DISAMBIGUATION: tuple[str, ...] = (
     "vienna virginia",
 )
 
+PREDATORY_DOMAINS: tuple[str, ...] = (
+    "allconferencealert.net",
+    "allconferencealert.com",
+    "researchleagues.com",
+    "waset.org",
+    "10times.com",
+    "cantonfair.net",
+    "conferencealert.com",
+    "conferencealerts.in",
+)
+
 LOCATION_TERMS: tuple[tuple[str, tuple[str, ...]], ...] = (
     (
         "vienna",
@@ -51,6 +62,11 @@ LOCATION_TERMS: tuple[tuple[str, tuple[str, ...]], ...] = (
             "austria center vienna",
             "medical university of vienna",
             "meduni wien",
+            "wexelerate",
+            "viennaup",
+            "alma mater europaea",
+            "messe wien",
+            "praterstraße",
         ),
     ),
     (
@@ -258,6 +274,7 @@ TAG_TERMS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("forum", ("forum", "forums", "colloquium")),
     ("meeting", ("meeting", "annual meeting", "scientific meeting")),
     ("consensus", ("consensus", "guideline", "guidelines")),
+    ("expo", ("expo", "expos", "exposition", "exhibition")),
     ("geroscience", ("geroscience", "gerontology", "geriatric", "geriatrics", "aging", "ageing", "longevity")),
     ("nutrition", ("nutrition", "nutritional", "diet", "dietary", "metabolic", "diabetes", "obesity")),
     ("hybrid_or_online", ("virtual", "online", "webinar", "hybrid")),
@@ -331,6 +348,8 @@ def canonicalize_url(raw_url: str, allowed_domains: list[str]) -> str:
     host = (parsed.hostname or "").lower().rstrip(".")
     if parsed.scheme.lower() != "https" or not host or parsed.username or parsed.password:
         raise CollectionError("event URL must use HTTPS and have no embedded credentials")
+    if any(host == domain or host.endswith("." + domain) for domain in PREDATORY_DOMAINS):
+        raise CollectionError("event URL originates from an unapproved or predatory conference aggregator")
     if not any(host == domain or host.endswith("." + domain) for domain in allowed_domains):
         raise CollectionError("event URL host is not in the source allowlist")
 
@@ -1133,6 +1152,72 @@ def fetch_eventbrite(
     return candidates
 
 
+def fetch_community_directory(
+    source: dict[str, Any], collected_at: str, run_id: str
+) -> list[dict[str, Any]]:
+    """Fetch from community directories, curated registries, and local submission files."""
+    candidates = _load_seed_candidates(
+        source, collected_at, run_id, access_basis="curated_primary_listing"
+    )
+    existing_urls = {c["source_url"] for c in candidates}
+
+    # Load validated community submissions from events/submissions/
+    submissions_dir = ROOT / "events" / "submissions"
+    if submissions_dir.is_dir():
+        for sub_file in sorted(submissions_dir.glob("*.json")):
+            if sub_file.name in {"template.json", "schema.json"}:
+                continue
+            try:
+                data = json.loads(sub_file.read_text(encoding="utf-8"))
+                items = data if isinstance(data, list) else [data]
+                for item in items:
+                    if not isinstance(item, dict) or "title" not in item or "url" not in item:
+                        continue
+                    url = item["url"]
+                    parsed = urllib.parse.urlsplit(url)
+                    host = (parsed.hostname or "").lower()
+                    if not any(
+                        host == dom or host.endswith("." + dom)
+                        for dom in source["allowed_domains"]
+                    ):
+                        continue
+                    if url in existing_urls:
+                        continue
+                    iso_date = item.get("date")
+                    raw_text = item.get("date_raw") or iso_date or ""
+                    if iso_date:
+                        parsed_iso, precision, _ = parse_publication_date(iso_date)
+                        pub_date = parsed_iso
+                        pub_precision = precision
+                        pub_raw = raw_text[:80] if raw_text else None
+                    else:
+                        pub_date, pub_precision, pub_raw = parse_publication_date(raw_text)
+                    try:
+                        candidate = build_candidate(
+                            source=source,
+                            upstream_id=str(item.get("id") or url),
+                            title=item["title"],
+                            article_url=url,
+                            publication_date=pub_date,
+                            publication_date_precision=pub_precision,
+                            publication_date_raw=pub_raw,
+                            author=item.get("author"),
+                            publisher=item.get("publisher") or source["publisher"],
+                            collected_at=collected_at,
+                            run_id=run_id,
+                            access_basis="community_submission",
+                            summary=item.get("summary"),
+                        )
+                        candidates.append(candidate)
+                        existing_urls.add(candidate["source_url"])
+                    except CollectionError:
+                        continue
+            except Exception:
+                continue
+
+    return candidates
+
+
 def load_sources(path: Path) -> list[dict[str, Any]]:
     try:
         registry = json.loads(path.read_text(encoding="utf-8"))
@@ -1155,6 +1240,7 @@ def load_sources(path: Path) -> list[dict[str, Any]]:
             "crossref",
             "search_engine",
             "eventbrite",
+            "community_directory",
         }:
             raise CollectionError(f"{source_id} has an unsupported source type")
         for field in (
@@ -1212,6 +1298,7 @@ def load_sources(path: Path) -> list[dict[str, Any]]:
             "crossref",
             "search_engine",
             "eventbrite",
+            "community_directory",
         }:
             if source.get("format") != "json":
                 raise CollectionError(f"{source_id} has an invalid configuration; format must be json")
@@ -1304,6 +1391,8 @@ def collect(
                 candidates = fetch_search_engine(source, collected_at, run_id)
             elif source["source_type"] == "eventbrite":
                 candidates = fetch_eventbrite(source, collected_at, run_id)
+            elif source["source_type"] == "community_directory":
+                candidates = fetch_community_directory(source, collected_at, run_id)
             else:
                 raise CollectionError(f"unhandled source type: {source['source_type']}")
             successful_sources += 1

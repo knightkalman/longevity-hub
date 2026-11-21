@@ -442,7 +442,10 @@
       "allowed_domains": [
         "eventbrite.com",
         "timepie.com",
-        "nus.edu.sg"
+        "nus.edu.sg",
+        "longevityhub.at",
+        "masters-of-longevity.com",
+        "europeanlongevitysociety.com"
       ],
       "query": "longevity",
       "max_results": 20,
@@ -457,8 +460,38 @@
       "terms_url": "https://www.eventbrite.com/platform/api-terms-of-use/",
       "trust_tier": "specialist_event_platform",
       "enabled": true,
-      "last_checked_date": "2026-10-25",
+      "last_checked_date": "2026-11-15",
       "seed_events": [
+        {
+          "id": "lofo-longevity-forum-expo-2027",
+          "title": "Longevity Forum + Expo (LOFO 2027) Vienna",
+          "url": "https://www.eventbrite.com/e/lofo-longevity-forum-expo-tickets-1999026319534",
+          "date": "2027-05-12",
+          "date_raw": "Wednesday, May 12, 2027 (10:00 – 18:00)",
+          "publisher": "Longevity Hub Austria & weXelerate Vienna",
+          "author": null,
+          "summary": "Vienna's premier longevity forum and expo at weXelerate focusing on scientific and practical methods to extend life expectancy and optimize vitality."
+        },
+        {
+          "id": "healthy-ageing-in-a-digital-world-2027",
+          "title": "Healthy Ageing in a Digital World 2027 Vienna",
+          "url": "https://www.masters-of-longevity.com/events/healthy-ageing-in-a-digital-world-2027",
+          "date": "2027-05-10",
+          "date_raw": "May 10–12, 2027",
+          "publisher": "Alma Mater Europaea University Vienna",
+          "author": null,
+          "summary": "Hybrid international conference examining healthy longevity at the convergence of AI, robotics, and digital health technologies."
+        },
+        {
+          "id": "european-longevity-society-summit-2027",
+          "title": "European Longevity Society Annual Summit & Clinical Sessions",
+          "url": "https://www.europeanlongevitysociety.com/",
+          "date": "2027-04-15",
+          "date_raw": "April 2027",
+          "publisher": "European Longevity Society",
+          "author": null,
+          "summary": "Continental summits and private masterclasses for physicians and researchers implementing clinical longevity medicine across Europe."
+        },
         {
           "id": "timepie-longevity-forum-2026",
           "title": "TimePie Asia Longevity & Rejuvenation Forum 2026 Shanghai",
@@ -478,6 +511,185 @@
           "publisher": "National University of Singapore Yong Loo Lin School of Medicine",
           "author": null,
           "summary": "An authoritative Singapore-based summit bridging clinical trials, multi-omics biomarker scoring, and healthspan optimization across the Asia-Pacific."
+        }
+      ]
+    },
+    {
+      "source_id": "vienna_longevity_ecosystem",
+      "name": "Vienna Longevity Innovation Network & Hub",
+      "publisher": "Longevity Hub Austria & ViennaUP Network",
+      "feed_url": "https://longevityhub.at/events",
+      "source_type": "community_directory",
+      "format": "json",
+      "allowed_domains": [
+        "longevityhub.at",
+        "masters-of-longevity.com",
+        "wexelerate.com",
+        "meduniwien.ac.at",
+        "geriatrie-online.at",
+        "oeaw.ac.at"
+      ],
+      "default_location": "vienna",
+      "topic_coverage": [
+        "Vienna longevity summits",
+        "Austrian geroscience forums",
+        "ViennaUP longevity tech"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Ingest verified Vienna-based primary event announcements and conference registrations.",
+      "terms_notes": "Preserve attribution and link directly to canonical host domains.",
+      "terms_url": "https://longevityhub.at/privacy",
+      "trust_tier": "curated_primary_network",
+      "enabled": true,
+      "last_checked_date": "2026-11-15",
+      "seed_events": [
+        {
+          "id": "longevity-business-forum-viennaup-2027",
+          "title": "Longevity Business Forum + Expo (ViennaUP 2027)",
+          "url": "https://longevityhub.at/business-forum/",
+          "date": "2027-05-12",
+          "date_raw": "May 12, 2027 (3:00 PM – 9:00 PM)",
+          "publisher": "Longevity Hub Austria & weXelerate Vienna",
+          "author": null,
+          "summary": "ViennaUP 2027 longevity flagship at weXelerate Vienna featuring keynotes by Univ.-Prof. Dr. Markus Müller (MedUni Wien), panel discussions on human longevity, startup pitch competition, and the Longevity Innovation Award."
+        }
+      ]
+    },
+    {
+      "source_id": "curated_directories_events",
+      "name": "Global Curated Longevity Directories & Scientific Flagships",
+      "publisher": "AgingBiotech.info, Lifespan.io & Scientific Societies",
+      "feed_url": "https://agingbiotech.info/conferences/",
+      "source_type": "community_directory",
+      "format": "json",
+      "allowed_domains": [
+        "agingbiotech.info",
+        "lifespan.io",
+        "agingpharma.org",
+        "forever-healthy.org",
+        "longevityinvestors.ch",
+        "grc.org",
+        "americanagingassociation.org",
+        "hevolution.com",
+        "eugms.org"
+      ],
+      "topic_coverage": [
+        "global longevity biotech conferences",
+        "geroscience symposia",
+        "translational aging retreats"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Sync curated conference listings from high-trust longevity databases and academic societies.",
+      "terms_notes": "Metadata only. Candidate links resolve directly to primary conference domains.",
+      "terms_url": "https://agingbiotech.info/about/",
+      "trust_tier": "curated_primary_index",
+      "enabled": true,
+      "last_checked_date": "2026-11-15",
+      "seed_events": [
+        {
+          "id": "ardd-copenhagen-2027",
+          "title": "14th Aging Research & Drug Discovery Meeting (ARDD 2027) Copenhagen",
+          "url": "https://agingpharma.org/",
+          "date": "2027-08-30",
+          "date_raw": "August 30 – September 3, 2027",
+          "publisher": "University of Copenhagen",
+          "author": null,
+          "summary": "The world's premier biogerontology and translational aging drug discovery meeting held annually at the University of Copenhagen."
+        },
+        {
+          "id": "rejuvenation-startup-summit-2027",
+          "title": "Rejuvenation Startup Summit 2027 Berlin",
+          "url": "https://forever-healthy.org/rejuvenation-startup-summit/",
+          "date": "2027-06-25",
+          "date_raw": "June 25-26, 2027",
+          "publisher": "Forever Healthy Foundation",
+          "author": null,
+          "summary": "The world's leading startup and venture conference dedicated exclusively to rejuvenation biotechnology and extending healthy human lifespan in Berlin."
+        },
+        {
+          "id": "longevity-investors-conference-2027",
+          "title": "Longevity Investors Conference 2027 Gstaad",
+          "url": "https://longevityinvestors.ch/",
+          "date": "2027-09-28",
+          "date_raw": "September 28-30, 2027",
+          "publisher": "Longevity Investors Conference",
+          "author": null,
+          "summary": "A premier private gathering in Gstaad, Switzerland bringing together institutional investors, family offices, and leading scientists to accelerate investments in longevity."
+        },
+        {
+          "id": "grc-biology-of-aging-2027",
+          "title": "Gordon Research Conference: Biology of Aging 2027",
+          "url": "https://www.grc.org/biology-of-aging-conference/2027/",
+          "date": "2027-07-11",
+          "date_raw": "July 11-16, 2027",
+          "publisher": "Gordon Research Conferences",
+          "author": null,
+          "summary": "A premier international scientific conference presenting cutting-edge research on molecular and cellular pathways modulating the biology of aging."
+        },
+        {
+          "id": "age-annual-meeting-2027",
+          "title": "American Aging Association (AGE) 55th Annual Meeting 2027",
+          "url": "https://www.americanagingassociation.org/annual-meeting",
+          "date": "2027-06-03",
+          "date_raw": "June 3-6, 2027",
+          "publisher": "American Aging Association",
+          "author": null,
+          "summary": "Major annual scientific meeting bringing together biogerontologists, clinicians, and researchers investigating the biology of aging and healthspan extension."
+        },
+        {
+          "id": "global-healthspan-summit-2027",
+          "title": "Global Healthspan Summit 2027 Riyadh",
+          "url": "https://hevolution.com/global-healthspan-summit",
+          "date": "2027-11-17",
+          "date_raw": "November 17-18, 2027",
+          "publisher": "Hevolution Foundation",
+          "author": null,
+          "summary": "A major global healthspan summit organized by Hevolution Foundation convening researchers, industry leaders, and policymakers to catalyze worldwide longevity research."
+        },
+        {
+          "id": "eugms-congress-2027",
+          "title": "23rd EuGMS Congress of the European Geriatric Medicine Society 2027",
+          "url": "https://www.eugms.org/",
+          "date": "2027-10-06",
+          "date_raw": "October 6-8, 2027",
+          "publisher": "European Geriatric Medicine Society (EuGMS)",
+          "author": null,
+          "summary": "The leading European scientific congress addressing geriatric medicine, multi-morbidity, prevention, and evidence-based interventions for healthy aging."
+        }
+      ]
+    },
+    {
+      "source_id": "luma_events_longevity",
+      "name": "Luma Longevity & Biotech Community Gatherings",
+      "publisher": "Luma Community Calendars & Biohacker Collectives",
+      "feed_url": "https://api.lu.ma/public/v1/calendar/list-events",
+      "source_type": "community_directory",
+      "format": "json",
+      "allowed_domains": [
+        "lu.ma"
+      ],
+      "topic_coverage": [
+        "grassroots longevity meetups",
+        "VitaDAO community summits",
+        "biotech fellowship demo days"
+      ],
+      "update_cadence": "continuous; checked daily",
+      "permitted_collection_method": "Sync verified public community meetups and longevity unconferences.",
+      "terms_notes": "Luma event links and metadata only.",
+      "terms_url": "https://lu.ma/terms",
+      "trust_tier": "community_event_platform",
+      "enabled": true,
+      "last_checked_date": "2026-11-15",
+      "seed_events": [
+        {
+          "id": "vitadao-longevity-summit-2027",
+          "title": "VitaDAO Global Longevity & Biotech Builders Summit 2027",
+          "url": "https://lu.ma/vitadao-summit-2027",
+          "date": "2027-06-18",
+          "date_raw": "June 18-20, 2027",
+          "publisher": "VitaDAO Community & Luma",
+          "author": null,
+          "summary": "Decentralized science and longevity biotech builders unconference connecting researchers, token holders, and early-stage startup founders."
         }
       ]
     }

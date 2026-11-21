@@ -1,0 +1,58 @@
+name: Submit a Longevity Conference or Event
+description: Propose an upcoming longevity, geroscience, or healthy aging event to be listed on the VitaBite Longevity Hub.
+title: "[Event]: "
+labels: ["event-submission", "needs_review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting an event to the VitaBite Longevity Hub!
+        Please review our [Event Policy](events/policy.md). We feature scientific conferences, translational summits, and clinical healthspan forums. Predatory conferences or non-scientific consumer fairs are excluded.
+  - type: input
+    id: title
+    attributes:
+      label: Event Title
+      description: Official name of the conference, summit, or symposium.
+      placeholder: e.g. Longevity Forum + Expo (ViennaUP 2027)
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Event Dates
+      description: Exact event dates (ISO YYYY-MM-DD preferred).
+      placeholder: e.g. 2027-05-12 or May 12–14, 2027
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location / Venue
+      description: City, country, and specific venue (or "Hybrid / Virtual").
+      placeholder: e.g. weXelerate, Vienna, Austria (Hybrid)
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical Event URL
+      description: Primary official conference landing page or registration link (must use HTTPS).
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: organizer
+    attributes:
+      label: Organizer / Host Society
+      description: Academic institution, society, or accredited foundation organizing the event.
+      placeholder: e.g. Longevity Hub Austria, MedUni Wien, American Aging Association
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Scientific Focus / Summary
+      description: 1–3 sentence overview of themes, keynotes, biomarkers, or translational focus.
+      placeholder: Focuses on geroscience, clinical longevity protocols, and healthspan extension...
+    validations:
+      required: true

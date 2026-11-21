@@ -82,6 +82,26 @@ It uses the exact same search engines, feed types, and collection methods as
 4. **Food Business News Events RSS (`food_business_events`, disabled):**
    Configured for industry expos and summits, kept `enabled: false` until terms
    can be verified by a maintainer.
+5. **OpenAlex & Crossref Global Longevity Indices (`openalex_events_longevity`, `crossref_events_aging`):**
+   Continuous bibliographic discovery of scientific conferences, consensus symposia, and proceedings.
+6. **Vienna Innovation Ecosystem (`vienna_longevity_ecosystem`):**
+   Curated primary listings from Longevity Hub Austria, ViennaUP summits at weXelerate,
+   and university research institutions (MedUni Wien, Alma Mater Europaea).
+7. **Curated Global Directories & Society Flagships (`curated_directories_events`):**
+   Primary conference listings synced from verified longevity databases (AgingBiotech.info,
+   Lifespan.io) and major academic societies (American Aging Association, ARDD Copenhagen,
+   EuGMS, Gordon Research Conferences).
+8. **Community Platforms & Submissions (`luma_events_longevity`, `events/submissions/`):**
+   Vetted decentralised community summits (VitaDAO, LBF) and verified pull-request
+   submissions from conference organizers conforming to `events/schemas/event-item.schema.json`.
+
+### Predatory conference aggregator exclusion
+To safeguard quality and protect researchers from paper mills and fee-harvesting scams,
+the pipeline enforces an automated blocklist rejecting unvetted aggregator farms
+(including `allconferencealert.net`, `allconferencealert.com`, `researchleagues.com`,
+`waset.org`, `10times.com`, `cantonfair.net`, and `conferencealert.com`). All events must
+originate from primary conference landing pages, accredited academic institutions, or verified
+specialist platforms.
 
 ## Dedupe, retention, freshness, corrections, and takedowns
 

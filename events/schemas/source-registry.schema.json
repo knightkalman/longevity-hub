@@ -63,7 +63,8 @@
             "openalex",
             "crossref",
             "search_engine",
-            "eventbrite"
+            "eventbrite",
+            "community_directory"
           ]
         },
         "format": {
