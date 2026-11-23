@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-22T13:37:46Z",
-  "last_successful_collection": "2026-11-22T13:37:40Z",
+  "generated_at": "2026-11-23T16:30:42Z",
+  "last_successful_collection": "2026-11-23T16:30:34Z",
   "collection_status": "success",
   "sources_succeeded": 14,
   "sources_total": 14,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 3
+      "new": 2
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -71,25 +71,25 @@
       "source_id": "eventbrite_events_longevity",
       "status": "success",
       "fetched": 5,
-      "new": 3
+      "new": 0
     },
     {
       "source_id": "vienna_longevity_ecosystem",
       "status": "success",
       "fetched": 1,
-      "new": 1
+      "new": 0
     },
     {
       "source_id": "curated_directories_events",
       "status": "success",
       "fetched": 7,
-      "new": 6
+      "new": 0
     },
     {
       "source_id": "luma_events_longevity",
       "status": "success",
       "fetched": 1,
-      "new": 1
+      "new": 0
     }
   ],
   "items": [
@@ -712,6 +712,46 @@
       "publication_date": null,
       "publication_date_precision": "month",
       "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "407586411f829c369dbbfd195ad3b8a8a8cc53495c0b9d155b1dd8c1730ce30b",
+      "title": "Isolated Liver and Combined Liver-Pancreas Transplantation in Cystic Fibrosis: An Australia and New Zealand Expert Consensus Statement.",
+      "publisher": "ANZ journal of surgery",
+      "author": "Bolia R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43070145",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "8fd55f5baa2d3f0d1d0b12ddb86b1d192617109cd8b7a09e7eac9dafacf58c57",
+      "title": "Three-Dimensional Leg Alignment Analysis: Do We Need a Consensus?",
+      "publisher": "Cartilage",
+      "author": "Bax E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43069469",
+      "publication_date": "2026-11-22",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 22",
       "location": "other",
       "location_groups": [],
       "tags": [
