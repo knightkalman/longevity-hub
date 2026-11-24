@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-23T16:30:42Z",
-  "last_successful_collection": "2026-11-23T16:30:34Z",
+  "generated_at": "2026-11-24T16:29:35Z",
+  "last_successful_collection": "2026-11-24T16:29:27Z",
   "collection_status": "success",
   "sources_succeeded": 14,
   "sources_total": 14,
@@ -17,13 +17,13 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 2
+      "new": 12
     },
     {
       "source_id": "pubmed_events_vienna",
       "status": "success",
       "fetched": 25,
-      "new": 0
+      "new": 1
     },
     {
       "source_id": "pubmed_events_europe",
@@ -465,6 +465,25 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "70aed9195ba81e6bf137d563809344529efef8ae489ebb348dee10bb78e941c7",
+      "title": "Xenotransplantation at the Threshold of Clinical Translation: Xenotransplantation Highlights From the Transplantation Society (TTS) 2026 Congress, Sydney, Australia.",
+      "publisher": "Xenotransplantation",
+      "author": "Hawthorne WJ",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43074556",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov-Dec",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "318c469d38b005c3d9433573c74bc4477b1e702d833b02e3bb55369f894e1668",
       "title": "Exploring the barriers to prehabilitation integration in Austrian healthcare: a qualitative analysis.",
       "publisher": "BJA open",
@@ -573,6 +592,28 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "f428a200ec8705d5790194e1ce7f304e6524ee462ad4f06da5d29c4176f6b022",
+      "title": "Supplement: Abstracts from the European Academy of Allergy and Clinical Immunology Congress, 12-15 June, 2026.",
+      "publisher": "Allergy",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071866",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "congress",
+        "europe",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "dbe413547c5a414fddfd563ed00bfea8866b71f4cc92136e1afa499c5b51e526",
       "title": "Taiwanese expert consensus on the assessment and management of agitation in dementia: A modified Delphi study.",
       "publisher": "Asian journal of psychiatry",
@@ -589,6 +630,28 @@
         "asia",
         "consensus",
         "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "d8bbfc16a390a8f3c28e38ef46797313d28efdeb5be6c9f458b74547b17a8da8",
+      "title": "Supplement: Abstracts from the European Academy of Allergy and Clinical Immunology Congress, 12-15 June, 2026.",
+      "publisher": "Allergy",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071863",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "congress",
+        "europe",
         "needs_review"
       ],
       "summary": null,
@@ -681,6 +744,50 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "748be00d3343711385434d774861441b9f684eb5f0f357d12d76b93edf551aa7",
+      "title": "Supplement: Abstracts from the European Academy of Allergy and Clinical Immunology Congress, 12-15 June, 2026.",
+      "publisher": "Allergy",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071862",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "congress",
+        "europe",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "4cac4bb5a430721afe77a1b793fd38956a66ccf5b5f6942ac8a0c82fefff046e",
+      "title": "Supplement: Abstracts from the European Academy of Allergy and Clinical Immunology Congress, 12-15 June, 2026.",
+      "publisher": "Allergy",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071865",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "congress",
+        "europe",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "19071e2aee3e25202690229673bca3ec6d3697b1d15ed85f42cba22db879747c",
       "title": "Corrigendum to 'Chinese expert consensus on the clinical application of stromal vascular fraction combined with bone marrow flushing for osteonecrosis of the femoral head' [J Orthop Transl 60 (2026) 101192 /JOTr -D-26-00434].",
       "publisher": "Journal of orthopaedic translation",
@@ -724,11 +831,131 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "ede707bbc4261c770942211b6b103b516b114975f070d5c0116e0bfd82172221",
+      "title": "Consensus-Based Diagnostic Criteria for Parsonage-Turner Syndrome/Neuralgic Amyotrophy: A Modified Delphi Study.",
+      "publisher": "Muscle & nerve",
+      "author": "Queler SC",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43074746",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f705acd5ddb98548d53e40199e2c0a8fed707343c7a310b3bc90a3c9908b5a4d",
+      "title": "Kidney Disease: Improving Global Outcomes (KDIGO) Summit on Genetics in Kidney Health: A United States Perspective.",
+      "publisher": "Clinical journal of the American Society of Nephrology : CJASN",
+      "author": "Rastogi A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071481",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "us",
+      "location_groups": [
+        "us"
+      ],
+      "tags": [
+        "needs_review",
+        "summit",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "7db3c583a90c79c0c29691cb165cee32e880237f424aa4e78a32216fc7a76d78",
+      "title": "Clinical Grand Rounds and Inborn Errors of Immunity abstracts from the Australasian Society of Clinical Immunology and Allergy 2026 conference - PDF.",
+      "publisher": "Journal of human immunity",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43070572",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "4d3fa9b864180def2cbc9e6d8737725c54cfe784b5a03592b6b5f22384209fcf",
+      "title": "Pediatric research for the future of children: introduction to the conference proceedings.",
+      "publisher": "Pediatric research",
+      "author": "Huppi P",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43073430",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "407586411f829c369dbbfd195ad3b8a8a8cc53495c0b9d155b1dd8c1730ce30b",
       "title": "Isolated Liver and Combined Liver-Pancreas Transplantation in Cystic Fibrosis: An Australia and New Zealand Expert Consensus Statement.",
       "publisher": "ANZ journal of surgery",
       "author": "Bolia R",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43070145",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "2f65a569011872cf5486d0d9cee070d5d8cc40abf3039d100db14342e3ef36b3",
+      "title": "Evidence and Consensus Based Imaging Guidelines in Ocular Syphilis. Multimodal imaging in Uveitis (MUV) Taskforce Report 21.",
+      "publisher": "Ophthalmology. Retina",
+      "author": "Tyagi M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43072635",
+      "publication_date": "2026-11-23",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 23",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "0ce7544b06ad776fc1269b18ca1d81164bf4f39599f5e878641b97a048db535a",
+      "title": "Standardized framework for periprosthetic DXA in hip and knee arthroplasty: multisociety RAND/UCLA consensus recommendations.",
+      "publisher": "Archives of osteoporosis",
+      "author": "Torres-Naranjo JF",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43071296",
       "publication_date": "2026-11-23",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 23",
@@ -5405,6 +5632,30 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "4956af30950a4a36f290e3d7ccfcd7c135784ee02c9796faa13f1261fee3bc30",
+      "title": "Perfusion Practice in Pediatric Aortic Arch Reconstruction: Results of a Survey Among Centers in Austria, Germany, and Switzerland.",
+      "publisher": "The Thoracic and cardiovascular surgeon",
+      "author": "Sturm N",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43072757",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Jan",
+      "location": "vienna",
+      "location_groups": [
+        "vienna",
+        "europe"
+      ],
+      "tags": [
+        "europe",
+        "event",
+        "needs_review",
+        "vienna"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "082a0b59bbda4cf94c05091db992f8ca4c7008f5071901b84d3fdd043c444bcf",
       "title": "The European Society of Gynaecological Oncology position statement: promoting inclusive surgical ergonomics in gynecological oncology.",
       "publisher": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
@@ -5694,6 +5945,25 @@
       "publisher": "Global heart",
       "author": "Narula J",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43032267",
+      "publication_date": null,
+      "publication_date_precision": "year",
+      "publication_date_raw": "2026",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "93548fff94551a314a5377c0ac263c861e7b21881fc957bfa6620cf2e5217620",
+      "title": "Breast Cancer Incidence and Risk Factors Among Active-Duty Members of the Armed Forces: A Report to Congress.",
+      "publisher": "Breast cancer : basic and clinical research",
+      "author": "Hamlin L",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43075167",
       "publication_date": null,
       "publication_date_precision": "year",
       "publication_date_raw": "2026",
