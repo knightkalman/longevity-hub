@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-24T16:29:35Z",
-  "last_successful_collection": "2026-11-24T16:29:27Z",
+  "generated_at": "2026-11-25T16:08:25Z",
+  "last_successful_collection": "2026-11-25T16:08:15Z",
   "collection_status": "success",
   "sources_succeeded": 14,
   "sources_total": 14,
@@ -17,13 +17,13 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 12
+      "new": 7
     },
     {
       "source_id": "pubmed_events_vienna",
       "status": "success",
       "fetched": 25,
-      "new": 1
+      "new": 0
     },
     {
       "source_id": "pubmed_events_europe",
@@ -788,6 +788,25 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "270d2d6c0bf364de3509a240613edc6491166967be5071881ce0eb48e0b6c7e6",
+      "title": "Psychiatrists' Prescribing Choice Determinants for Brexpiprazole and Other Antipsychotics in Patients With Schizophrenia: Results From a National Congress-Based Survey in Argentina.",
+      "publisher": "Human psychopharmacology",
+      "author": "Ramirez J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43076797",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "congress",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "19071e2aee3e25202690229673bca3ec6d3697b1d15ed85f42cba22db879747c",
       "title": "Corrigendum to 'Chinese expert consensus on the clinical application of stromal vascular fraction combined with bone marrow flushing for osteonecrosis of the femoral head' [J Orthop Transl 60 (2026) 101192 /JOTr -D-26-00434].",
       "publisher": "Journal of orthopaedic translation",
@@ -831,11 +850,110 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "fb82abf14f3574c68b5b29edc37cfc80f552cf7b989332da69955184119b6e7d",
+      "title": "AI-supported digital infrastructures in human health chemical risk assessment: recommendations from a joint VHP4Safety/ONTOX workshop.",
+      "publisher": "Archives of toxicology",
+      "author": "de Winter A",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43078962",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "ede707bbc4261c770942211b6b103b516b114975f070d5c0116e0bfd82172221",
       "title": "Consensus-Based Diagnostic Criteria for Parsonage-Turner Syndrome/Neuralgic Amyotrophy: A Modified Delphi Study.",
       "publisher": "Muscle & nerve",
       "author": "Queler SC",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43074746",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "d45bb0979cac92c402ab549e827c334073b9acdff214089256695aeffb068114",
+      "title": "[Expert consensus on the diagnosis and treatment of nocturnal enuresis in children in primary medical and health institutions (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Pediatric Urodynamics and Pelvic Floor Group, Pediatric Surgery Branch of the Chinese Medical Association",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43079829",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "5fd038dde759e815eb3156c751fb8057e5dfc7a10c9b6bc1fdbe4c73a7d29f38",
+      "title": "[Expert consensus on imaging diagnosis of comorbid pulmonary tuberculosis and lung cancer (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Radiology Professional Committee on Infection and Inflammation of the Chinese Research Hospital Association",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43079827",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "3eee413095b939b12165a509611aef487c33aa10cd61a44a5acd2cd55f67f636",
+      "title": "Indications for medial unicompartmental knee arthroplasty (UKA). The 2026 ESSKA-EKA formal consensus. Part 1-Patient history and clinical principles.",
+      "publisher": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "author": "Servien E",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43076012",
+      "publication_date": "2026-11-24",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 24",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "228a22f255ad473bdc9b670842190a8fe3e02f91b8838299d80aa1be7b69477e",
+      "title": "[Expert consensus on blood pressure and vascular assessment and multidisciplinary management of adult Takayasu arteritis (2026 edition)].",
+      "publisher": "Zhonghua yi xue za zhi",
+      "author": "Rheumatology Branch of Chinese Women′s Medical Association",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43079828",
       "publication_date": "2026-11-24",
       "publication_date_precision": "day",
       "publication_date_raw": "2026 Nov 24",
@@ -1964,6 +2082,29 @@
       "location_groups": [],
       "tags": [
         "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "941e797ede566415fceac5ededc02241203e5ba6a4303e6346c1d588c3487a6d",
+      "title": "Preemptive treatment in children with classic Fabry disease: recommendations from the Italian E-TREAT Delphi consensus.",
+      "publisher": "Molecular genetics and metabolism",
+      "author": "Spada M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43077787",
+      "publication_date": "2026-11-16",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 16",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
         "needs_review"
       ],
       "summary": null,
