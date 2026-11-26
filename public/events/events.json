@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "publication_status": "metadata_roundup",
-  "generated_at": "2026-11-25T16:08:25Z",
-  "last_successful_collection": "2026-11-25T16:08:15Z",
+  "generated_at": "2026-11-26T15:50:05Z",
+  "last_successful_collection": "2026-11-26T15:49:57Z",
   "collection_status": "success",
   "sources_succeeded": 14,
   "sources_total": 14,
@@ -17,7 +17,7 @@
       "source_id": "pubmed_events_upcoming",
       "status": "success",
       "fetched": 30,
-      "new": 7
+      "new": 13
     },
     {
       "source_id": "pubmed_events_vienna",
@@ -807,6 +807,25 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "257fb0df4e61d4c3fbb21ec2a54e092d3a4f9a40edd6d9e3bf9e1875fcefdb1b",
+      "title": "36(th) Annual Conference of the Australasian Society of Clinical Immunology and Allergy (ASCIA), 1-4 September 2026, Te Pae Christchurch Convention Centre, New Zealand.",
+      "publisher": "Internal medicine journal",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43084456",
+      "publication_date": null,
+      "publication_date_precision": "month",
+      "publication_date_raw": "2026 Nov",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "19071e2aee3e25202690229673bca3ec6d3697b1d15ed85f42cba22db879747c",
       "title": "Corrigendum to 'Chinese expert consensus on the clinical application of stromal vascular fraction combined with bone marrow flushing for osteonecrosis of the femoral head' [J Orthop Transl 60 (2026) 101192 /JOTr -D-26-00434].",
       "publisher": "Journal of orthopaedic translation",
@@ -843,6 +862,173 @@
       "tags": [
         "consensus",
         "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "8d124c20d21509fa87864c941901457a6ea6c7f64377043010b0e044f0323497",
+      "title": "Resistant and Refractory Migraine: Updated Consensus Definitions and Management.",
+      "publisher": "Current pain and headache reports",
+      "author": "Robblee J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43086492",
+      "publication_date": "2026-11-26",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 26",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f9c9f491d8669df06f3ab8963c0fc7496970ec1a40da565b6818b7158242c473",
+      "title": "Characterizing sarcopenic obesity in Spanish older adults: an ESPEN-EASO consensus-based approach.",
+      "publisher": "Geriatric nursing (New York, N.Y.)",
+      "author": "Balasch-Bernat M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43085045",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "europe",
+      "location_groups": [
+        "europe",
+        "us"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "geroscience",
+        "needs_review",
+        "nutrition",
+        "us"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "c9f95cc365a5c4e47b90cd225388e8f51e707c238d5c61374afb484c61962d05",
+      "title": "Emerging advances in CAR-T therapy for solid tumors: latest clinical trial updates from the 2026 ASCO Annual Meeting.",
+      "publisher": "Journal of hematology & oncology",
+      "author": "Bao Y",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43087045",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "meeting",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "a40417be71139722c99237d4ccd2eeffd17bcfb3bf18963c1d5e63b9e7497c5e",
+      "title": "Correction to: Implementation of cardiac computed tomography in everyday practice: A clinical consensus statement of the European Association of Cardiovascular Imaging (EACVI) of the ESC and the ESC Council for Cardiology Practice.",
+      "publisher": "European heart journal",
+      "author": null,
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43084239",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "97df3339ce07e2ef793f86d1462464e455ff58e1992800b8caac234d9a392c5e",
+      "title": "Photographic Documentation Standards for Facial Plastic Surgery: An International Modified Delphi Consensus.",
+      "publisher": "Facial plastic surgery : FPS",
+      "author": "Sclafani AP",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43085749",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "6ee658aabb6f5acc3289e7dc760ff9c0684df8587edcf2f94d3e28cecac64451",
+      "title": "Management of side effects in PARP inhibitor maintenance therapy for advanced ovarian cancer: results of a NOGGO national interdisciplinary workshop.",
+      "publisher": "Archives of gynecology and obstetrics",
+      "author": "Sehouli J",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43083921",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "645768904e53afe4ac11d283b11baf977d344f5907bbb2428048ff7554569b08",
+      "title": "The development of a core outcome set of relationships and sex education for and with students with intellectual disability: a Delphi consensus study.",
+      "publisher": "BMJ open",
+      "author": "Paulauskaite L",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43085993",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "549e3a05f670d454fc8f733bbd018d4980a6c9432c65526d476798de47339187",
+      "title": "Consultation-Liaison Case Conference: Mentorship in Clinical Supervision Following a Difficult Patient Encounter.",
+      "publisher": "Journal of the Academy of Consultation-Liaison Psychiatry",
+      "author": "Hamlin D",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43085730",
+      "publication_date": "2026-11-25",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 25",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "conference",
         "needs_review"
       ],
       "summary": null,
@@ -2592,6 +2778,30 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "e14ac02e8d3775d05584742c27e63f813dec72b71fd761e8e5029f0e45a52ad7",
+      "title": "Medication Review Training for Japanese Community Pharmacists Using the Ask-Assess-Advise Framework: A Post-Workshop Cross-Sectional Survey of Self-Assessed Competencies.",
+      "publisher": "Pharmacy (Basel, Switzerland)",
+      "author": "Iijima H",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43083442",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "europe",
+      "location_groups": [
+        "europe",
+        "asia"
+      ],
+      "tags": [
+        "asia",
+        "europe",
+        "needs_review",
+        "workshop"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "c89dc43582e3b484abd6c9fc8379869a7c447d03f30757ce29ed26e386a3ba9e",
       "title": "Consensus-Based Recommendations for the Management of Deep and Extremely Deep Carious Lesions and Vital Pulp Treatment in Permanent Teeth: A National Delphi Study.",
       "publisher": "International endodontic journal",
@@ -2604,6 +2814,29 @@
       "location_groups": [],
       "tags": [
         "consensus",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "b650b84f68da289428baaf6b81b18eaee38ffdca34fc19110d88c44d203f8213",
+      "title": "Basic and Advanced Training in Pediatric Cardiology and Congenital Heart Disease Echocardiography: An Expert Consensus Paper from the European Paediatric and Congenital Cardiology (AEPC) Imaging Working Group and Congenital Heart Disease Shared Interest Group of the European Association of Cardiovascular Imaging (EACVI).",
+      "publisher": "Journal of clinical medicine",
+      "author": "Cantinotti M",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43090853",
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 11",
+      "location": "europe",
+      "location_groups": [
+        "europe"
+      ],
+      "tags": [
+        "consensus",
+        "europe",
         "event",
         "needs_review"
       ],
@@ -3749,6 +3982,27 @@
       "review_state": "candidate"
     },
     {
+      "item_id": "b2d1a38f27126805bc0ca971f79775ffa212fda4c6d1df3ba16623b4f7d150b5",
+      "title": "Descriptive Consensus Pathway Analysis Identifies Matrix-Dependent Metabolic Patterns During Wheat-Germ Fermentation.",
+      "publisher": "Microorganisms",
+      "author": "Melis R",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43092416",
+      "publication_date": "2026-11-05",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 5",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
+        "event",
+        "needs_review",
+        "nutrition"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
       "item_id": "82407cb61c59fb102d33edab42e92a6de7683f65f8e706798c757f4265c8855c",
       "title": "Evidence-based clinical practice national guideline for elective female genital aesthetic labiaplasty: recommendations from the pelvic floor and cosmetic gynecology (PETKOZ) association and expert consensus.",
       "publisher": "Journal of the Turkish German Gynecological Association",
@@ -3853,6 +4107,26 @@
       "tags": [
         "consensus",
         "europe",
+        "event",
+        "needs_review"
+      ],
+      "summary": null,
+      "evidence_notes": null,
+      "review_state": "candidate"
+    },
+    {
+      "item_id": "f4173eccdb0f2c11125c8f3494fdb09b4ce0d580e6fa98c3f6157192b414545f",
+      "title": "Identification, Monitoring, and Management of Elevated Ketones in Ambulatory Settings: A Consensus Statement.",
+      "publisher": "JAMA network open",
+      "author": "Shah VN",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43084303",
+      "publication_date": "2026-11-02",
+      "publication_date_precision": "day",
+      "publication_date_raw": "2026 Nov 2",
+      "location": "other",
+      "location_groups": [],
+      "tags": [
+        "consensus",
         "event",
         "needs_review"
       ],
